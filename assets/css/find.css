@@ -1,0 +1,30 @@
+.my-container {
+  max-width: 1264px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.max_w_1440 {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.shopping-box {
+  padding-top: 46px;
+  padding-bottom: 54px;
+}
+.gap_52 {
+  gap: 52px;
+}
+.header-img {
+  max-width: 1440px !important;
+  height: 851px !important;
+  object-fit: cover;
+}
+@media (max-width: 575.98px) {
+  .shopping-box {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
