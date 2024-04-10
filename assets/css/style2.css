@@ -85,7 +85,13 @@
     background: #3C3F4E;
     border-radius: 16px;
 }
-
+.benfit_card_bg4{
+    width: 95px;
+    height: 84px;
+    margin-top: 24px;
+    background: #3C3F4E;
+    border-radius: 16px
+}
 .benifit_card_1 {
     margin-top: 42px;
     width: 122px;
@@ -155,6 +161,8 @@
 }
 
 .seller_woamn {
+    border-radius: 20px;
+    object-fit: cover;
     max-width: 440px;
 }
 
