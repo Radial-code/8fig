@@ -61,9 +61,11 @@ body {
   margin-top: 180px;
 }
 .blur-card {
-  background: #dedede;
-  padding: 12px 7px;
-  filter: blur(2px);
+  max-width: 365px;
+}
+.blur-position {
+  top: 280px;
+  right: 35px;
 }
 .study {
   padding-top: 120px;
@@ -86,13 +88,20 @@ body {
   height: 851px !important;
   object-fit: cover;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .ml_168 {
-    margin-left: 80px;
+    margin-left: 38px;
   }
   .mt_263 {
-    margin-top: 263px;
+    margin-top: 500px;
   }
+  .blur-position {
+    top: 170px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
 }
 @media (max-width: 575.98px) {
   .shopping-box {
