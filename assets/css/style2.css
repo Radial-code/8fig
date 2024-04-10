@@ -21,9 +21,15 @@
 }
 
 .coman_btn {
+    transition: all 300ms ease-in-out;
+    border: 1px transparent;
     border-radius: 24px;
     Padding: 7px 48px 13px 48px;
 }
+.coman_btn:hover {
+    background: #000;
+}
+
 
 /* accordian */
 .accordion-button.collapsed::after {
@@ -58,20 +64,89 @@
 .max-w-438 {
     max-width: 438px;
 }
-.eligible_card{
+
+.eligible_card {
     padding: 40px 22px;
 }
-.fw_sm_normal{
+
+.fw_sm_normal {
     font-weight: normal !important;
 }
 
+.dots {
+    height: 7px;
+    width: 7px;
+    border-radius: 100px;
+}
+.benfit_card_bg{
+    background: #3C3F4E;
+    border-radius: 16px;
+}
+.benifit_card_1{
+    margin-top: 42px;
+    width: 122px;
+    height: 84px;
+}
+.benifit_card_2{
+    margin-top: 42px;
+    width: 205px;
+    height: 79px;
+}
+.line{
+    width: 162px;
+    height: 10px;
+    border-radius: 120px;
+    background: #616372;
+}
+.line_white_circle{
+background:white;
+width: 9px;
+height: 9px;
+}
+.dot_1 {
+    background-color: #AAACB8;
+}
+
+.dot_3 {
+    background-color: #616371;
+
+}
+
+.dot_2 {
+    background-color: #858895;
+}
+.girl_ellips{
+    position: absolute;
+    left: -24%;
+    top: 14%;
+}
+.tik_vector{
+    position: absolute;
+    right: -14%;
+    top: 28%;
+    height: 36px;
+    width: 36px;
+    border-radius: 52px;
+    background: #4C4F5D;
+}
+.seller_woamn{
+    max-width: 440px;
+}
+.fotter_icons{
+    transition: all 300ms ease-in-out;
+}
+.fotter_icons:hover{
+    transform: translateY(-6px);
+}
 @media (max-width:576px) {
-    .fw_sm_normal{
-        font-weight:500 !important;
+    .fw_sm_normal {
+        font-weight: 500 !important;
     }
-    .eligible_card{
+
+    .eligible_card {
         padding: 20px 3px;
     }
+
     .max-w-438 {
         max-width: 438px;
     }
