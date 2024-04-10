@@ -81,6 +81,7 @@
 }
 
 .benfit_card_bg {
+    margin-top: 42px;
     background: #3C3F4E;
     border-radius: 16px;
 }
@@ -92,7 +93,6 @@
 }
 
 .benifit_card_2 {
-    margin-top: 42px;
     width: 205px;
     height: 79px;
 }
