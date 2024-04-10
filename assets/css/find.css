@@ -14,6 +14,15 @@ body {
   padding: 6px 19px;
   border: none;
   border: 1px solid #4c57ff;
+  transition: all 300ms linear;
+}
+.apply-btn:hover {
+  background: transparent;
+  border-radius: 24px;
+  color: #4c57ff !important;
+  padding: 6px 19px;
+  border: none;
+  border: 1px solid #4c57ff;
 }
 .ml_168 {
   margin-left: 168px;
