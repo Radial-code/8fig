@@ -1,6 +1,6 @@
 :root {
   --font-xxs: 12px;
-  --font-xs: 14px;
+  --font-xs   : 14px;
   --font-sm: 16px;
   --font-md: 18px;
   --font-md-large: 19px;
@@ -12,6 +12,7 @@
   --font-5xl: 50px;
   --font-6xl: 62px;
   --light-grey: #95959d;
+  --dark-white: #AFAFB5;
   --grey: #dddddd;
   --dark-grey: #76767f;
   --blue: #4c57ff;
@@ -112,6 +113,9 @@
 }
 .text-light-black {
   color: var(--light-black);
+}
+.text-dark-white {
+  color: var(--dark-white);
 }
 .bg-light-black {
   background-color: var(--light-black);
