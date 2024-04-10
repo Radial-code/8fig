@@ -2,52 +2,84 @@
     text-decoration: none !important;
     list-style-type: none !important;
 }
-.custon_container{
+
+.custon_container {
     max-width: 1264px;
 }
+
 .footer_padding {
     padding: 54px 52px 64px 52px;
 }
+
 .logo_img {
     width: 69px;
     height: 43.43px;
 }
+
 .gap_36 {
     gap: 36px !important;
 }
+
 .coman_btn {
     border-radius: 24px;
     Padding: 7px 48px 13px 48px;
 }
+
 /* accordian */
 .accordion-button.collapsed::after {
-    background-image: url('/assets/images/svg/Plus.svg') !important;
+    background-image: url('/assets/images/svg/plus.svg') !important;
 }
+
 .accordion-button:not(.collapsed)::after {
     background-image: url('/assets/images/svg/cross.svg') !important;
-   
+
 }
+
 .accordion-button:not(.collapsed) {
     border-bottom: 0px solid #DDDDDF !important;
-   
+
 }
+
 .accordion-button {
     outline: none !important;
     box-shadow: none !important;
-    background-color:#EFECE6 !important;
+    background-color: #EFECE6 !important;
     border: 0px !important;
     border-bottom: 1px solid #DDDDDF !important;
 }
+
 .accordion-body {
     padding-top: 0px !important;
     max-width: 1030px;
-    background-color:#EFECE6 !important;
+    background-color: #EFECE6 !important;
     border-bottom: 1px solid #DDDDDF !important;
 }
+
+.max-w-438 {
+    max-width: 438px;
+}
+.eligible_card{
+    padding: 40px 22px;
+}
+.fw_sm_normal{
+    font-weight: normal !important;
+}
+
 @media (max-width:576px) {
-    .accordion_heading{
+    .fw_sm_normal{
+        font-weight:500 !important;
+    }
+    .eligible_card{
+        padding: 20px 3px;
+    }
+    .max-w-438 {
+        max-width: 438px;
+    }
+
+    .accordion_heading {
         max-width: 230px;
     }
+
     .seller_woamn {
         width: 417px;
         height: 278px;
