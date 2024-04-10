@@ -74,7 +74,6 @@ body {
   background: #0e1122;
 }
 .header-img {
-  max-width: 1440px !important;
   height: 851px !important;
   object-fit: cover;
 }

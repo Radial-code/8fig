@@ -18,3 +18,7 @@
 .font-abril-bold {
   font-family: "font-abril-bold", sans-serif;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
