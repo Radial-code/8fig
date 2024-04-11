@@ -15,3 +15,18 @@ var swiper = new Swiper(".swiper-container", {
     clickable: true, // Allow clicking pagination bullets
   },
 });
+
+window.addEventListener("scroll", function () {
+  var scrollPosition = window.scrollY;
+  var viewportHeight = window.innerHeight;
+
+  if (scrollPosition >= viewportHeight) {
+    document
+      .querySelector(".content-container")
+      .classList.add("black-background"); // Add class to change content container background color
+  } else {
+    document
+      .querySelector(".content-container")
+      .classList.remove("black-background"); // Remove class to revert content container background color
+  }
+});
