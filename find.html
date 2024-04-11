@@ -48,9 +48,14 @@
         </div>
         <div class="position-absolute blur-position z-2">
           <img
-            class="blur-card"
+            class="blur-card d-md-block d-none"
             src="./assets/images/png/blur-card.png"
             alt="blur-card"
+          />
+          <img
+            class="blur-card d-md-none d-block"
+            src="./assets/images/png/half-blur.png"
+            alt="half-blur"
           />
         </div>
         <div class="swiper-container">
@@ -126,81 +131,289 @@
       </div>
     </section>
     <section class="bg-yellow">
-      <div class="max_w_1440">
+      <div class="max_w_1440 overflow-hidden">
         <div class="my-container study">
-          <div class="d-flex flex-lg-row flex-column gap_100">
-            <img
-              class="w-100 study-img"
-              src="./assets/images/png/women.png"
-              alt="women"
-            />
-            <div class="m-0">
-              <div class="d-flex flex-column">
-                <div
-                  class="black_circle d-flex justify-content-center align-items-center"
-                >
-                  <p
-                    class="fw-semibold font-2xl font-abril-semibold text-white mb-0 mt-1"
+          <div class="max_w_1060 mx-auto">
+            <div
+              class="d-flex flex-md-row flex-column justify-content-xl-start justify-content-between flex-column-reverse gap_100"
+            >
+              <div class="position-relative d-flex justify-content-center">
+                <img
+                  class="position-absolute blur-card-1 z-2"
+                  src="./assets/images/png/blur-card-1.png"
+                  alt="blur-card"
+                />
+                <img
+                  class="w-100 study-img"
+                  src="./assets/images/png/women.png"
+                  alt="women"
+                />
+              </div>
+              <div class="m-0 mt_84">
+                <div class="d-flex flex-column">
+                  <div class="mx-md-0 mx-auto">
+                    <div
+                      class="black_circle d-flex justify-content-center align-items-center"
+                    >
+                      <p
+                        class="fw-semibold font-2xl font-abril-semibold text-white mb-0 mt-1"
+                      >
+                        1
+                      </p>
+                    </div>
+                  </div>
+                  <h2
+                    class="font-abril-semibold text-md-start text-center mx-md-0 mx-auto fw-semibold font-4xl text-light-black mt-3 max_w_360 mb-0"
                   >
-                    1
+                    Get an AI evaluation
+                  </h2>
+                  <h2
+                    class="font-abril-semibold text-md-start text-center mx-md-0 mx-auto fw-semibold font-4xl text-light-black max_w_350 mb-0"
+                  >
+                    of your supply chain needs
+                  </h2>
+                  <p
+                    class="font-poppins font-xl text-md-start text-center mx-md-0 mx-auto text-light-black fw-medium mb-0 mt-1 max_w_350"
+                  >
+                    By analyzing your sales velocity and growth potential.
                   </p>
                 </div>
-                <h2
-                  class="font-abril-semibold fw-semibold font-4xl text-light-black mt-3 max_w_360 mb-0"
+                <div
+                  class="w-100 d-flex justify-content-md-start justify-content-center mt_20"
                 >
-                  Get an AI evaluation
-                </h2>
-                <h2
-                  class="font-abril-semibold fw-semibold font-4xl text-light-black max_w_350 mb-0"
-                >
-                  of your supply chain needs
-                </h2>
-                <p
-                  class="font-poppins font-xl text-light-black fw-medium mb-0 mt-1 max_w_350"
-                >
-                  By analyzing your sales velocity and growth potential.
-                </p>
+                  <button
+                    class="apply-btn text-white font-poppins fw-medium font-xxs"
+                  >
+                    Apply now
+                  </button>
+                </div>
               </div>
-              <button
-                class="apply-btn text-white font-poppins fw-medium font-xxs mt_20"
-              >
-                Apply now
-              </button>
+            </div>
+            <div
+              class="d-flex flex-md-row flex-column justify-content-between gap_100 mt_195"
+            >
+              <div class="m-0 mt_54">
+                <div class="d-flex flex-column">
+                  <div class="mx-md-0 mx-auto">
+                    <div
+                      class="black_circle d-flex justify-content-center align-items-center"
+                    >
+                      <p
+                        class="fw-semibold font-2xl font-abril-semibold text-white mb-0 mt-1"
+                      >
+                        2
+                      </p>
+                    </div>
+                  </div>
+                  <h2
+                    class="font-abril-semibold text-md-start text-center mx-md-0 mx-auto text-md-start text-center mx-md-0 mx-auto fw-semibold font-4xl text-light-black mt-3 max_w_360 mb-0"
+                  >
+                    Get an AI evaluation
+                  </h2>
+                  <h2
+                    class="font-abril-semibold text-md-start text-center mx-md-0 mx-auto text-md-start text-center mx-md-0 mx-auto fw-semibold font-4xl text-light-black max_w_350 mb-0"
+                  >
+                    of your supply chain needs
+                  </h2>
+                  <p
+                    class="font-poppins font-xl text-md-start text-center mx-md-0 mx-auto text-md-start text-center mx-md-0 mx-auto text-light-black fw-medium mb-0 mt-1 max_w_350"
+                  >
+                    By analyzing your sales velocity and growth potential.
+                  </p>
+                </div>
+                <div
+                  class="w-100 d-flex justify-content-md-start justify-content-center mt_20"
+                >
+                  <button
+                    class="apply-btn text-white font-poppins fw-medium font-xxs"
+                  >
+                    Apply now
+                  </button>
+                </div>
+              </div>
+              <div class="position-relative d-flex justify-content-center">
+                <img
+                  class="position-absolute blur-card-2 z-2"
+                  src="./assets/images/png/blur-card-2.png"
+                  alt="blur-card"
+                />
+                <img
+                  class="w-100 study-img-2"
+                  src="./assets/images/png/friends.png"
+                  alt="friends"
+                />
+              </div>
+            </div>
+            <div
+              class="d-flex flex-md-row flex-column justify-content-xl-start justify-content-between flex-column-reverse gap_100 mt_164"
+            >
+              <div class="position-relative d-flex justify-content-center">
+                <img
+                  class="position-absolute blur-card-1 z-2"
+                  src="./assets/images/png/blur-card-3.png"
+                  alt="blur-card"
+                />
+                <img
+                  class="w-100 study-img"
+                  src="./assets/images/png/learn.png"
+                  alt="learn"
+                />
+              </div>
+              <div class="m-0 mt_67">
+                <div class="d-flex flex-column">
+                  <div class="mx-md-0 mx-auto">
+                    <div
+                      class="black_circle d-flex justify-content-center align-items-center"
+                    >
+                      <p
+                        class="fw-semibold font-2xl text-md-start text-center mx-md-0 mx-auto font-abril-semibold text-white mb-0 mt-1"
+                      >
+                        3
+                      </p>
+                    </div>
+                  </div>
+                  <h2
+                    class="font-abril-semibold text-md-start text-center mx-md-0 mx-auto fw-semibold font-4xl text-light-black mt-3 max_w_360 mb-0"
+                  >
+                    Experience cash flow freedom
+                  </h2>
+                  <p
+                    class="font-poppins font-xl text-md-start text-center mx-md-0 mx-auto text-light-black fw-medium mb-0 mt-1 max_w_360"
+                  >
+                    Use the AI to continuously analyze and fund your business.
+                  </p>
+                </div>
+                <div
+                  class="w-100 d-flex justify-content-md-start justify-content-center mt_20"
+                >
+                  <button
+                    class="apply-btn text-white font-poppins fw-medium font-xxs"
+                  >
+                    Apply now
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="d-flex flex-lg-row flex-column gap_100 mt_180">
+        </div>
+      </div>
+    </section>
+    <section class="bg-light-black">
+      <div class="max_w_1440">
+        <div
+          class="my-container pt_66 pb_62 min-vh-100 d-flex flex-column justify-content-between"
+        >
+          <div class="flex-column">
+            <h6
+              class="text-light-grey font-poppins text-uppercase fw-medium font-xs text-center mb-0"
+            >
+              how it works
+            </h6>
+            <h2
+              class="font-abril-semibold text-center fw-semibold mx-auto font-4xl text-white mb-0 max_w_620 mt_20"
+            >
+              AI technology that predicts, plans, and protects your cash flow
+            </h2>
+          </div>
+          <div class="position-relative overflow-y-scroll">
+            <div class="d-flex justify-content-start align-items-end mb-3">
+              <img
+                class="card-img-1"
+                src="./assets/images/png/card-1.png"
+                alt="card-1"
+              />
+              <img
+                class="card-img-2"
+                src="./assets/images/png/card-2.png"
+                alt="card-1"
+              />
+              <img
+                class="card-img-4"
+                src="./assets/images/png/card-4.png"
+                alt="card-1"
+              />
+              <img
+                class="card-img-6"
+                src="./assets/images/png/card-6.png"
+                alt="card-1"
+              />
+              <img
+                class="card-img-4"
+                src="./assets/images/png/card-4.png"
+                alt="card-1"
+              />
+              <img
+                class="card-img-8"
+                src="./assets/images/png/card-8.png"
+                alt="card-1"
+              />
+            </div>
+            <div
+              class="d-flex justify-content-start dots align-items-center z-2"
+            >
+              <img src="./assets/images/svg/color-circle.svg" alt="card-1" />
+              <img
+                class="dot-1"
+                src="./assets/images/svg/green-box.svg"
+                alt="card-1"
+              />
+              <img
+                class="dot-2"
+                src="./assets/images/svg/white-box.svg"
+                alt="card-1"
+              />
+              <img
+                class="dot-3"
+                src="./assets/images/svg/green-box.svg"
+                alt="card-1"
+              />
+              <img
+                class="dot-4"
+                src="./assets/images/svg/color-circle.svg"
+                alt="card-1"
+              />
+              <img
+                class="dot-5"
+                src="./assets/images/svg/white-box.svg"
+                alt="card-1"
+              />
+              <img
+                class="dot-6"
+                src="./assets/images/svg/green-box.svg"
+                alt="card-1"
+              />
+              <img
+                class="dot-7"
+                src="./assets/images/svg/white-box.svg"
+                alt="card-1"
+              />
+              <img
+                class="dot-8"
+                src="./assets/images/svg/color-circle.svg"
+                alt="card-1"
+              />
+            </div>
             <img
-              class="w-100 study-img"
-              src="./assets/images/png/women.png"
-              alt="women"
+              class="w-100 bg-line z-0"
+              src="./assets/images/svg/bg-line.svg"
+              alt="bg-line"
             />
-            <div class="m-0">
-              <div class="d-flex flex-column">
-                <div
-                  class="black_circle d-flex justify-content-center align-items-center"
-                >
-                  <p
-                    class="fw-semibold font-2xl font-abril-semibold text-white mb-0 mt-1"
-                  >
-                    3
-                  </p>
-                </div>
-                <h2
-                  class="font-abril-semibold fw-semibold font-4xl text-light-black mt-3 max_w_360 mb-0"
-                >
-                  Experience cash flow freedom
-                </h2>
-                <p
-                  class="font-poppins font-xl text-light-black fw-medium mb-0 mt-1 max_w_360"
-                >
-                  Use the AI to continuously analyze and fund your business.
-                </p>
-              </div>
-              <button
-                class="apply-btn text-white font-poppins fw-medium font-xxs mt_20"
-              >
-                Apply now
-              </button>
+            <div class="d-flex mt-3">
+              <img
+                class="card-img-3"
+                src="./assets/images/png/card-3.png"
+                alt="card-1"
+              />
+              <img
+                class="card-img-5"
+                src="./assets/images/png/card-5.png"
+                alt="card-1"
+              />
+              <img
+                class="card-img-7"
+                src="./assets/images/png/card-7.png"
+                alt="card-1"
+              />
             </div>
           </div>
         </div>
