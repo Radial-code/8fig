@@ -1,202 +1,198 @@
 * {
-    text-decoration: none !important;
-    list-style-type: none !important;
+  text-decoration: none !important;
+  list-style-type: none !important;
 }
 
 .custon_container {
-    max-width: 1264px;
+  max-width: 1264px;
 }
 
 .footer_padding {
-    padding: 54px 52px 64px 52px;
+  padding: 54px 52px 64px 52px;
 }
 
 .logo_img {
-    width: 69px;
-    height: 43.43px;
+  width: 69px;
+  height: 43.43px;
 }
 
 .gap_36 {
-    gap: 36px !important;
+  gap: 36px !important;
 }
 
 .coman_btn {
-    transition: all 300ms ease-in-out;
-    border: 1px transparent;
-    border-radius: 24px;
-    Padding: 7px 48px 13px 48px;
+  transition: all 300ms ease-in-out;
+  border: 1px transparent;
+  border-radius: 24px;
+  padding: 7px 48px 13px 48px;
 }
 
 .coman_btn:hover {
-    background: #000;
+  background: #000;
 }
-
 
 /* accordian */
 .accordion-button.collapsed::after {
-    background-image: url('/assets/images/svg/plus.svg') !important;
+  background-image: url("/assets/images/svg/plus.svg") !important;
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url('/assets/images/svg/cross.svg') !important;
-
+  background-image: url("/assets/images/svg/cross.svg") !important;
 }
 
 .accordion-button:not(.collapsed) {
-    border-bottom: 0px solid #DDDDDF !important;
-
+  border-bottom: 0px solid #dddddf !important;
 }
 
 .accordion-button {
-    outline: none !important;
-    box-shadow: none !important;
-    background-color: #EFECE6 !important;
-    border: 0px !important;
-    border-bottom: 1px solid #DDDDDF !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #efece6 !important;
+  border: 0px !important;
+  border-bottom: 1px solid #dddddf !important;
 }
 
 .accordion-body {
-    padding-top: 0px !important;
-    max-width: 1030px;
-    background-color: #EFECE6 !important;
-    border-bottom: 1px solid #DDDDDF !important;
+  padding-top: 0px !important;
+  max-width: 1030px;
+  background-color: #efece6 !important;
+  border-bottom: 1px solid #dddddf !important;
 }
 
 .max-w-438 {
-    max-width: 438px;
+  max-width: 438px;
 }
 
 .eligible_card {
-    padding: 40px 22px;
+  padding: 40px 22px;
 }
 
 .fw_sm_normal {
-    font-weight: normal !important;
+  font-weight: normal !important;
 }
 
 .dots {
-    height: 7px;
-    width: 7px;
-    border-radius: 100px;
+  height: 7px;
+  width: 7px;
+  border-radius: 100px;
 }
 
 .benfit_card_bg3 {
-    margin-top: 42px;
-    background: #3C3F4E;
-    border-radius: 24px;
+  margin-top: 42px;
+  background: #3c3f4e;
+  border-radius: 24px;
 }
 
 .benfit_card_bg {
-    background: #3C3F4E;
-    border-radius: 16px;
+  background: #3c3f4e;
+  border-radius: 16px;
 }
 
 .equlity_svg {
-    margin-top: -6px;
+  margin-top: -6px;
 }
 
 .manufacturing_svg {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .benfit_card_bg4 {
-    width: 95px;
-    height: 84px;
-    margin-top: 24px;
-    background: #3C3F4E;
-    border-radius: 16px
+  width: 95px;
+  height: 84px;
+  margin-top: 24px;
+  background: #3c3f4e;
+  border-radius: 16px;
 }
 
 .benifit_card_1 {
-    margin-top: 42px;
-    width: 122px;
-    height: 84px;
+  margin-top: 42px;
+  width: 122px;
+  height: 84px;
 }
 
 .benifit_card_2 {
-    width: 205px;
-    height: 79px;
+  width: 205px;
+  height: 79px;
 }
 
 .line {
-    width: 162px;
-    height: 10px;
-    border-radius: 120px;
-    background: #616372;
+  width: 162px;
+  height: 10px;
+  border-radius: 120px;
+  background: #616372;
 }
 
 .line_white_circle {
-    position: absolute;
-    top: -69%;
-    left: 34%;
-    border-radius: 120px;
-    background: white;
-    width: 24px;
-    height: 24px;
+  position: absolute;
+  top: -69%;
+  left: 34%;
+  border-radius: 120px;
+  background: white;
+  width: 24px;
+  height: 24px;
 }
 
 .line_white_blue {
-    border-radius: 120px;
-    height: 10px;
-    width: 10px;
-    background: #4C57FF;
+  border-radius: 120px;
+  height: 10px;
+  width: 10px;
+  background: #4c57ff;
 }
 
 .toltip {
-    position: absolute;
-    left: 16%;
-    top: -42%;
+  position: absolute;
+  left: 16%;
+  top: -42%;
 }
 
 .dot_1 {
-    background-color: #AAACB8;
+  background-color: #aaacb8;
 }
 
 .dot_3 {
-    background-color: #616371;
-
+  background-color: #616371;
 }
 
 .dot_2 {
-    background-color: #858895;
+  background-color: #858895;
 }
 
 .girl_ellips {
-    position: absolute;
-    left: -24%;
-    top: 14%;
+  position: absolute;
+  left: -24%;
+  top: 14%;
 }
 
 .tik_vector {
-    position: absolute;
-    right: -14%;
-    top: 28%;
-    height: 36px;
-    width: 36px;
-    border-radius: 52px;
-    background: #4C4F5D;
+  position: absolute;
+  right: -14%;
+  top: 28%;
+  height: 36px;
+  width: 36px;
+  border-radius: 52px;
+  background: #4c4f5d;
 }
 
 .seller_woamn {
-    border-radius: 20px;
-    object-fit: cover;
-    max-width: 440px;
+  border-radius: 20px;
+  object-fit: cover;
+  max-width: 440px;
 }
 
 .fotter_icons {
-    transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .fotter_icons:hover {
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 }
 
 .max_w_546 {
-    max-width: 546px;
+  max-width: 546px;
 }
 
 /*   ------------------------------ slider --------------- */
-.slider_content {
+/* .slider_content {
     display: none;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -335,4 +331,4 @@
     .gap_36 {
         gap: 23px !important;
     }
-}
+} */
