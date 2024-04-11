@@ -80,18 +80,33 @@
     border-radius: 100px;
 }
 
-.benfit_card_bg {
+.benfit_card_bg3 {
     margin-top: 42px;
+    background: #3C3F4E;
+    border-radius: 24px;
+}
+
+.benfit_card_bg {
     background: #3C3F4E;
     border-radius: 16px;
 }
-.benfit_card_bg4{
+
+.equlity_svg {
+    margin-top: -6px;
+}
+
+.manufacturing_svg {
+    margin-right: 8px;
+}
+
+.benfit_card_bg4 {
     width: 95px;
     height: 84px;
     margin-top: 24px;
     background: #3C3F4E;
     border-radius: 16px
 }
+
 .benifit_card_1 {
     margin-top: 42px;
     width: 122px;
@@ -119,13 +134,15 @@
     width: 24px;
     height: 24px;
 }
-.line_white_blue{
+
+.line_white_blue {
     border-radius: 120px;
     height: 10px;
     width: 10px;
-    background:#4C57FF;
+    background: #4C57FF;
 }
-.toltip{
+
+.toltip {
     position: absolute;
     left: 16%;
     top: -42%;
@@ -174,6 +191,30 @@
     transform: translateY(-6px);
 }
 
+.max_w_546 {
+    max-width: 546px;
+}
+
+/*   ------------------------------ slider --------------- */
+   
+.slider_content {
+    display: none;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width: 399px;
+    padding: 40px;
+} 
+  .slick-centermode .slick-slide .slider_content {
+    display: block !important;
+  }
+  .slick-centermode .slick-slide .slider_img_radius {
+    border-radius:40px;
+}
+  
+.slider_para_w {
+    max-width: 280px;
+}
+
 @media (max-width:576px) {
     .fw_sm_normal {
         font-weight: 500 !important;
@@ -194,7 +235,7 @@
     .seller_woamn {
         width: 417px;
         height: 278px;
-        transform: translatex(-18%);
+        transform: translatex(-14%);
     }
 
     .facebook_icon {
