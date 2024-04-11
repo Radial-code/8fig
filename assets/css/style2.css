@@ -211,6 +211,7 @@
 .slider_img_radius {
     border-radius: 40px;
     width: 208px;
+    scale: 0.8 !important;
 }
 
 .slider_para_w {
@@ -238,6 +239,7 @@
 
 .swiper-slide-active .slider_img_radius {
     width: 232px !important;
+    scale: unset !important;
 }
 
 .swiper-slide {
