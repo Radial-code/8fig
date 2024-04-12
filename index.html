@@ -34,7 +34,20 @@
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/css/root.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -88,45 +101,43 @@
             alt="half-blur"
           />
         </div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class="header-img w-100"
-                src="./assets/images/webp/header-men.webp"
-                alt="header-men"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="header-img w-100"
-                src="./assets/images/webp/header-women.webp"
-                alt="header-women"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="header-img w-100"
-                src="./assets/images/webp/header-cupal.webp"
-                alt="header-cupal"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="header-img w-100"
-                src="./assets/images/webp/header-women-2.webp"
-                alt="header-women-2"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="header-img w-100"
-                src="./assets/images/webp/header-women-3.webp"
-                alt="header-women-3"
-              />
-            </div>
-            <!-- Add more slides as needed -->
+        <div class="slick-slider">
+          <div class="">
+            <img
+              class="header-img w-100"
+              src="./assets/images/webp/header-men.webp"
+              alt="header-men"
+            />
           </div>
+          <div class="">
+            <img
+              class="header-img w-100"
+              src="./assets/images/webp/header-women.webp"
+              alt="header-women"
+            />
+          </div>
+          <div class="">
+            <img
+              class="header-img w-100"
+              src="./assets/images/webp/header-cupal.webp"
+              alt="header-cupal"
+            />
+          </div>
+          <div class="">
+            <img
+              class="header-img w-100"
+              src="./assets/images/webp/header-women-2.webp"
+              alt="header-women-2"
+            />
+          </div>
+          <div class="">
+            <img
+              class="header-img w-100"
+              src="./assets/images/webp/header-women-3.webp"
+              alt="header-women-3"
+            />
+          </div>
+          <!-- Add more slides as needed -->
         </div>
       </div>
       <div class="bg-light-black shopping-box">
@@ -450,7 +461,7 @@
       </div>
     </section>
     <!-- ------------------ join community ---------------------- -->
-  <div class="bg-yellow overflow-hidden pb-5">
+    <div class="bg-yellow overflow-hidden pb-5">
       <div class="pb-5 pt-4">
         <div
           class="d-flex justify-content-center mt-1 mb-5 pb-5 mb-sm-0 pb-md-0 flex-column align-items-center"
@@ -466,467 +477,243 @@
             Learn from sellers who’ve already made it
           </h4>
         </div>
-        <div class="swiper-container pb-5 mb-3">
-          <div class="swiper-wrapper">
-            <div
-              id="kulvinder_slider"
-              class="w_20 d-flex justify-content-center flex-column flex-xl-row swiper-slide"
-            >
-              <img
-                src="/assets/images/webp/ali-kaminetsky.webp"
-                width="232px"
-                height="360px"
-                class="object-fit-cover d-none d-xl-block slider_img_radius"
-                alt="ali-kaminetsky"
-              />
-              <img
-                src="/assets/images/webp/ali-kaminetsky-mobile.webp"
-                width="318px"
-                height="162px"
-                class="object-fit-cover d-xl-none"
-                alt="ali-kaminetsky"
-              />
-              <div class="slider_content text-start bg-white">
-                <h4 class="font-md fw-bold text-black font-poppins mb-0">
-                  Ali Kaminetsky
-                </h4>
-                <p
-                  class="text-uppercase mb-1 mb-xl-2 fw-medium font-xxs text-dark-grey"
+        <div id="centermode" class="slider_responsive pb-3 pb-sm-5">
+          <div
+            class="w_20 d-flex justify-content-center flex-column flex-md-row swiper-slide"
+          >
+            <img
+              src="/assets/images/webp/ali-kaminetsky.webp"
+              width="232px"
+              height="360px"
+              class="object-fit-cover d-none d-md-block slider_img_radius"
+              alt="ali-kaminetsky"
+            />
+            <img
+              src="/assets/images/webp/ali-kaminetsky-mobile.webp"
+              width="318px"
+              height="162px"
+              class="object-fit-cover d-md-none"
+              alt="ali-kaminetsky"
+            />
+            <div class="slider_content text-start bg-white">
+              <h4 class="font-md fw-bold text-black font-poppins mb-0">
+                Ali Kaminetsky
+              </h4>
+              <p
+                class="text-uppercase mb-1 mb-xl-2 fw-medium font-xxs text-dark-grey"
+              >
+                Shopify seller
+              </p>
+              <p
+                class="fw-medium font-sm mb-sm-0 mb-xl-2 slider_para_w text-black"
+              >
+                “8fig helped us meet demand and grow 450% in sales to $6 million
+                without tying up cash flow. Their funding and tools were crucial
+                in optimizing our supply chain and operations.”
+              </p>
+              <p
+                class="text-black pt-3 pt-sm-0 pt-xl-1 fw-bold font-abril-bold mb-0 font-4xl d-flex align-items-center"
+              >
+                450%<span class="fw-semibold font-abril-bold ms-2 ps-1 font-lg"
+                  >Shopify store growth</span
                 >
-                  Shopify seller
-                </p>
-                <p
-                  class="fw-medium font-sm mb-sm-0 mb-xl-2 slider_para_w text-black"
-                >
-                  “8fig helped us meet demand and grow 450% in sales to $6
-                  million without tying up cash flow. Their funding and tools
-                  were crucial in optimizing our supply chain and operations.”
-                </p>
-                <p
-                  class="text-black pt-4 pt-sm-0 pt-xl-1 fw-bold font-abril-bold mb-0 font-4xl d-flex align-items-center"
-                >
-                  450%<span
-                    class="fw-semibold font-abril-bold ms-2 ps-1 font-lg"
-                    >Shopify store growth</span
-                  >
-                </p>
-              </div>
+              </p>
             </div>
-            <div
-              id="kulvinder_slider"
-              class="w_20 d-flex d-flex justify-content-center flex-column flex-xl-row swiper-slide"
-            >
-              <img
-                src="/assets/images/webp/david-lang.webp"
-                width="232px"
-                height="356px"
-                class="object-fit-cover d-none d-xl-block slider_img_radius"
-                alt="ali-kaminetsky"
-              />
-              <img
-                src="/assets/images/webp/david-lang-mobile.webp"
-                width="318px"
-                height="162px"
-                class="object-fit-cover d-xl-none"
-                alt="ali-kaminetsky"
-              />
-              <div class="slider_content text-start bg-white">
-                <h4 class="font-md fw-bold text-black font-poppins mb-1">
-                  David Lang
-                </h4>
-                <p class="text-uppercase fw-medium font-xxs text-dark-grey">
-                  co founder, davan strategic
-                </p>
-                <p class="fw-medium font-sm slider_para_w text-black pb-xl-2">
-                  “Our 8Fig growth plan has allowed us to scale our business in
-                  an incredibly short amount of time.”
-                </p>
-                <p
-                  class="text-blackn pt-4 pt-sm-0 pt-xl-1 fw-bold font-abril-bold font-4xl d-flex align-items-center mt-5 pt-xl-4 mb-0"
+          </div>
+          <div
+            class="w_20 d-flex d-flex justify-content-center flex-column flex-md-row swiper-slide"
+          >
+            <img
+              src="/assets/images/webp/david-lang.webp"
+              width="232px"
+              height="356px"
+              class="object-fit-cover d-none d-md-block slider_img_radius"
+              alt="ali-kaminetsky"
+            />
+            <img
+              src="/assets/images/webp/david-lang-mobile.webp"
+              width="318px"
+              height="162px"
+              class="object-fit-cover d-md-none"
+              alt="ali-kaminetsky"
+            />
+            <div class="slider_content text-start bg-white">
+              <h4 class="font-md fw-bold text-black font-poppins mb-1">
+                David Lang
+              </h4>
+              <p class="text-uppercase fw-medium font-xxs text-dark-grey">
+                co founder, davan strategic
+              </p>
+              <p class="fw-medium font-sm slider_para_w text-black pb-xl-2">
+                “Our 8Fig growth plan has allowed us to scale our business in an
+                incredibly short amount of time.”
+              </p>
+              <p
+                class="text-blackn pt-2 pt-sm-0 pt-xl-1 fw-bold font-abril-bold font-4xl d-flex align-items-center mt-5 pt-xl-4 mb-0"
+              >
+                $5M<span class="fw-semibold font-abril-bold ms-2 ps-1 font-lg"
+                  >Net revenue</span
                 >
-                  $5M<span class="fw-semibold font-abril-bold ms-2 ps-1 font-lg"
-                    >Net revenue</span
-                  >
-                </p>
-              </div>
+              </p>
             </div>
-            <div
-              id="kulvinder_slider"
-              class="w_20 d-flex d-flex justify-content-center flex-column flex-xl-row swiper-slide"
-            >
-              <img
-                src="/assets/images/webp/alex-aidan.webp"
-                width="232px"
-                height="356px"
-                class="object-fit-cover d-none d-xl-block slider_img_radius"
-                alt="ali-kaminetsky"
-              />
-              <img
-                src="/assets/images/webp/alex-aidan-mobile.webp"
-                width="318px"
-                height="162px"
-                class="object-fit-cover d-xl-none"
-                alt="ali-kaminetsky"
-              />
-              <div class="slider_content text-start bg-white">
-                <h4 class="font-md fw-bold text-black font-poppins mb-1">
-                  Alex & Aidan
-                </h4>
-                <p class="text-uppercase fw-medium font-xxs text-dark-grey">
-                  6 Figure amazon sellers
-                </p>
-                <p class="fw-medium font-sm slider_para_w text-black pb-2">
-                  “As soon as we started receiving consistent cash flow from
-                  8Fig, it was growth, growth, growth.”
-                </p>
-                <p
-                  class="text-black pt-5 pt-sm-1 fw-bold font-abril-bold font-4xl d-flex align-items-lg-end align-items-xl-center mt-xl-5 pt-xl-4 mb-0"
+          </div>
+          <div
+            class="w_20 d-flex d-flex justify-content-center flex-column flex-md-row swiper-slide"
+          >
+            <img
+              src="/assets/images/webp/alex-aidan.webp"
+              width="232px"
+              height="356px"
+              class="object-fit-cover d-none d-md-block slider_img_radius"
+              alt="ali-kaminetsky"
+            />
+            <img
+              src="/assets/images/webp/alex-aidan-mobile.webp"
+              width="318px"
+              height="162px"
+              class="object-fit-cover d-md-none"
+              alt="ali-kaminetsky"
+            />
+            <div class="slider_content text-start bg-white">
+              <h4 class="font-md fw-bold text-black font-poppins mb-1">
+                Alex & Aidan
+              </h4>
+              <p class="text-uppercase fw-medium font-xxs text-dark-grey">
+                6 Figure amazon sellers
+              </p>
+              <p class="fw-medium font-sm slider_para_w text-black pb-2">
+                “As soon as we started receiving consistent cash flow from 8Fig,
+                it was growth, growth, growth.”
+              </p>
+              <p
+                class="text-black pt-3 pt-sm-1 fw-bold font-abril-bold font-4xl d-flex align-items-lg-end align-items-xl-center mt-xl-5 pt-xl-4 mb-0"
+              >
+                639%<span
+                  class="fw-semibold font-abril-bold ms-2 ps-1 pe-xl-4 font-lg"
+                  >Amazon store growth in a year</span
                 >
-                  639%<span
-                    class="fw-semibold font-abril-bold ms-2 ps-1 pe-xl-4 font-lg"
-                    >Amazon store growth in a year</span
-                  >
-                </p>
-              </div>
+              </p>
             </div>
-            <div
-              id="kulvinder_slider"
-              class="w_20 d-flex d-flex justify-content-center flex-column flex-xl-row swiper-slide"
-            >
-              <img
-                src="/assets/images/webp/eddie-li.webp"
-                width="232px"
-                height="356px"
-                class="object-fit-cover d-none d-xl-block slider_img_radius"
-                alt="ali-kaminetsky"
-              />
-              <img
-                src="/assets/images/webp/eddie-li-mobile.webp"
-                width="318px"
-                height="162px"
-                class="object-fit-cover d-xl-none"
-                alt="ali-kaminetsky"
-              />
-              <div class="slider_content text-start bg-white">
-                <h4 class="font-md fw-bold text-black font-poppins mb-1">
-                  Eddie Li
-                </h4>
-                <p class="text-uppercase fw-medium font-xxs text-dark-grey">
-                  Shopify seller
-                </p>
-                <p class="fw-medium font-sm slider_para_w text-black mb-0">
-                  “8fig funding terms and flexibility provided the resources we
-                  needed to propel our growth while maintaining our brand’s
-                  integrity”
-                </p>
-                <p
-                  class="text-black fw-bold font-abril-bold font-4xl d-flex align-items-center mt-4 mt-sm-0 mt-xl-4 pt-4 mb-0"
+          </div>
+          <div
+            class="w_20 d-flex d-flex justify-content-center flex-column flex-md-row swiper-slide"
+          >
+            <img
+              src="/assets/images/webp/eddie-li.webp"
+              width="232px"
+              height="356px"
+              class="object-fit-cover d-none d-md-block slider_img_radius"
+              alt="ali-kaminetsky"
+            />
+            <img
+              src="/assets/images/webp/eddie-li-mobile.webp"
+              width="318px"
+              height="162px"
+              class="object-fit-cover d-md-none"
+              alt="ali-kaminetsky"
+            />
+            <div class="slider_content text-start bg-white">
+              <h4 class="font-md fw-bold text-black font-poppins mb-1">
+                Eddie Li
+              </h4>
+              <p class="text-uppercase fw-medium font-xxs text-dark-grey">
+                Shopify seller
+              </p>
+              <p class="fw-medium font-sm slider_para_w text-black mb-0">
+                “8fig funding terms and flexibility provided the resources we
+                needed to propel our growth while maintaining our brand’s
+                integrity”
+              </p>
+              <p
+                class="text-black fw-bold font-abril-bold font-4xl d-flex align-items-center mt-4 mt-sm-0 mt-xl-4 pt-3 pt-sm-4 mb-0"
+              >
+                370%<span
+                  class="fw-semibold font-abril-bold ms-2 ps-1 me-3 lh-sm font-xl f font-lg-lg"
+                  >Shopify store growth</span
                 >
-                  370%<span
-                    class="fw-semibold font-abril-bold ms-2 ps-1 me-3 lh-sm font-xl f font-lg-lg"
-                    >Shopify store growth</span
-                  >
-                </p>
-              </div>
+              </p>
             </div>
-            <div
-              id="kulvinder_slider"
-              class="w_20 d-flex d-flex justify-content-center flex-column flex-xl-row swiper-slide"
-            >
-              <img
-                src="/assets/images/webp/felix-leshno.webp"
-                width="232px"
-                height="356px"
-                class="object-fit-cover d-none d-xl-block slider_img_radius"
-                alt="ali-kaminetsky"
-              />
-              <img
-                src="/assets/images/webp/felix-leshno-mobile.webp"
-                width="318px"
-                height="162px"
-                class="object-fit-cover d-xl-none"
-                alt="ali-kaminetsky"
-              />
-              <div class="slider_content text-start bg-white">
-                <h4 class="font-md fw-bold text-black font-poppins mb-1">
-                  Felix Leshno
-                </h4>
-                <p class="text-uppercase fw-medium font-xxs text-dark-grey">
-                  co founder & cxo, Underoutfit
-                </p>
-                <p class="fw-medium font-sm slider_para_w text-black mb-0">
-                  “8fig funding terms and flexibility provided the resources we
-                  needed to propel our growth while maintaining our brand’s
-                  integrity”
-                </p>
-                <p
-                  class="text-black fw-bold font-abril-bold font-2xl font-xl-4xl d-flex align-items-center mt-4 mt-sm-0 mt-xl-4 pt-4 mb-0"
+          </div>
+          <div
+            class="w_20 d-flex d-flex justify-content-center flex-column flex-md-row swiper-slide"
+          >
+            <img
+              src="/assets/images/webp/felix-leshno.webp"
+              width="232px"
+              height="356px"
+              class="object-fit-cover d-none d-md-block slider_img_radius"
+              alt="ali-kaminetsky"
+            />
+            <img
+              src="/assets/images/webp/felix-leshno-mobile.webp"
+              width="318px"
+              height="162px"
+              class="object-fit-cover d-md-none"
+              alt="ali-kaminetsky"
+            />
+            <div class="slider_content text-start bg-white">
+              <h4 class="font-md fw-bold text-black font-poppins mb-1">
+                Felix Leshno
+              </h4>
+              <p class="text-uppercase fw-medium font-xxs text-dark-grey">
+                co founder & cxo, Underoutfit
+              </p>
+              <p class="fw-medium font-sm slider_para_w text-black mb-0">
+                “8fig funding terms and flexibility provided the resources we
+                needed to propel our growth while maintaining our brand’s
+                integrity”
+              </p>
+              <p
+                class="text-black fw-bold font-abril-bold font-2xl font-xl-4xl d-flex align-items-center mt-4 mt-sm-0 mt-xl-4 pt-3 pt-sm-4 mb-0"
+              >
+                5 to 7 figures
+                <span
+                  class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg"
+                  >in 2021</span
                 >
-                  5 to 7 figures
-                  <span
-                    class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg"
-                    >in 2021</span
-                  >
-                </p>
-              </div>
+              </p>
             </div>
-            <div
-              id="kulvinder_slider"
-              class="w_20 d-flex d-flex justify-content-center flex-column flex-xl-row swiper-slide"
-            >
-              <img
-                src="/assets/images/webp/david-lang.webp"
-                width="232px"
-                height="356px"
-                class="object-fit-cover d-none d-xl-block slider_img_radius"
-                alt="ali-kaminetsky"
-              />
-              <img
-                src="/assets/images/webp/david-lang-mobile.webp"
-                width="318px"
-                height="162px"
-                class="object-fit-cover d-xl-none"
-                alt="ali-kaminetsky"
-              />
-              <div class="slider_content text-start bg-white">
-                <h4 class="font-md fw-bold text-black font-poppins mb-1">
-                  David Lang
-                </h4>
-                <p class="text-uppercase fw-medium font-xxs text-dark-grey">
-                  co founder, davan strategic
-                </p>
-                <p class="fw-medium font-sm slider_para_w text-black pb-xl-2">
-                  “Our 8Fig growth plan has allowed us to scale our business in
-                  an incredibly short amount of time.”
-                </p>
-                <p
-                  class="text-blackn pt-4 pt-sm-0 pt-xl-1 fw-bold font-abril-bold font-4xl d-flex align-items-center mt-5 pt-xl-4 mb-0"
+          </div>
+          <div
+            class="w_20 d-flex d-flex justify-content-center flex-column flex-md-row swiper-slide"
+          >
+            <img
+              src="/assets/images/webp/david-lang.webp"
+              width="232px"
+              height="356px"
+              class="object-fit-cover d-none d-md-block slider_img_radius"
+              alt="ali-kaminetsky"
+            />
+            <img
+              src="/assets/images/webp/david-lang-mobile.webp"
+              width="318px"
+              height="162px"
+              class="object-fit-cover d-md-none"
+              alt="ali-kaminetsky"
+            />
+            <div class="slider_content text-start bg-white">
+              <h4 class="font-md fw-bold text-black font-poppins mb-1">
+                David Lang
+              </h4>
+              <p class="text-uppercase fw-medium font-xxs text-dark-grey">
+                co founder, davan strategic
+              </p>
+              <p class="fw-medium font-sm slider_para_w text-black pb-xl-2">
+                “Our 8Fig growth plan has allowed us to scale our business in an
+                incredibly short amount of time.”
+              </p>
+              <p
+                class="text-blackn pt-2 pt-sm-0 pt-sm-0 pt-xl-1 fw-bold font-abril-bold font-4xl d-flex align-items-center mt-5 pt-xl-4 mb-0"
+              >
+                $5M<span class="fw-semibold font-abril-bold ms-2 ps-1 font-lg"
+                  >Net revenue</span
                 >
-                  $5M<span class="fw-semibold font-abril-bold ms-2 ps-1 font-lg"
-                    >Net revenue</span
-                  >
-                </p>
-              </div>
+              </p>
             </div>
           </div>
         </div>
-        <div class="position-relative w_180 mx-auto">
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-
-        <div class="swiper-scrollbar"></div>
       </div>
     </div>
-      <div class="pb-5 pt-4">
-        <div
-          class="d-flex justify-content-center mt-1 flex-column align-items-center"
-        >
-          <p
-            class="text-uppercase mt-5 font-xs fw-medium mb-3 pb-1 text-dark-grey"
-          >
-            join our community
-          </p>
-          <h4
-            class="font-4xl text-light-black fw-semibold font-abril-semibold mb-0 mb-sm-4 pb-sm-1 text-center max_w_546 px-4 px-md-0"
-          >
-            Learn from sellers who’ve already made it
-          </h4>
-        </div>
-        <div class="swiper-2 pb-5 mb-3">
-          <div class="swiper-wrapper">
-            <div class="d-flex swiper-slide">
-              <img
-                src="/assets/images/webp/ali-kaminetsky.webp"
-                width="232px"
-                height="360px"
-                class="object-fit-cover slider_img_radius"
-                alt="ali-kaminetsky"
-              />
-              <div class="slider_content text-start bg-white">
-                <h4 class="font-md fw-bold text-black font-poppins mb-0">
-                  Ali Kaminetsky
-                </h4>
-                <p class="text-uppercase fw-medium font-xxs text-dark-grey">
-                  Shopify seller
-                </p>
-                <p class="fw-medium font-sm slider_para_w text-black">
-                  “8fig helped us meet demand and grow 450% in sales to $6
-                  million without tying up cash flow. Their funding and tools
-                  were crucial in optimizing our supply chain and operations.”
-                </p>
-                <p
-                  class="text-black pt-1 fw-bold font-abril-bold mb-0 font-4xl d-flex align-items-center"
-                >
-                  450%<span
-                    class="fw-semibold font-abril-bold ms-2 ps-1 font-lg"
-                    >Shopify store growth</span
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="d-flex swiper-slide">
-              <img
-                src="/assets/images/webp/david-lang.webp"
-                width="232px"
-                height="356px"
-                class="object-fit-cover slider_img_radius"
-                alt="ali-kaminetsky"
-              />
-              <div class="slider_content text-start bg-white">
-                <h4 class="font-md fw-bold text-black font-poppins mb-1">
-                  David Lang
-                </h4>
-                <p class="text-uppercase fw-medium font-xxs text-dark-grey">
-                  co founder, davan strategic
-                </p>
-                <p class="fw-medium font-sm slider_para_w text-black pb-2">
-                  “Our 8Fig growth plan has allowed us to scale our business in
-                  an incredibly short amount of time.”
-                </p>
-                <p
-                  class="text-black pt-1 fw-bold font-abril-bold font-4xl d-flex align-items-center mt-5 pt-4 mb-0"
-                >
-                  $5M<span class="fw-semibold font-abril-bold ms-2 ps-1 font-lg"
-                    >Net revenue</span
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="d-flex swiper-slide">
-              <img
-                src="/assets/images/webp/alex-aidan.webp"
-                width="232px"
-                height="356px"
-                class="object-fit-cover slider_img_radius"
-                alt="ali-kaminetsky"
-              />
-              <div class="slider_content text-start bg-white">
-                <h4 class="font-md fw-bold text-black font-poppins mb-1">
-                  Alex & Aidan
-                </h4>
-                <p class="text-uppercase fw-medium font-xxs text-dark-grey">
-                  6 Figure amazon sellers
-                </p>
-                <p class="fw-medium font-sm slider_para_w text-black pb-2">
-                  “As soon as we started receiving consistent cash flow from
-                  8Fig, it was growth, growth, growth.”
-                </p>
-                <p
-                  class="text-black pt-1 fw-bold font-abril-bold font-4xl d-flex align-items-center mt-5 pt-4 mb-0"
-                >
-                  639%<span
-                    class="fw-semibold font-abril-bold ms-2 ps-1 pe-4 font-lg"
-                    >Amazon store growth in a year</span
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="d-flex swiper-slide">
-              <img
-                src="/assets/images/webp/eddie-li.webp"
-                width="232px"
-                height="356px"
-                class="object-fit-cover slider_img_radius"
-                alt="ali-kaminetsky"
-              />
-              <div class="slider_content text-start bg-white">
-                <h4 class="font-md fw-bold text-black font-poppins mb-1">
-                  Eddie Li
-                </h4>
-                <p class="text-uppercase fw-medium font-xxs text-dark-grey">
-                  Shopify seller
-                </p>
-                <p class="fw-medium font-sm slider_para_w text-black mb-0">
-                  “8fig funding terms and flexibility provided the resources we
-                  needed to propel our growth while maintaining our brand’s
-                  integrity”
-                </p>
-                <p
-                  class="text-black fw-bold font-abril-bold font-4xl d-flex align-items-center mt-4 pt-4 mb-0"
-                >
-                  370%<span
-                    class="fw-semibold font-abril-bold ms-2 ps-1 me-3 lh-sm font-lg"
-                    >Shopify store growth</span
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="d-flex swiper-slide">
-              <img
-                src="/assets/images/webp/felix-leshno.webp"
-                width="232px"
-                height="356px"
-                class="object-fit-cover slider_img_radius"
-                alt="ali-kaminetsky"
-              />
-              <div class="slider_content text-start bg-white">
-                <h4 class="font-md fw-bold text-black font-poppins mb-1">
-                  co founder & cxo, Underoutfit
-                </h4>
-                <p class="text-uppercase fw-medium font-xxs text-dark-grey">
-                  Shopify seller
-                </p>
-                <p class="fw-medium font-sm slider_para_w text-black mb-0">
-                  “8fig funding terms and flexibility provided the resources we
-                  needed to propel our growth while maintaining our brand’s
-                  integrity”
-                </p>
-                <p
-                  class="text-black fw-bold font-abril-bold font-4xl d-flex align-items-center mt-4 pt-4 mb-0"
-                >
-                  5 to 7 figures
-                  <span
-                    class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg"
-                    >in 2021</span
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="d-flex swiper-slide">
-              <img
-                src="/assets/images/webp/felix-leshno.webp"
-                width="232px"
-                height="356px"
-                class="object-fit-cover slider_img_radius"
-                alt="ali-kaminetsky"
-              />
-              <div class="slider_content bg-white">
-                <h4 class="font-md fw-bold text-black font-poppins mb-1">
-                  co founder & cxo, Underoutfit
-                </h4>
-                <p class="text-uppercase fw-medium font-xxs text-dark-grey">
-                  Shopify seller
-                </p>
-                <p class="fw-medium font-sm slider_para_w text-black mb-0">
-                  “8fig funding terms and flexibility provided the resources we
-                  needed to propel our growth while maintaining our brand’s
-                  integrity”
-                </p>
-                <p
-                  class="text-black fw-bold font-abril-bold font-4xl d-flex align-items-center mt-4 pt-4 mb-0"
-                >
-                  5 to 7 figures
-                  <span
-                    class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg"
-                    >in 2021</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="position-relative w_180 mx-auto">
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-
-        <div class="swiper-scrollbar"></div>
-      </div>
-    </div> -->
-
     <!-- ---------------------- Benifits ----------------------- -->
     <div class="bg-light-black">
       <div class="custon_container pb-5 mx-auto px-3">
@@ -1068,7 +855,7 @@
                     class="me-1"
                     alt="arrow"
                   />
-                  $150,00
+                  $20,800
                 </p>
                 <p
                   class="font-medium font-poppins mb-0 font-xxs d-flex align-items-center font-light-black bg-white rounded-5 py-1 px-3 d-flex align-items-center justify-content-center"
@@ -1539,11 +1326,10 @@
           <div class="col-lg-4">
             <div class="d-flex align-items-center justify-content-center">
               <p
-                class="font-poppins font-xs mb-0 text-dark-grey text-capaitalize text-uppercase fw-medium d-none d-lg-block"
+                class="font-poppins font-xs text-dark-grey text-capaitalize text-uppercase fw-medium d-none d-lg-block"
               >
                 <span class="me-1 font-xl">©</span>
-                <span id="currentYear"></span>
-                8fig - All Rights Reserved
+                <span id="currentYear"></span> 8fig - All Rights Reserved
               </p>
             </div>
           </div>
@@ -1587,28 +1373,96 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/js/find.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- SLICK-link-js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+      integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script>
-      var swiper = new Swiper(".swiper-2", {
-        slidesPerView: 5,
-        centeredSlides: true,
-        spaceBetween: 100,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+      $(".slider_responsive").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        centerMode: true,
+        focusOnSelect: true,
+        centerPadding: 60,
+        slidesToScroll: 1,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 767.9,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 425,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 2,
+            },
+          },
+        ],
       });
     </script>
     <script>
       var currentYear = new Date().getFullYear();
       document.getElementById("currentYear").innerText = currentYear;
     </script>
+    <script>
+      $(document).ready(function () {
+        $(".slick-slider").slick({
+          dots: false,
+          arrows: false,
+          infinite: true,
+          speed: 3000,
+          slidesToShow: 1,
+          fade: true,
+          autoplay: true,
+          autoplaySpeed: 5000,
+        });
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var scrollPosition = window.scrollY;
+        var viewportHeight = window.innerHeight;
+
+        if (scrollPosition >= viewportHeight) {
+          document
+            .querySelector(".content-container")
+            .classList.add("black-background"); // Add class to change content container background color
+        } else {
+          document
+            .querySelector(".content-container")
+            .classList.remove("black-background"); // Remove class to revert content container background color
+        }
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
   </body>
 </html>
