@@ -13,7 +13,13 @@
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
     <link rel="stylesheet" href="./assets/css/root.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -32,7 +38,7 @@
         Get funded
       </button>
     </div>
-    <section class="min-vh-100 bg-yellow mt_56">
+    <section class="min-vh-100 bg-yellow mt_-80">
       <div class="position-relative">
         <div class="position-absolute ml_168 mt_263 z-2">
           <div class="d-flex flex-column">
@@ -65,45 +71,43 @@
             alt="half-blur"
           />
         </div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class="header-img w-100"
-                src="./assets/images/webp/header-men.webp"
-                alt="header-men"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="header-img w-100"
-                src="./assets/images/webp/header-women.webp"
-                alt="header-women"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="header-img w-100"
-                src="./assets/images/webp/header-cupal.webp"
-                alt="header-cupal"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="header-img w-100"
-                src="./assets/images/webp/header-women-2.webp"
-                alt="header-women-2"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="header-img w-100"
-                src="./assets/images/webp/header-women-3.webp"
-                alt="header-women-3"
-              />
-            </div>
-            <!-- Add more slides as needed -->
+        <div class="slick-slider">
+          <div class="">
+            <img
+              class="header-img w-100"
+              src="./assets/images/webp/header-men.webp"
+              alt="header-men"
+            />
           </div>
+          <div class="">
+            <img
+              class="header-img w-100"
+              src="./assets/images/webp/header-women.webp"
+              alt="header-women"
+            />
+          </div>
+          <div class="">
+            <img
+              class="header-img w-100"
+              src="./assets/images/webp/header-cupal.webp"
+              alt="header-cupal"
+            />
+          </div>
+          <div class="">
+            <img
+              class="header-img w-100"
+              src="./assets/images/webp/header-women-2.webp"
+              alt="header-women-2"
+            />
+          </div>
+          <div class="">
+            <img
+              class="header-img w-100"
+              src="./assets/images/webp/header-women-3.webp"
+              alt="header-women-3"
+            />
+          </div>
+          <!-- Add more slides as needed -->
         </div>
       </div>
       <div class="bg-light-black shopping-box">
@@ -431,8 +435,41 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/js/find.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".slick-slider").slick({
+          dots: false,
+          arrows: false,
+          infinite: true,
+          speed: 3000,
+          slidesToShow: 1,
+          fade: true,
+          autoplay: true,
+          autoplaySpeed: 5000,
+        });
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var scrollPosition = window.scrollY;
+        var viewportHeight = window.innerHeight;
+
+        if (scrollPosition >= viewportHeight) {
+          document
+            .querySelector(".content-container")
+            .classList.add("black-background"); // Add class to change content container background color
+        } else {
+          document
+            .querySelector(".content-container")
+            .classList.remove("black-background"); // Remove class to revert content container background color
+        }
+      });
+    </script>
   </body>
 </html>

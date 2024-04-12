@@ -263,7 +263,7 @@ body {
     right: 0px;
   }
   .blur-card {
-    max-width: 195px;
+    max-width: 305px;
   }
   .gap_100 {
     gap: 50px;
@@ -280,6 +280,9 @@ body {
     max-width: 230px;
     top: -5%;
     right: 0%;
+  }
+  .blur-card {
+    max-width: 195px;
   }
   .mt_195 {
     margin-top: 100px;
@@ -304,7 +307,7 @@ body {
     left: -2%;
   }
   .study-img {
-    transform: translateX(60px);
+    transform: translateX(60px) !important;
     border-radius: 40px;
     object-fit: cover;
   }
