@@ -206,15 +206,6 @@
 
 .slider_img_radius {
     border-radius: 40px;
-}
-
-
-.swiper-slide {
-    text-align: center;
-}
-
-.slider_img_radius {
-    border-radius: 40px;
     width: 208px;
 }
 
@@ -224,7 +215,6 @@
 
 .swiper-slide-active .slider_content {
     position: relative;
-    display: block;
     display: block !important;
     z-index: 2;
 }
@@ -281,6 +271,19 @@
     margin: 0 12px !important;
 }
 
+@media (max-width:1200px) {
+    .swiper-slide-active {
+        width: 325px !important;
+    }
+    .slider_content {
+        display: block;
+        border-bottom-right-radius: 20px !important;
+        border-bottom-left-radius: 20px !important;
+        border-top-right-radius: 0px !important;
+        width: 320px;
+        padding:22px;
+    }
+}
 @media (max-width:576px) {
     .fw_sm_normal {
         font-weight: 500 !important;
