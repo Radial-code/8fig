@@ -249,7 +249,8 @@
     background-repeat: no-repeat;
     z-index: 10;
     position: absolute !important;
-    bottom: -6% !important;
+    bottom: -8% !important;
+    right: -32% !important;
 
 }
 
@@ -260,7 +261,7 @@
 }
 
 .w_180 {
-    width: 180px;
+    width: 140px;
 }
 
 .swiper-slide-prev,
