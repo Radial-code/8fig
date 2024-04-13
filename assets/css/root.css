@@ -20,7 +20,11 @@
   --black: #000000;
   --light-yellow: #efece6;
 }
-
+@media (max-width: 1199.98px) {
+  :root {
+    --font-5xl: 42px;
+  }
+}
 @media (max-width: 991.98px) {
   :root {
     --font-sm: 16px;
