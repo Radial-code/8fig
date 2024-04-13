@@ -919,8 +919,8 @@ body {
 @media (max-width: 426px) {
   .slider_bttns {
     display: block !important;
-    left: 36.5%;
-    bottom: 3.2%;
+    left: 35%;
+    bottom: 3%;
   }
 }
 
