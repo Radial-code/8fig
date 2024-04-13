@@ -287,7 +287,19 @@
   .lh-133{
     line-height: 133% !important;
   }
+  #slick-slide01{
+    width: 200px !important;
+  }
+  .manufacturing_btn{
+    transform: translateX(50px);
+  }
 @media (max-width: 767.9px) {
+    .manufacturing_btn{
+        transform: translateX(20px);
+      }
+      .manufacturing_btn2{
+        transform: translateX(-25px);
+      }
   .slider_content {
     opacity: 100% !important;
     border-top-right-radius: 0px;
