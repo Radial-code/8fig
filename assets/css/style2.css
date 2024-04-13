@@ -202,6 +202,7 @@
   max-height: 360px;
   opacity: 0;
 }
+
 .slick-dots li button:before {
   font-size: 8px !important;
 }
@@ -211,16 +212,23 @@
   width: 12px !important;
   margin: 0 !important;
 }
+
 .slick-dots li button {
   padding: 0 !important;
 }
+
 .swiper-slide {
   text-align: center;
 }
+
 .slick-dots {
   bottom: 2px !important;
 }
+
 .slider_img_radius {
+  margin-top: 25px;
+  width: 208px;
+  height: 294px;
   border-radius: 40px;
 }
 
@@ -235,22 +243,27 @@
   z-index: 2;
   opacity: 100%;
 }
+
 .medium_grey {
   color: #95959d;
 }
+
 .slider_content .slider_content_data {
   transition: all 0.5s ease-out;
   opacity: 0;
 }
+
 .px_apply_btn {
   border: 1px solid transparent !important;
   padding: 3.3px 9.5px !important;
 }
+
 .px_apply_btn:hover {
   color: #4c57ff !important;
   background-color: transparent !important;
   border: 1px solid #4c57ff !important;
 }
+
 .slick-current .slider_content .slider_content_data {
   transition: all 0.5s ease-out;
   transition-delay: 0.3s;
@@ -258,11 +271,11 @@
 }
 
 #centermode .slick-slide {
-  width: 300px !important;
+  width: 230px !important;
 }
 
-.slick-current {
-  min-width: 700px;
+#centermode .slick-current {
+  min-width: 655px;
 }
 
 .slick-current ~ div {
@@ -275,31 +288,63 @@
 }
 
 .slick-current .slider_img_radius {
+  margin-top: 0px;
+  height: 344px;
+  width: 223px;
   border-radius: 0px;
   z-index: 2;
 }
+
+.slick-current .w_20 {
+  max-width: 631px !important;
+}
+
 .eligible_car3 {
   transform: translateY(-14px);
 }
+
 .eligible_car4 {
   transform: translateY(10px);
 }
+
 .lh-133 {
   line-height: 133% !important;
 }
-#slick-slide01 {
-  width: 200px !important;
-}
+
 .manufacturing_btn {
   transform: translateX(50px);
 }
+
+.slider_bttns {
+  left: 46.5%;
+  bottom: 7.2%;
+}
+#slick-slide03 {
+  max-width: 200px;
+  height: 100px;
+}
+@media (max-width: 1200px) {
+  .slider_bttns {
+    display: none !important;
+  }
+}
+
 @media (max-width: 767.9px) {
+  #centermode .slick-slide {
+    width: 380px !important;
+  }
+
+  #centermode .slick-current {
+    min-width: 700px;
+  }
   .manufacturing_btn {
     transform: translateX(20px);
   }
+
   .manufacturing_btn2 {
     transform: translateX(-25px);
   }
+
   .slider_content {
     opacity: 100% !important;
     border-top-right-radius: 0px;
@@ -323,10 +368,19 @@
   }
 }
 
+@media (max-width: 426px) {
+  .slider_bttns {
+    display: block !important;
+    left: 36.5%;
+    bottom: 3.2%;
+  }
+}
+
 @media (max-width: 576px) {
   .slick-dots {
     bottom: -25px !important;
   }
+
   .slick-current {
     padding-left: 0px;
     padding-right: 0px;
@@ -387,4 +441,8 @@
   .gap_36 {
     gap: 23px !important;
   }
+}
+
+.w_20 {
+  max-width: 208px;
 }
