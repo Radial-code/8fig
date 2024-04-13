@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./assets/css/find.css" />
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
     <div
       class="d-flex content-container justify-content-between position-sticky top-0 p-4 z-3"
     >
@@ -334,7 +335,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-light-black">
+    <section class="bg-light-black pinned-section">
       <div class="max_w_1440">
         <div
           class="my-container pt_66 pb_62 d-flex flex-column justify-content-between"
@@ -351,8 +352,10 @@
               AI technology that predicts, plans, and protects your cash flow
             </h2>
           </div>
-          <div class="position-relative overflow-y-scroll mt_121">
-            <div class="d-flex justify-content-start align-items-end mb-3">
+          <div class="position-relative overflow-x-hidden mt_121">
+            <div
+              class="d-flex justify-content-start align-items-end mb-3 scroll-text"
+            >
               <img
                 class="card-img-1"
                 src="./assets/images/webp/card-1.webp"
@@ -384,61 +387,63 @@
                 alt="card-1"
               />
             </div>
-            <div
-              class="d-flex justify-content-start color-dots align-items-center z-2"
-            >
-              <img
-                class="position-relative"
-                src="./assets/images/svg/color-circle.svg"
-                alt="card-1"
-              />
-              <img
-                class="dot-1 position-relative"
-                src="./assets/images/svg/green-box.svg"
-                alt="card-1"
-              />
-              <img
-                class="dot-2 position-relative"
-                src="./assets/images/svg/white-box.svg"
-                alt="card-1"
-              />
-              <img
-                class="dot-3 position-relative"
-                src="./assets/images/svg/green-box.svg"
-                alt="card-1"
-              />
-              <img
-                class="dot-4 position-relative"
-                src="./assets/images/svg/color-circle.svg"
-                alt="card-1"
-              />
-              <img
-                class="dot-5 position-relative"
-                src="./assets/images/svg/white-box.svg"
-                alt="card-1"
-              />
-              <img
-                class="dot-6 position-relative"
-                src="./assets/images/svg/green-box.svg"
-                alt="card-1"
-              />
-              <img
-                class="dot-7 position-relative"
-                src="./assets/images/svg/white-box.svg"
-                alt="card-1"
-              />
-              <img
-                class="dot-8 position-relative"
-                src="./assets/images/svg/color-circle.svg"
-                alt="card-1"
-              />
+            <div class="scroll-text">
+              <div
+                class="d-flex justify-content-start color-dots align-items-center z-2"
+              >
+                <img
+                  class="position-relative z-3"
+                  src="./assets/images/svg/color-circle.svg"
+                  alt="card-1"
+                />
+                <img
+                  class="dot-1 position-relative"
+                  src="./assets/images/svg/green-box.svg"
+                  alt="card-1"
+                />
+                <img
+                  class="dot-2 position-relative"
+                  src="./assets/images/svg/white-box.svg"
+                  alt="card-1"
+                />
+                <img
+                  class="dot-3 position-relative"
+                  src="./assets/images/svg/green-box.svg"
+                  alt="card-1"
+                />
+                <img
+                  class="dot-4 position-relative"
+                  src="./assets/images/svg/color-circle.svg"
+                  alt="card-1"
+                />
+                <img
+                  class="dot-5 position-relative"
+                  src="./assets/images/svg/white-box.svg"
+                  alt="card-1"
+                />
+                <img
+                  class="dot-6 position-relative"
+                  src="./assets/images/svg/green-box.svg"
+                  alt="card-1"
+                />
+                <img
+                  class="dot-7 position-relative"
+                  src="./assets/images/svg/white-box.svg"
+                  alt="card-1"
+                />
+                <img
+                  class="dot-8 position-relative"
+                  src="./assets/images/svg/color-circle.svg"
+                  alt="card-1"
+                />
+              </div>
             </div>
             <img
-              class="w-100 bg-line z-0"
+              class="w-100 bg-line z-0 scroll-text"
               src="./assets/images/svg/bg-line.svg"
               alt="bg-line"
             />
-            <div class="d-flex mt-3">
+            <div class="d-flex mt-3 scroll-text">
               <img
                 class="card-img-3"
                 src="./assets/images/webp/card-3.webp"
@@ -1484,6 +1489,61 @@
             .classList.remove("black-background"); // Remove class to revert content container background color
         }
       });
+    </script>
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Include ScrollTrigger plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      var tl = gsap.timeline();
+
+      // Pin the .pinned-section when it reaches the top of the viewport
+      gsap.to(".pinned-section", {
+        scrollTrigger: {
+          trigger: ".pinned-section",
+          start: "0% 17%",
+          end: "100% 20%",
+          pin: true, // Pin the element
+          markers: true, // Add markers for visualization
+        },
+      });
+      gsap.fromTo(
+        ".scroll-text",
+        { x: 0 },
+        {
+          x: "-700px",
+          duration: 1,
+          scrollTrigger: {
+            trigger: ".scroll-text",
+            start: "-130% 20%", // Trigger the animation when 80% of .scroll-text is in view from the top
+            end: "250% 40%", // End the animation when 40% of .scroll-text is in view from the bottom
+            scrub: true, // Smoothly animate the x property as the user scrolls
+            markers: true, // Add markers for visualization
+          },
+        }
+      );
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

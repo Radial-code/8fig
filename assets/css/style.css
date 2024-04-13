@@ -22,3 +22,41 @@
 .cursor-pointer {
   cursor: pointer;
 }
+
+#myBtn {
+  display: none;
+  border: none;
+  width: 50px;
+  height: 50px; /* Initially hide the button */
+  position: fixed; /* Fixed position ensures it stays in one place as the user scrolls */
+  bottom: 20px; /* Adjust this value to position the button vertically */
+  right: 30px; /* Adjust this value to position the button horizontally */
+  z-index: 99;
+  background-color: #4c57ff !important;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  animation-duration: 300ms;
+  animation: spin 2s linear infinite;
+  transition: all 300ms linear;
+}
+@keyframes spin {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
