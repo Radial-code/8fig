@@ -919,7 +919,7 @@ body {
 @media (max-width: 426px) {
   .slider_bttns {
     display: block !important;
-    left: 35%;
+    left: 33.5%;
     bottom: 3%;
   }
 }
