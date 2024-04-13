@@ -41,7 +41,7 @@
             Learn from sellers who’ve already made it
           </h4>
         </div>
-        <div class="slider_responsive pb-3 pb-sm-5 ">
+        <div id="centermode" class="slider_responsive pb-3 pb-sm-5 ">
             <div  class="w_20 d-flex justify-content-center flex-column flex-md-row swiper-slide"
             >
               <img
@@ -887,7 +887,7 @@
               <p
                 class="font-poppins font-xs text-dark-grey text-capaitalize text-uppercase fw-medium d-none d-lg-block"
               >
-                <span class="me-1 font-xl">©</span> <span id="currentYear"></span> 8fig - All Rights
+                <span class="me-1 font-xl">©</span> 2024 8fig - All Rights
                 Reserved
               </p>
             </div>
@@ -943,7 +943,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
-    
     $('.slider_responsive').slick({
       dots: true,
       infinite: true,
@@ -981,9 +980,5 @@
       ]
     });
   </script>
-  <script>
-    var currentYear = new Date().getFullYear();
-    document.getElementById("currentYear").innerText = currentYear;
-</script>
   </body>
 </html>

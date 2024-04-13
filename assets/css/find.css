@@ -144,8 +144,8 @@ body {
   width: 231px;
   height: 168px;
 }
-.dots {
-  margin-bottom: -25px !important;
+.color-dots {
+  margin-bottom: -18px !important;
   margin-left: 50px;
 }
 .dot-1 {
@@ -209,7 +209,7 @@ body {
   background: #0e1122;
 }
 .header-img {
-  height: 742px !important;
+  height: 100vh !important;
   object-fit: cover;
 }
 .blur-card-1 {
@@ -230,6 +230,9 @@ body {
 }
 .mt_84 {
   margin-top: 0px;
+}
+.mt_121 {
+  margin-top: 121px;
 }
 .mt_54 {
   margin-top: 0px;

@@ -269,7 +269,7 @@
   width: 300px !important;
 }
 
-#centermode .slick-current {
+.slick-current {
   min-width: 700px;
 }
 
@@ -277,7 +277,7 @@
   border-radius: 40px;
 }
 
-#centermode .slick-current img {
+#centermode.slick-current img {
   width: 250px !important;
   transition: all 0.3s ease-in-out;
 }
@@ -302,7 +302,7 @@
     padding: 22px !important;
   }
 
-  .slick-current img {
+  #centermode.slick-current img {
     width: 320px !important;
   }
 
@@ -316,9 +316,14 @@
     bottom: -25px !important;
   }
   .slick-current {
-    padding-left: 38px;
-    padding-right: 38px;
-    min-width: 398px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #centermode .slick-current {
+    padding-left: 38px !important;
+    padding-right: 38px !important;
+    min-width: 394px;
   }
 
   .fw_sm_normal {
