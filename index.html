@@ -1526,7 +1526,7 @@
           start: "0% 17%",
           end: "100% 20%",
           pin: true, // Pin the element
-          markers: true, // Add markers for visualization
+          markers: false, // Add markers for visualization
         },
       });
       gsap.fromTo(
@@ -1540,7 +1540,7 @@
             start: "-130% 20%", // Trigger the animation when 80% of .scroll-text is in view from the top
             end: "250% 40%", // End the animation when 40% of .scroll-text is in view from the bottom
             scrub: true, // Smoothly animate the x property as the user scrolls
-            markers: true, // Add markers for visualization
+            markers: false, // Add markers for visualization
           },
         }
       );
