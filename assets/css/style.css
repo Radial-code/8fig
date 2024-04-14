@@ -441,12 +441,12 @@ body {
   }
 
   .mt_263 {
-    margin-top: 400px;
+    margin-top: 430px !important;
   }
 
   .blur-position {
     top: 170px;
-    right: 0px;
+    right: 0px !important;
   }
 
   .blur-card {
@@ -517,6 +517,16 @@ body {
     transform: translateX(-60px);
     border-radius: 40px;
     object-fit: cover !important;
+  }
+}
+
+@media (max-width: 1024.98px) {
+  .mt_263 {
+    margin-top: 200px;
+  }
+  .blur-position {
+    top: 220px;
+    right: 35px;
   }
 }
 
