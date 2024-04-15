@@ -603,11 +603,12 @@ body {
 
 /* accordian */
 .accordion-button.collapsed::after {
-  background-image: url("/assets/images/svg/plus.svg") !important;
+  background-image: url("../images/svg/cross.svg") !important;
+  transform: rotate(45deg);
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("/assets/images/svg/cross.svg") !important;
+  background-image: url("../images/svg/cross.svg") !important;
 }
 
 .accordion-button:not(.collapsed) {
@@ -854,7 +855,7 @@ body {
   min-width: 655px;
 }
 
-.slick-current ~ div {
+.slick-current~div {
   border-radius: 40px;
 }
 
@@ -1034,65 +1035,39 @@ body {
   justify-content: flex-start !important;
 }
 
-.slider_responsive .slick-track .slick-active + .slick-active {
+.slider_responsive .slick-track .slick-active+.slick-active {
   transform: scale(1) translateX(-6%);
   z-index: 8;
   position: relative;
 }
 
-.slider_responsive .slick-track .slick-active + .slick-active + .slick-active {
+.slider_responsive .slick-track .slick-active+.slick-active+.slick-active {
   transform: scale(1);
   z-index: 10;
   position: relative;
   display: block;
 }
 
-.slider_responsive
-  .slick-track
-  .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active {
+.slider_responsive .slick-track .slick-active+.slick-active+.slick-active+.slick-active {
   transform: scale(1) translateX(6%);
   z-index: 8;
   position: relative;
 }
 
-.slider_responsive
-  .slick-track
-  .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active {
+.slider_responsive .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
   transform: scale(0.9);
   z-index: 6;
   position: relative;
   display: flex;
 }
 
-.slider_responsive
-  .slick-track
-  .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active {
+.slider_responsive .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
   transform: scale(0.8);
   z-index: 6;
   position: relative;
 }
 
-.slider_responsive
-  .slick-track
-  .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active {
+.slider_responsive .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
   transform: scale(0.7);
   z-index: 6;
   position: relative;
