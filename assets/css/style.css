@@ -518,8 +518,24 @@ body {
 }
 
 @media (max-width: 390.98px) {
+  .rating_icon {
+    width: 55px;
+  }
+
+  .trustpilot_icon {
+    width: 90px;
+  }
+
   .fs_xxs {
     font-size: 12px !important;
+  }
+
+  .fs_clasic {
+    font-size: 16px !important;
+  }
+
+  .fs_render {
+    font-size: 18px !important;
   }
 
   .blur-card-1 {
