@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   text-decoration: none !important;
   list-style-type: none !important;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
 
 .font-poppins {
   font-family: "Poppins", sans-serif !important;
@@ -31,18 +38,16 @@
   cursor: pointer;
 }
 
+/* back to top css start  */
+
 #myBtn {
   display: none;
   border: none;
   width: 50px;
   height: 50px;
-  /* Initially hide the button */
   position: fixed;
-  /* Fixed position ensures it stays in one place as the user scrolls */
   bottom: 20px;
-  /* Adjust this value to position the button vertically */
   right: 30px;
-  /* Adjust this value to position the button horizontally */
   z-index: 99;
   background-color: #4c57ff !important;
   color: white;
@@ -88,26 +93,17 @@
   padding-right: 24px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  /* Make body background transparent */
-}
+
 
 .content-container {
   background-color: transparent;
-  /* Set background color for content container */
   transition: background-color 0.3s ease;
-  /* Add transition effect for smooth color change */
 }
 
 .black-background {
   background-color: black;
   width: 100%;
-  /* Change background color for content container to black */
   transition: background-color 0.3s ease;
-  /* Add transition effect for smooth color change */
 }
 
 .max_w_1060 {
