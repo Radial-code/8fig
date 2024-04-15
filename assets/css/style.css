@@ -454,7 +454,7 @@ body {
   }
 
   .mt_263 {
-    margin-top: 430px !important;
+    margin-top: 280px !important;
   }
 
   .blur-position {
@@ -472,6 +472,10 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .get-btn2 {
+    padding: 10px 38px;
+  }
+
   .blur-card-1 {
     max-width: 175px;
     top: 0%;
@@ -489,7 +493,7 @@ body {
   }
 
   .blur-card {
-    max-width: 195px;
+    max-width: 180px;
   }
 
   .mt_195 {
@@ -510,6 +514,10 @@ body {
 
   .mt_67 {
     margin-top: 67px;
+  }
+
+  .mt_263 {
+    margin-top: 325px !important;
   }
 }
 
@@ -539,7 +547,7 @@ body {
   }
 
   .blur-position {
-    top: 220px;
+    top: 142px;
     right: 35px;
   }
 }
