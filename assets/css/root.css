@@ -1,4 +1,5 @@
 :root {
+  --font-xsm: 10px;
   --font-xxs: 12px;
   --font-xs: 14px;
   --font-sm: 16px;
@@ -72,6 +73,9 @@
 
 .font-xs {
   font-size: var(--font-xs) !important;
+}
+.font-xsm {
+  font-size: var(--font-xsm) !important;
 }
 
 .font-sm {

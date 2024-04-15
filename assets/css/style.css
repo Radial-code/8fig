@@ -1,3 +1,8 @@
+* {
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .font-poppins {
@@ -131,10 +136,12 @@ body {
   border: none;
   border: 1px solid #4c57ff;
 }
+
 .commerce {
   width: 101px;
   height: 23px;
 }
+
 .get-btn2 {
   background: #4c57ff;
   border-radius: 24px;
@@ -143,9 +150,15 @@ body {
   border: 1px solid #4c57ff;
   transition: all 300ms linear;
 }
+
 .mt_60 {
   margin-top: 60px !important;
 }
+
+.lh_157 {
+  line-height: 157% !important;
+}
+
 .get-btn2:hover {
   background: transparent;
   border-radius: 24px;
@@ -441,12 +454,12 @@ body {
   }
 
   .mt_263 {
-    margin-top: 400px;
+    margin-top: 430px !important;
   }
 
   .blur-position {
     top: 170px;
-    right: 0px;
+    right: 0px !important;
   }
 
   .blur-card {
@@ -520,6 +533,17 @@ body {
   }
 }
 
+@media (max-width: 1024.98px) {
+  .mt_263 {
+    margin-top: 200px;
+  }
+
+  .blur-position {
+    top: 220px;
+    right: 35px;
+  }
+}
+
 @media (max-width: 575.98px) {
   .shopping-box {
     padding-top: 60px;
@@ -548,11 +572,6 @@ body {
 }
 
 /* dev css */
-
-* {
-  text-decoration: none !important;
-  list-style-type: none !important;
-}
 
 .custon_container {
   max-width: 1264px;
@@ -614,6 +633,10 @@ body {
   max-width: 438px;
 }
 
+.ls_8 {
+  letter-spacing: 1px !important;
+}
+
 .eligible_card {
   padding: 40px 22px;
 }
@@ -629,6 +652,8 @@ body {
 }
 
 .benfit_card_bg3 {
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-top: 42px;
   background: #3c3f4e;
   border-radius: 24px;
@@ -829,7 +854,7 @@ body {
   min-width: 655px;
 }
 
-.slick-current ~ div {
+.slick-current~div {
   border-radius: 40px;
 }
 
@@ -853,15 +878,25 @@ body {
 .lh-133 {
   line-height: 133% !important;
 }
+
 .lh_136 {
   line-height: 136%;
 }
+
 .manufacturing_btn {
   transform: translateX(50px);
 }
 
+.manufacturing_smal_btn {
+  padding: 3.8px 6px;
+}
+
+.mt_10 {
+  margin-top: 10px;
+}
+
 .slider_bttns {
-  left: 46.5%;
+  left: 45.3%;
   bottom: 7.2%;
 }
 
@@ -955,9 +990,11 @@ body {
   .accordion_heading {
     max-width: 230px;
   }
+
   .lh_166 {
     line-height: 166%;
   }
+
   .seller_woamn {
     width: 417px;
     height: 278px;
@@ -1004,65 +1041,39 @@ body {
   justify-content: flex-start !important;
 }
 
-.slider_responsive .slick-track .slick-active + .slick-active {
+.slider_responsive .slick-track .slick-active+.slick-active {
   transform: scale(1) translateX(-6%);
   z-index: 8;
   position: relative;
 }
 
-.slider_responsive .slick-track .slick-active + .slick-active + .slick-active {
+.slider_responsive .slick-track .slick-active+.slick-active+.slick-active {
   transform: scale(1);
   z-index: 10;
   position: relative;
   display: block;
 }
 
-.slider_responsive
-  .slick-track
-  .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active {
+.slider_responsive .slick-track .slick-active+.slick-active+.slick-active+.slick-active {
   transform: scale(1) translateX(6%);
   z-index: 8;
   position: relative;
 }
 
-.slider_responsive
-  .slick-track
-  .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active {
+.slider_responsive .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
   transform: scale(0.9);
   z-index: 6;
   position: relative;
   display: flex;
 }
 
-.slider_responsive
-  .slick-track
-  .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active {
+.slider_responsive .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
   transform: scale(0.8);
   z-index: 6;
   position: relative;
 }
 
-.slider_responsive
-  .slick-track
-  .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active
-  + .slick-active {
+.slider_responsive .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
   transform: scale(0.7);
   z-index: 6;
   position: relative;
