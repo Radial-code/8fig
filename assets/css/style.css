@@ -340,7 +340,7 @@ body {
 }
 
 .pt_66 {
-  padding-top: 66px;
+  padding-top: 60px;
 }
 
 .blur-card {
@@ -469,7 +469,7 @@ body {
 
 @media (max-width: 767.98px) {
   .get-btn2 {
-    padding: 10px 38px;
+    padding: 10px 24px;
   }
 
   .blur-card-1 {
@@ -518,6 +518,10 @@ body {
 }
 
 @media (max-width: 390.98px) {
+  .fs_xxs {
+    font-size: 12px !important;
+  }
+
   .blur-card-1 {
     max-width: 175px;
     top: -20%;
@@ -962,6 +966,10 @@ body {
 }
 
 @media (max-width: 576px) {
+  .benifit_card_1 {
+    margin-top: 24px;
+  }
+
   .slick-dots {
     bottom: -25px !important;
   }
