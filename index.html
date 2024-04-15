@@ -836,15 +836,17 @@
       $(".slider_responsive").slick({
         dots: true,
         infinite: true,
-        speed: 300,
+        speed: 0,
         slidesToShow: 5,
         centerMode: true,
         focusOnSelect: true,
         centerPadding: 60,
         slidesToScroll: 1,
+        draggable: false,
+        accessibility: false,
+        variableWidth: true,
         prevArrow: $(".custom-prev"),
         nextArrow: $(".custom-next"),
-        variableWidth: true,
         responsive: [
           {
             breakpoint: 1024,
