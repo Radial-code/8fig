@@ -687,6 +687,10 @@ body {
   height: 84px;
 }
 
+.benifits_container {
+  max-width: 1236px;
+}
+
 .benifit_card_2 {
   width: 205px;
   height: 79px;
@@ -813,7 +817,7 @@ body {
   max-width: 280px;
 }
 
-.slick-current > div .slider_content {
+.slick-current>div .slider_content {
   padding: 40px !important;
   z-index: 2;
   opacity: 100%;
