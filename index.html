@@ -864,8 +864,21 @@ AI technology that predicts, plans, and protects your cash flow." />
   </div>
 
   <!-- Back to top  -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
-
+  <button id="back-to-top" style="z-index: 99999999; display: none"
+    class="border border-1 border-white rounded-5 back_to_top_hover transition_300 back_to_top_animation"
+    data-toggle="tooltip" title="Back to Top">
+    <span class="d-flex justify-content-center align-items-center w-100 h-100">
+      <svg class="back_to_top_arrow_size" width="20" height="17" viewBox="0 0 22 19" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M20.154 11.4008C20.259 11.5014 20.3826 11.58 20.5175 11.6322C20.6525 11.6844 20.7963 11.7091 20.9407 11.705C21.0852 11.7008 21.2274 11.6679 21.3592 11.6081C21.4911 11.5482 21.61 11.4626 21.7092 11.3562C21.8085 11.2498 21.886 11.1246 21.9375 10.9878C21.989 10.851 22.0134 10.7052 22.0093 10.5589C22.0052 10.4125 21.9728 10.2684 21.9137 10.1347C21.8547 10.0011 21.7702 9.88055 21.6652 9.77998L11.7665 0.304706C11.5623 0.109028 11.292 0 11.0109 0C10.7299 0 10.4596 0.109028 10.2553 0.304706L0.355555 9.77998C0.248252 9.87989 0.161604 10.0004 0.100645 10.1345C0.0396856 10.2687 0.00563107 10.4137 0.000457544 10.5613C-0.00471599 10.7089 0.0190964 10.8561 0.0705096 10.9943C0.121923 11.1324 0.199912 11.2589 0.299949 11.3663C0.399986 11.4736 0.520075 11.5598 0.653242 11.6197C0.786409 11.6797 0.929999 11.7122 1.07567 11.7154C1.22134 11.7186 1.36619 11.6925 1.50181 11.6384C1.63742 11.5844 1.7611 11.5037 1.86565 11.4008L11.0109 2.64789L20.154 11.4008Z"
+          fill="black"></path>
+        <path
+          d="M20.154 18.1176C20.259 18.2182 20.3826 18.2968 20.5175 18.349C20.6525 18.4012 20.7963 18.4259 20.9407 18.4218C21.0852 18.4176 21.2274 18.3847 21.3592 18.3249C21.4911 18.265 21.61 18.1794 21.7092 18.073C21.8085 17.9666 21.886 17.8414 21.9375 17.7046C21.989 17.5678 22.0134 17.422 22.0093 17.2757C22.0052 17.1293 21.9728 16.9852 21.9137 16.8515C21.8547 16.7179 21.7702 16.5973 21.6652 16.4968L11.7665 7.0215C11.5623 6.82583 11.292 6.7168 11.0109 6.7168C10.7299 6.7168 10.4596 6.82583 10.2553 7.0215L0.355555 16.4968C0.248252 16.5967 0.161604 16.7172 0.100645 16.8513C0.0396856 16.9855 0.00563107 17.1305 0.000457544 17.2781C-0.00471599 17.4257 0.0190964 17.5729 0.0705096 17.7111C0.121923 17.8492 0.199912 17.9757 0.299949 18.0831C0.399986 18.1904 0.520075 18.2766 0.653242 18.3365C0.786409 18.3964 0.929999 18.429 1.07567 18.4322C1.22134 18.4354 1.36619 18.4092 1.50181 18.3552C1.63742 18.3012 1.7611 18.2205 1.86565 18.1176L11.0109 9.36468L20.154 18.1176Z"
+          fill="black"></path>
+      </svg>
+    </span>
+  </button>
   <!-- bootstrap link  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -957,28 +970,6 @@ AI technology that predicts, plans, and protects your cash flow." />
       }
     });
   </script>
-  <script>
-    window.onscroll = function () {
-      scrollFunction();
-    };
-
-    function scrollFunction() {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        document.getElementById("myBtn").style.display = "block";
-      } else {
-        document.getElementById("myBtn").style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <!-- Include ScrollTrigger plugin -->
@@ -1061,6 +1052,27 @@ AI technology that predicts, plans, and protects your cash flow." />
 
     // Listen for window resize events and update animations accordingly
     window.addEventListener("resize", updateAnimations);
+  </script>
+  <!-- BACTOPK-TO-TOP -->
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $("#back-to-top").fadeIn();
+        } else {
+          $("#back-to-top").fadeOut();
+        }
+      });
+      $("#back-to-top").click(function () {
+        $("html, body").animate(
+          {
+            scrollTop: 0,
+          },
+          40
+        );
+        return false;
+      });
+    });
   </script>
   <!-- slick.min.js link  -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
