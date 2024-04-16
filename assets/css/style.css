@@ -588,6 +588,9 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  #centermode .slick-dots {
+    bottom: -20px !important;
+  }
 
   .slider_content {
     min-height: 280px !important;
@@ -811,6 +814,9 @@ body {
 .fotter_icons:hover {
   transform: translateY(-6px);
 }
+.footer_padding {
+  padding: 64px 52px;
+}
 
 .max_w_546 {
   max-width: 546px;
@@ -943,26 +949,18 @@ body {
 .slider_bttns {
   left: 50%;
   transform: translate(-50%);
-  bottom: -7px;
+  bottom: -9px;
   z-index: 1;
 }
 
 #slick-slide03 {
   max-width: 200px;
-  /* height: 100px; */
 }
 
 @media (max-width: 767.9px) {
-  /* #centermode .slick-current {
-    min-width: 480px !important;
-  } */
   .slider_content {
     max-width: 400px !important;
   }
-
-  /* #centermode .slick-current {
-    min-width: 230px !important;
-  } */
 
   .manufacturing_btn {
     transform: translateX(20px);
@@ -995,34 +993,17 @@ body {
   }
 }
 
-/* @media (max-width: 426px) {
-  .slider_bttns {
-    bottom: 3%;
-  }
-} */
-
 @media (max-width: 576px) {
   .benifit_card_1 {
     margin-top: 24px;
   }
-
-  /* .slick-dots {
-    bottom: -25px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-
+  .slider_bttns {
+    bottom: -26px;
+  }
   .slick-current {
     padding-left: 0px;
     padding-right: 0px;
   }
-
-  /* #centermode .slick-current {
-    padding-left: 38px !important;
-    padding-right: 38px !important;
-    min-width: 394px;
-  } */
 
   .fw_sm_normal {
     font-weight: 500 !important;
@@ -1090,6 +1071,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .slick-dotted.slick-slider {
+    margin-bottom: 48px !important;
+  }
   .slick-current > div .slider_content {
     padding: 40px !important;
     z-index: 2;
