@@ -624,10 +624,6 @@ body {
   max-width: 1264px;
 }
 
-.footer_padding {
-  padding: 54px 52px 64px 52px;
-}
-
 .logo_img {
   width: 69px;
   height: 43.43px;
@@ -656,6 +652,7 @@ body {
 
 .accordion-button:not(.collapsed)::after {
   background-image: url("../images/svg/cross.svg") !important;
+  transform: none !important;
 }
 
 .accordion-button:not(.collapsed) {
@@ -1074,7 +1071,7 @@ body {
   }
 
   .footer_padding {
-    padding: 54px 34px 14px 40px;
+    padding: 40px 34px;
   }
 
   .gap_36 {
