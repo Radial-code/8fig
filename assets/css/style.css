@@ -391,6 +391,7 @@ body {
 
 .header-img {
   height: 100vh !important;
+  min-height: 617px !important;
   object-fit: cover;
 }
 
