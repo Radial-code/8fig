@@ -40,7 +40,8 @@ AI technology that predicts, plans, and protects your cash flow." />
 
 <body>
   <!-- header start  -->
-  <div class="d-flex content-container justify-content-between position-sticky top-0 p-4 z-3 transition_03s">
+  <div
+    class="d-flex content-container bg-yellow justify-content-between position-sticky top-0 px-4 py-3 z-3 transition_03s">
     <a href="/"><img class="cursor-pointer z-2" src="./assets/images/svg/logo.svg" alt="logo" /></a>
     <button class="font-poppins fw-medium font-xxs get-btn">
       Get Funded
@@ -51,7 +52,6 @@ AI technology that predicts, plans, and protects your cash flow." />
   <section class="bg-yellow mt_-80 overflow-hidden">
     <div class="position-relative">
       <span class="layer_bg"></span>
-
       <div class="position-absolute ml_168 mt_263 z-2">
         <div class="d-flex flex-column">
           <h1 class="font-abril-bold fw-bold font-6xl lh_106 text-white mt-3 max_w_470 mb-0">
@@ -891,7 +891,7 @@ AI technology that predicts, plans, and protects your cash flow." />
   <!-- bootstrap link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-  </script>
+    </script>
   <!-- jquery Link -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
     integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
@@ -918,38 +918,38 @@ AI technology that predicts, plans, and protects your cash flow." />
       prevArrow: $(".custom-prev"),
       nextArrow: $(".custom-next"),
       responsive: [{
-          breakpoint: 2000,
-          settings: {
-            slidesToShow: 5,
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 5,
 
-          },
         },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            centerMode: false,
-          },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: false,
         },
-        {
-          breakpoint: 767.9,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            centerMode: false,
-            centerPadding: 30,
-            speed: 300,
-          },
+      },
+      {
+        breakpoint: 767.9,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+          centerPadding: 30,
+          speed: 300,
         },
-        {
-          breakpoint: 425,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 2,
-            speed: 300,
-          },
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+          speed: 300,
         },
+      },
       ],
     });
   </script>
@@ -1008,66 +1008,66 @@ AI technology that predicts, plans, and protects your cash flow." />
       if (window.innerWidth >= 1200) {
         gsap.fromTo(
           ".x_val", {
-            x: 0,
-          }, {
-            x: -700,
-            duration: 1, // Adjust duration as needed
-            delay: 0.5, // Adjust delay as needed
-            scrollTrigger: {
-              trigger: ".pin_scroll",
-              start: "top top",
-              end: "+=400",
-              scrub: true,
-            },
-          }
+          x: 0,
+        }, {
+          x: -700,
+          duration: 1, // Adjust duration as needed
+          delay: 0.5, // Adjust delay as needed
+          scrollTrigger: {
+            trigger: ".pin_scroll",
+            start: "top top",
+            end: "+=400",
+            scrub: true,
+          },
+        }
         );
       } else if (window.innerWidth >= 992) {
         gsap.fromTo(
           ".x_val", {
-            x: 0,
-          }, {
-            x: -900,
-            duration: 1, // Adjust duration as needed
-            delay: 0.5, // Adjust delay as needed
-            scrollTrigger: {
-              trigger: ".pin_scroll",
-              start: "top top",
-              end: "+=200",
-              scrub: true,
-            },
-          }
+          x: 0,
+        }, {
+          x: -900,
+          duration: 1, // Adjust duration as needed
+          delay: 0.5, // Adjust delay as needed
+          scrollTrigger: {
+            trigger: ".pin_scroll",
+            start: "top top",
+            end: "+=200",
+            scrub: true,
+          },
+        }
         );
       } else if (window.innerWidth >= 768) {
         gsap.fromTo(
           ".x_val", {
-            x: 0,
-          }, {
-            x: -1200,
-            duration: 1, // Adjust duration as needed
-            delay: 0.5, // Adjust delay as needed
-            scrollTrigger: {
-              trigger: ".pin_scroll",
-              start: "top top",
-              end: "+=200",
-              scrub: true,
-            },
-          }
+          x: 0,
+        }, {
+          x: -1200,
+          duration: 1, // Adjust duration as needed
+          delay: 0.5, // Adjust delay as needed
+          scrollTrigger: {
+            trigger: ".pin_scroll",
+            start: "top top",
+            end: "+=200",
+            scrub: true,
+          },
+        }
         );
       } else if (window.innerWidth >= 320) {
         gsap.fromTo(
           ".x_val", {
-            x: 0,
-          }, {
-            x: -1600,
-            duration: 1, // Adjust duration as needed
-            delay: 0.5, // Adjust delay as needed
-            scrollTrigger: {
-              trigger: ".pin_scroll",
-              start: "top top",
-              end: "+=200",
-              scrub: true,
-            },
-          }
+          x: 0,
+        }, {
+          x: -1600,
+          duration: 1, // Adjust duration as needed
+          delay: 0.5, // Adjust delay as needed
+          scrollTrigger: {
+            trigger: ".pin_scroll",
+            start: "top top",
+            end: "+=200",
+            scrub: true,
+          },
+        }
         );
       }
     }
@@ -1094,8 +1094,8 @@ AI technology that predicts, plans, and protects your cash flow." />
       });
       $("#back-to-top").click(function () {
         $("html, body").animate({
-            scrollTop: 0,
-          },
+          scrollTop: 0,
+        },
           40
         );
         return false;
