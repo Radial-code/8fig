@@ -9,7 +9,7 @@ const tl2 = gsap.timeline({
   },
 });
  
-if (window.innerWidth >=1300 && window.innerWidth < 1536) {tl2
+if (window.innerWidth >=1300 ) {tl2
   .to(
     ".card-img-1",
     {
