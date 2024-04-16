@@ -1220,13 +1220,3 @@ body {
     bottom: -14px !important;
   }
 }
-
-/* [aria-hidden="true"] {
-  display: none !important;
-}
-
-.slick-track [aria-hidden="false"] {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-} */
