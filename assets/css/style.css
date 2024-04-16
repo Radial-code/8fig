@@ -39,6 +39,8 @@ body {
 }
 
 /* BACK TO TOP CSS HERE */
+
+/* BACK TO TOP CSS HERE */
 .back_to_top_arrow_size {
   max-width: 40px !important;
 }
@@ -410,7 +412,7 @@ body {
 
 .header-img {
   height: 100vh !important;
-  min-height: 700px !important;
+  min-height: 750px !important;
   object-fit: cover;
 }
 
@@ -623,6 +625,9 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .ml_168 {
+    margin-left: 16px !important;
+  }
   .blur-card-1 {
     max-width: 175px;
     top: -10%;
@@ -914,7 +919,7 @@ body {
 }
 
 .slick-dots {
-  bottom: -4px !important;
+  bottom: -8px !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1052,7 +1057,7 @@ body {
   }
 
   .slider_bttns {
-    bottom: -26px;
+    bottom: -21px;
   }
 
   .slick-current {
@@ -1233,6 +1238,6 @@ body {
     bottom: -20px;
   }
   .slick-dots {
-    bottom: -14px !important;
+    bottom: -18px !important;
   }
 }
