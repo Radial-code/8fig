@@ -394,7 +394,7 @@ body {
 
 .header-img {
   height: 100vh !important;
-  min-height: 617px !important;
+  min-height: 700px !important;
   object-fit: cover;
 }
 
@@ -560,7 +560,7 @@ body {
   }
 
   .mt_263 {
-    margin-top: 325px !important;
+    margin-top: 369px !important;
   }
 }
 
