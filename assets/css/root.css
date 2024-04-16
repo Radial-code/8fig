@@ -165,3 +165,12 @@
 .bg-yellow {
   background-color: var(--light-yellow) !important;
 }
+.transition_03s {
+  transition: all 0.3s ease-in-out;
+}
+.image_zoom_hover {
+  border-radius: 40px;
+}
+.image_zoom_hover:hover img {
+  transform: scale(1.06);
+}
