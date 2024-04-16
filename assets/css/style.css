@@ -1233,6 +1233,7 @@ body {
     position: relative;
   }
 }
+
 @media (min-width: 1200px) {
   .slider_bttns {
     bottom: -20px;
@@ -1240,4 +1241,114 @@ body {
   .slick-dots {
     bottom: -18px !important;
   }
+}
+@media (min-width: 1536px) {
+  .slick-dotted.slick-slider {
+    margin-bottom: 48px !important;
+  }
+
+  .slick-current > div .slider_content {
+    padding: 40px !important;
+    z-index: 2;
+    opacity: 100%;
+    max-width: 600px !important;
+    transition: all 150ms linear;
+    width: 100%;
+  }
+
+  #centermode .slick-slide {
+    width: 230px !important;
+  }
+
+  #centermode .slick-current {
+    min-width: 655px;
+  }
+
+  .slick-current > div .slider_content {
+    padding: 40px !important;
+    z-index: 2;
+    opacity: 100%;
+    max-width: 600px !important;
+    transition: all 150ms linear;
+  }
+
+  #community .slick-track .slick-active {
+    transform: scale(0.8) translateY(1%);
+    z-index: 8;
+    position: relative;
+    justify-content: flex-start !important;
+  }
+
+  #community .slick-track .slick-active + .slick-active {
+    transform: scale(1) translateX(-6%);
+    z-index: 8;
+    position: relative;
+  }
+
+  #community .slick-track .slick-active + .slick-active + .slick-active {
+    transform: scale(1);
+    z-index: 10;
+    position: relative;
+    display: block;
+  }
+
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
+    transform: scale(1) translateX(6%);
+    z-index: 8;
+    position: relative;
+  }
+
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
+    transform: scale(0.8);
+    z-index: 6;
+    position: relative;
+    display: flex;
+  }
+
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
+    transform: scale(0.8);
+    z-index: 6;
+    position: relative;
+  }
+
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
+    transform: scale(0.7);
+    z-index: 6;
+    position: relative;
+  }
+}
+[aria-hidden="true"] {
+  display: none !important;
+}
+
+.slick-track [aria-hidden="false"] {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
