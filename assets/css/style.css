@@ -38,49 +38,65 @@ body {
   cursor: pointer;
 }
 
-/* back to top css start  */
-
-#myBtn {
-  display: none;
-  border: none;
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  background-color: #4c57ff !important;
-  color: white;
-  cursor: pointer;
-  border-radius: 50%;
-  animation-duration: 300ms;
-  animation: spin 2s linear infinite;
-  transition: all 300ms linear;
+/* BACK TO TOP CSS HERE */
+.back_to_top_arrow_size {
+  max-width: 40px !important;
 }
 
-@keyframes spin {
+.back_to_top_arrow_size path {
+  fill: #fff;
+}
+
+.back_to_top_hover:hover {
+  -webkit-box-shadow: 0px 5px 10px 0px #ffffff !important;
+  box-shadow: 0px 5px 10px 0px #ffffff !important;
+}
+
+.back_to_top_animation {
+  -webkit-animation: back_to_top_animation 3s 300ms infinite;
+  animation: back_to_top_animation 3s 300ms infinite;
+}
+
+#back-to-top {
+  position: fixed;
+  right: 20px;
+  top: 90%;
+  width: 45px;
+  height: 45px;
+  background-color: var(--blue);
+}
+
+@-webkit-keyframes back_to_top_animation {
   0% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
   }
 
-  20% {
-    transform: translateY(-10px);
-  }
-
-  40% {
-    transform: translateY(0px);
-  }
-
-  60% {
-    transform: translateY(-10px);
-  }
-
-  80% {
-    transform: translateY(0px);
+  50% {
+    -webkit-transform: translateY(15%);
+    transform: translateY(15%);
   }
 
   100% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@keyframes back_to_top_animation {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+
+  50% {
+    -webkit-transform: translateY(15%);
+    transform: translateY(15%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 
