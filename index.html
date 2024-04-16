@@ -1635,84 +1635,90 @@ AI technology that predicts, plans, and protects your cash flow."
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
     <!-- Gsap code  -->
-    <script>
-      gsap.registerPlugin(ScrollTrigger);
+     <script>
+       gsap.registerPlugin(ScrollTrigger);
 
-      function updateAnimations() {
-        if (window.innerWidth >= 1200) {
-          gsap.fromTo(
-            ".x_val",
-            {
-              x: 0,
-            },
-            {
-              x: -600,
-              scrollTrigger: {
-                trigger: ".pin_scroll",
-                start: "top top",
-                end: "+=400",
-                scrub: true,
-              },
-            }
-          );
-        } else if (window.innerWidth >= 992) {
-          gsap.fromTo(
-            ".x_val",
-            {
-              x: 0,
-            },
-            {
-              x: -900,
-              scrollTrigger: {
-                trigger: ".pin_scroll",
-                start: "top top",
-                end: "+=200",
-                scrub: true,
-              },
-            }
-          );
-        } else if (window.innerWidth >= 768) {
-          gsap.fromTo(
-            ".x_val",
-            {
-              x: 0,
-            },
-            {
-              x: -1200,
-              scrollTrigger: {
-                trigger: ".pin_scroll",
-                start: "top top",
-                end: "+=200",
-                scrub: 1,
-              },
-            }
-          );
-        } else if (window.innerWidth >= 576) {
-          gsap.fromTo(
-            ".x_val",
-            {
-              x: 0,
-            },
-            {
-              x: -1600,
-              scrollTrigger: {
-                trigger: ".pin_scroll",
-                start: "top top",
-                end: "+=200",
-                scrub: 1,
-              },
-            }
-          );
-        }
-      }
+       function updateAnimations() {
+         // Clear any existing animations
+         gsap.killTweensOf(".x_val");
 
-      // Initial call to set up animations based on current window size
-      updateAnimations();
+         if (window.innerWidth >= 1200) {
+           gsap.fromTo(
+             ".x_val", {
+               x: 0,
+             }, {
+               x: -700,
+               duration: 1, // Adjust duration as needed
+               delay: 0.5, // Adjust delay as needed
+               scrollTrigger: {
+                 trigger: ".pin_scroll",
+                 start: "top top",
+                 end: "+=400",
+                 scrub: true,
+               },
+             }
+           );
+         } else if (window.innerWidth >= 992) {
+           gsap.fromTo(
+             ".x_val", {
+               x: 0,
+             }, {
+               x: -900,
+               duration: 1, // Adjust duration as needed
+               delay: 0.5, // Adjust delay as needed
+               scrollTrigger: {
+                 trigger: ".pin_scroll",
+                 start: "top top",
+                 end: "+=200",
+                 scrub: true,
+               },
+             }
+           );
+         } else if (window.innerWidth >= 768) {
+           gsap.fromTo(
+             ".x_val", {
+               x: 0,
+             }, {
+               x: -1200,
+               duration: 1, // Adjust duration as needed
+               delay: 0.5, // Adjust delay as needed
+               scrollTrigger: {
+                 trigger: ".pin_scroll",
+                 start: "top top",
+                 end: "+=200",
+                 scrub: true,
+               },
+             }
+           );
+         } else if (window.innerWidth >= 320) {
+           gsap.fromTo(
+             ".x_val", {
+               x: 0,
+             }, {
+               x: -1600,
+               duration: 1, // Adjust duration as needed
+               delay: 0.5, // Adjust delay as needed
+               scrollTrigger: {
+                 trigger: ".pin_scroll",
+                 start: "top top",
+                 end: "+=200",
+                 scrub: true,
+               },
+             }
+           );
+         }
+       }
 
-      // Listen for window resize events and update animations accordingly
-      window.addEventListener("resize", updateAnimations);
-    </script>
-    <!-- BACTOPK-TO-TOP -->
+       // Initial call to set up animations based on current window size
+       updateAnimations();
+
+       // Listen for window resize events and update animations accordingly
+       window.addEventListener("resize", function () {
+         // Refresh animations when screen size changes
+         updateAnimations();
+       });
+     </script>
+    <!-- BACk-TO-TOP -->
     <script>
       $(document).ready(function () {
         $(window).scroll(function () {
