@@ -256,6 +256,12 @@
   width: 115px;
   height: 40px;
 }
+/* .card_prod_done,
+.card_prod_start,
+.card_prod_delay {
+  position: relative;
+  left: -200px;
+} */
 
 .card-img-6 {
   margin-left: 125px;
@@ -314,7 +320,7 @@
 }
 
 .bg-line {
-  min-width: 1840px;
+  min-width: 2540px;
   margin-left: 54px;
 }
 
