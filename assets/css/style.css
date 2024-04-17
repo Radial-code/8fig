@@ -1,3 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif !important;
+}
+
+@font-face {
+  font-family: "font-abril-semibold";
+  src: url("../font/Abril_Display/Abril_Display_SemiBold.otf");
+}
+
+.font-abril-semibold {
+  font-family: "font-abril-semibold", sans-serif;
+}
+
+@font-face {
+  font-family: "font-abril-bold";
+  src: url(../font/Abril_Display/Abril_Display_Bold.otf);
+}
+
+.font-abril-bold {
+  font-family: "font-abril-bold", sans-serif;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* BACK TO TOP CSS HERE */
+
 /* BACK TO TOP CSS HERE */
 .back_to_top_arrow_size {
   max-width: 40px !important;
@@ -71,6 +113,7 @@
 
 .content-container {
   background-color: transparent;
+  transition: background-color 0.3s ease;
 }
 
 .black-background {
@@ -187,7 +230,7 @@
 }
 
 .shopping-box {
-  margin-top: -12px;
+  margin-top: -6px;
   padding-top: 46px;
   padding-bottom: 54px;
 }
@@ -539,25 +582,19 @@
   }
 }
 
-@media (max-width: 390.98px) {
-  .rating_icon {
-    width: 55px;
+@media (max-width: 575.98px) {
+  .study-img {
+    transform: translateX(80px) !important;
+    border-radius: 40px;
+    width: 411px !important;
+    object-fit: cover;
   }
 
-  .trustpilot_icon {
-    width: 90px;
-  }
-
-  .fs_xxs {
-    font-size: 12px !important;
-  }
-
-  .fs_clasic {
-    font-size: 16px !important;
-  }
-
-  .fs_render {
-    font-size: 18px !important;
+  .study-img-2 {
+    transform: translateX(-80px);
+    border-radius: 40px;
+    max-height: 270px !important;
+    object-fit: cover !important;
   }
 
   .image_zoom_hover {
@@ -567,21 +604,9 @@
   .image_zoom_hover:hover img {
     transform: unset !important;
   }
-
-  .study-img {
-    transform: translateX(60px) !important;
-    border-radius: 40px;
-    object-fit: cover;
+  .rating_icon {
+    width: 55px;
   }
-
-  .study-img-2 {
-    transform: translateX(-60px);
-    border-radius: 40px;
-    object-fit: cover !important;
-  }
-}
-
-@media (max-width: 575.98px) {
   .ml_168 {
     margin-left: 16px !important;
   }
@@ -626,6 +651,36 @@
 
   .mt_44 {
     margin-top: 44px;
+  }
+}
+@media (max-width: 390.98px) {
+  .trustpilot_icon {
+    width: 90px;
+  }
+
+  .fs_xxs {
+    font-size: 12px !important;
+  }
+
+  .fs_clasic {
+    font-size: 16px !important;
+  }
+
+  .fs_render {
+    font-size: 18px !important;
+  }
+  .image_zoom_hover .study-img {
+    transform: translateX(60px) !important;
+    border-radius: 40px;
+    width: 330 !important;
+    object-fit: cover;
+  }
+
+  .image_zoom_hover .study-img-2 {
+    transform: translateX(-60px);
+    border-radius: 40px;
+    max-height: 270px !important;
+    object-fit: cover !important;
   }
 }
 
