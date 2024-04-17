@@ -62,7 +62,7 @@ body {
 
 @media (max-width: 1199.98px) {
   :root {
-    --font-sm: 12px;
+    /* --font-sm: 12px; */
     --font-base: 14px;
     --font-md: 16px;
     --font-lg: 18px;
