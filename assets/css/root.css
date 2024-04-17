@@ -55,8 +55,6 @@ body {
   --light-yellow: #efece6;
 }
 
-
-
 @media (max-width: 1199.98px) {
   :root {
     --font-sm: 12px;
@@ -193,7 +191,7 @@ body {
 }
 
 .transition_05s {
-  transition: all .5s linear;
+  transition: all 0.5s linear !important;
 }
 
 .letter_spacing {
@@ -202,10 +200,6 @@ body {
 
 .hide_header {
   transform: translateY(-100%);
-}
-
-.transition_05s {
-  transition: all 500ms ease-in-out;
 }
 
 .image_zoom_hover {
@@ -260,7 +254,7 @@ body {
   max-width: 400px;
 }
 
-@media (max-width:1399.98px) {
+@media (max-width: 1399.98px) {
   .hero_blur_card {
     transform: translateX(0px);
   }
