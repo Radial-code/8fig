@@ -544,7 +544,7 @@
     padding-top: 60px;
   }
 
-  .footer_text_size{
+  .footer_text_size {
     font-size: 12px;
   }
 
@@ -927,7 +927,6 @@
 }
 
 .slider_content .slider_content_data {
-  transition: all 0.5s ease-out;
   opacity: 0;
 }
 
@@ -1131,9 +1130,12 @@
     padding: 40px !important;
     z-index: 2;
     opacity: 100%;
-    max-width: 600px !important;
-    transition: all 150ms linear;
-    width: 100%;
+ max-width: 600px !important; */
+    /* transition: all 150ms linear; */
+    /* width: 100%; */
+  }
+  .mx_slider_custom {
+    transition: all 0.3s ease-in-out;
   }
 
   #centermode .slick-slide {
