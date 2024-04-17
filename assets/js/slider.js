@@ -7,7 +7,7 @@ const tl2 = gsap.timeline({
     scrub: 1,
     pin: true,
     pinSpacing: true,
-    markers:true
+    // markers:true
   },
 });
  gsap.set(".pin_scroll",{height:"100vh"})

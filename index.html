@@ -349,14 +349,14 @@ AI technology that predicts, plans, and protects your cash flow." />
     </div>
   </section>
   <!-----------------------------  HOW IT WORKS---------------------------  -->
-  <section class="bg-light-black overflow-hidden pinned-section">
-    <div class="max_w_1440">
-      <div class="my-container pt_66 pb_62 d-flex flex-column justify-content-between pin_scroll">
+  <section class="bg-light-black overflow-hidden">
+    <div class="max_w_1440 pinned-section">
+      <div class="my-container pt_66 pb_62 d-flex flex-column justify-content-center pin_scroll">
         <div class="flex-column">
-          <h6 class="text-light-grey text-uppercase fw-medium font-sm text-center mb-0 letter_spacing">
+          <h6 class="text-light-grey font-poppins text-uppercase fw-medium font-xs text-center mb-0">
             how it works
           </h6>
-          <h2 class="font-abril-semibold text-center fw-semibold mx-auto font-3xl text-white mb-0 max_w_620 mt_20">
+          <h2 class="font-abril-semibold text-center fw-semibold mx-auto font-4xl text-white mb-0 max_w_620 mt_20">
             AI technology that predicts, plans, and protects your cash flow
           </h2>
         </div>
@@ -388,8 +388,24 @@ AI technology that predicts, plans, and protects your cash flow." />
               alt="card-1" />
             <img style="opacity: 0" class="dot-7 position-relative" src="./assets/images/svg/white-box.svg"
               alt="card-1" />
-            <img style="opacity: 0" class="animate_garident position-relative"
-              src="./assets/images/svg/group-garident-animation.svg" alt="garident anim" />
+            <!-- <img style="opacity: 0" 
+                              src="./assets/images/svg/group-garident-animation.svg" alt="garident anim" /> -->
+            <span style="opacity: 0" class="animate_garident position-relative"> <svg width="171" height="13"
+                viewBox="0 0 171 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="171" height="13" rx="6.5" fill="url(#paint0_linear_4003_2139)" />
+                <rect x="155" y="6.4043" width="6.22862" height="6.22862" transform="rotate(-45 155 6.4043)"
+                  fill="#F66262" />
+                <rect x="4" y="6.4043" width="6.22862" height="6.22862" transform="rotate(-45 4 6.4043)" fill="white" />
+                <defs>
+                  <linearGradient id="paint0_linear_4003_2139" x1="0" y1="6.5" x2="171" y2="6.5"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="0.413488" stop-color="#3D3F4F" />
+                    <stop offset="1" stop-color="#703737" />
+                  </linearGradient>
+                </defs>
+              </svg></span>
+
+
             <img style="opacity: 0" class="animate_garident_second position-relative"
               src="./assets/images/svg/group-garident-animation-second-line.svg" alt="garident anim" />
             <img style="opacity: 0" class="animate_garident_third position-relative"
@@ -671,8 +687,7 @@ AI technology that predicts, plans, and protects your cash flow." />
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="d-flex mt-5 pt-5 pt-lg-0 mt-lg-0 flex-column justify-content-center align-items-center">
-            <h3
-              class="text-uppercase font-sm text-white fw-medium mx-3 mx-xl-5 text-center mx-lg-4 lh_157 mb-0">
+            <h3 class="text-uppercase font-sm text-white fw-medium mx-3 mx-xl-5 text-center mx-lg-4 lh_157 mb-0">
               Fixed cost of capital <br />
               No hidden fees, <br />
               equity-free
@@ -959,12 +974,10 @@ AI technology that predicts, plans, and protects your cash flow." />
         </div>
         <div class="col-lg-4">
           <div class="d-flex align-items-center justify-content-center">
-            <p
-              class="me-1 text-dark-grey text-capaitalize text-uppercase fw-medium font-xl mb-0 d-none d-lg-block">
+            <p class="me-1 text-dark-grey text-capaitalize text-uppercase fw-medium font-xl mb-0 d-none d-lg-block">
               ©
             </p>
-            <p
-              class="mb-0 d-none d-lg-block font-sm text-dark-grey text-capaitalize text-uppercase fw-medium">
+            <p class="mb-0 d-none d-lg-block font-sm text-dark-grey text-capaitalize text-uppercase fw-medium">
               <span id="currentYear"></span> 8fig - All Rights Reserved
             </p>
           </div>
@@ -1006,7 +1019,7 @@ AI technology that predicts, plans, and protects your cash flow." />
   <!-- bootstrap link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-  </script>
+    </script>
   <!-- jquery Link -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
     integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
@@ -1033,38 +1046,38 @@ AI technology that predicts, plans, and protects your cash flow." />
       prevArrow: $(".custom-prev"),
       nextArrow: $(".custom-next"),
       responsive: [{
-          breakpoint: 2000,
-          settings: {
-            slidesToShow: 5,
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 5,
 
-          },
         },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            centerMode: false,
-          },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: false,
         },
-        {
-          breakpoint: 767.9,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            centerMode: false,
-            centerPadding: 30,
-            speed: 300,
-          },
+      },
+      {
+        breakpoint: 767.9,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+          centerPadding: 30,
+          speed: 300,
         },
-        {
-          breakpoint: 425,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 2,
-            speed: 300,
-          },
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+          speed: 300,
         },
+      },
       ],
     });
   </script>
@@ -1111,8 +1124,8 @@ AI technology that predicts, plans, and protects your cash flow." />
       });
       $("#back-to-top").click(function () {
         $("html, body").animate({
-            scrollTop: 0,
-          },
+          scrollTop: 0,
+        },
           40
         );
         return false;
