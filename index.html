@@ -352,7 +352,8 @@ AI technology that predicts, plans, and protects your cash flow." />
   <!-----------------------------  HOW IT WORKS---------------------------  -->
   <section class="bg-light-black overflow-hidden">
     <div class="max_w_1440 pinned-section">
-      <div class="my-container pt_66 pb_62 d-flex flex-column justify-content-between justify-content-xl-center pin_scroll">
+      <div
+        class="my-container pt_66 pb_62 d-flex flex-column justify-content-between justify-content-xl-center pin_scroll">
         <div class="flex-column">
           <h6 class="text-light-grey font-poppins text-uppercase fw-medium font-xs text-center mb-0">
             how it works
@@ -965,10 +966,10 @@ AI technology that predicts, plans, and protects your cash flow." />
         <div class="col-6 col-lg-4">
           <div class="d-flex align-items-lg-center flex-wrap">
             <a href="#" target="_blank">
-              <img src="./assets/images/webp/Logo.webp" alt="logo" class="logo_img me-3 me-lg-1" />
+              <img src="./assets/images/webp/Logo.webp" alt="logo" class="logo_img me-3 me-lg-1 mb-3 mb-sm-0" />
             </a>
             <span
-              class="font-sm pt-3 pt-sm-0 text-dark-grey text-capaitalize text-uppercase fw-medium ms-lg-4 ps-xl-5">8fig,
+              class="font-sm text-dark-grey text-capaitalize text-uppercase fw-medium ms-lg-4 ps-xl-5 footer_text_size">8fig,
               1717 W 6th St, <br />
               Austin, Texas</span>
           </div>
@@ -1029,112 +1030,16 @@ AI technology that predicts, plans, and protects your cash flow." />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
     integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- HERO SLIDER JS CODE -->
-  <script>
-    $(document).ready(function () {
-      $(".hero_slider").slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
-        speed: 2000,
-        slidesToShow: 1,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 8000,
-      });
-    });
-  </script>
-
-  <!-- join community Slider js code -->
-  <script>
-    $(".slider_new_custom").slick({
-      dots: true,
-      infinite: true,
-      speed: 0,
-      slidesToShow: 5,
-      centerMode: true,
-      focusOnSelect: true,
-      centerPadding: 60,
-      slidesToScroll: 1,
-      draggable: false,
-      accessibility: false,
-      variableWidth: true,
-      prevArrow: $(".custom-prev"),
-      nextArrow: $(".custom-next"),
-      responsive: [{
-          breakpoint: 2000,
-          settings: {
-            slidesToShow: 5,
-
-          },
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            centerMode: false,
-          },
-        },
-        {
-          breakpoint: 767.9,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            centerMode: false,
-            centerPadding: 30,
-            speed: 300,
-          },
-        },
-        {
-          breakpoint: 425,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 2,
-            speed: 300,
-          },
-        },
-      ],
-    });
-  </script>
-
-  <!-- YEAR FUNCTION -->
-  <script>
-    var currentYear = new Date().getFullYear();
-    document.getElementById("currentYear").innerText = currentYear;
-  </script>
-
-  <!-- HEADER BG CODE -->
-  <script src="/assets/js/header.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <!-- Include ScrollTrigger plugin -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
-  <script src="./assets/js/slider.js"></script>
-
-  <!-- BACk-TO-TOP -->
-  <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-          $("#back-to-top").fadeIn();
-        } else {
-          $("#back-to-top").fadeOut();
-        }
-      });
-      $("#back-to-top").click(function () {
-        $("html, body").animate({
-            scrollTop: 0,
-          },
-          40
-        );
-        return false;
-      });
-    });
-  </script>
   <!-- slick.min.js link  -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <!-- CUSTOM JS FILES -->
+  <script src="/assets/js/header.js"></script>
+  <script src="./assets/js/gsap.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
