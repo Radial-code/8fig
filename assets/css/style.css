@@ -98,18 +98,13 @@
   border-radius: 24px;
   color: #4c57ff !important;
   padding: 6px 19px;
-  border: none;
   border: 1px solid #4c57ff;
   transition: all 200ms linear;
 }
 
 .get-btn:hover {
   background: #4c57ff;
-  border-radius: 24px;
   color: white !important;
-  padding: 6px 19px;
-  border: none;
-  border: 1px solid #4c57ff;
 }
 
 .commerce {
@@ -121,7 +116,6 @@
   background: #4c57ff;
   border-radius: 24px;
   padding: 10px 49px;
-  border: none;
   border: 1px solid #4c57ff;
   transition: all 200ms linear;
 }
@@ -139,7 +133,6 @@
   border-radius: 24px;
   color: #4c57ff !important;
   padding: 10px 49px;
-  border: none;
   border: 1px solid #4c57ff;
 }
 
@@ -151,9 +144,8 @@
   background: #4c57ff;
   border-radius: 24px;
   padding: 6px 19px;
-  border: none;
   border: 1px solid #4c57ff;
-  transition: all 300ms linear;
+  transition: all 200ms linear;
 }
 
 .apply-btn:hover {
@@ -161,7 +153,6 @@
   border-radius: 24px;
   color: #4c57ff !important;
   padding: 6px 19px;
-  border: none;
   border: 1px solid #4c57ff;
 }
 
@@ -949,7 +940,7 @@
   opacity: 100%;
 }
 
-.slick-current~div {
+.slick-current ~ div {
   border-radius: 40px;
 }
 
@@ -1068,10 +1059,6 @@
     max-width: 438px;
   }
 
-  .accordion_heading {
-    max-width: 230px;
-  }
-
   .lh_166 {
     line-height: 166%;
   }
@@ -1132,7 +1119,7 @@
     margin-bottom: 48px !important;
   }
 
-  .slick-current>div .slider_content {
+  .slick-current > div .slider_content {
     padding: 40px !important;
     z-index: 2;
     opacity: 100%;
@@ -1149,7 +1136,7 @@
     min-width: 655px;
   }
 
-  .slick-current>div .slider_content {
+  .slick-current > div .slider_content {
     padding: 40px !important;
     z-index: 2;
     opacity: 100%;
@@ -1164,39 +1151,65 @@
     justify-content: flex-start !important;
   }
 
-  #community .slick-track .slick-active+.slick-active {
+  #community .slick-track .slick-active + .slick-active {
     transform: scale(1) translateX(-6%);
     z-index: 8;
     position: relative;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active {
+  #community .slick-track .slick-active + .slick-active + .slick-active {
     transform: scale(1);
     z-index: 10;
     position: relative;
     display: block;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(1) translateX(6%);
     z-index: 8;
     position: relative;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(0.8);
     z-index: 6;
     position: relative;
     display: flex;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(0.8);
     z-index: 6;
     position: relative;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(0.7);
     z-index: 6;
     position: relative;
@@ -1218,7 +1231,7 @@
     margin-bottom: 48px !important;
   }
 
-  .slick-current>div .slider_content {
+  .slick-current > div .slider_content {
     padding: 40px !important;
     z-index: 2;
     opacity: 100%;
@@ -1235,7 +1248,7 @@
     min-width: 655px;
   }
 
-  .slick-current>div .slider_content {
+  .slick-current > div .slider_content {
     padding: 40px !important;
     z-index: 2;
     opacity: 100%;
@@ -1250,39 +1263,65 @@
     justify-content: flex-start !important;
   }
 
-  #community .slick-track .slick-active+.slick-active {
+  #community .slick-track .slick-active + .slick-active {
     transform: scale(1) translateX(-6%);
     z-index: 8;
     position: relative;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active {
+  #community .slick-track .slick-active + .slick-active + .slick-active {
     transform: scale(1);
     z-index: 10;
     position: relative;
     display: block;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(1) translateX(6%);
     z-index: 8;
     position: relative;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(0.8);
     z-index: 6;
     position: relative;
     display: flex;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(0.8);
     z-index: 6;
     position: relative;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(0.7);
     z-index: 6;
     position: relative;
