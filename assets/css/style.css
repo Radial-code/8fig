@@ -557,10 +557,6 @@
     font-size: 16px !important;
   }
 
-  .fs_render {
-    font-size: 18px !important;
-  }
-
   .image_zoom_hover {
     border-radius: 0px !important;
   }
@@ -667,7 +663,9 @@
   background-image: url("../images/svg/cross.svg") !important;
   transform: rotate(45deg);
 }
-
+.accordion-button:not(.collapsed) {
+  color: #0e1122 !important;
+}
 .accordion-button:not(.collapsed)::after {
   background-image: url("../images/svg/cross.svg") !important;
   transform: none !important;
@@ -683,6 +681,8 @@
   background-color: #efece6 !important;
   border: 0px !important;
   border-bottom: 1px solid #dddddf !important;
+  font-size: 18px !important;
+  padding: 20px !important;
 }
 
 .accordion-body {
@@ -690,6 +690,8 @@
   max-width: 1030px;
   background-color: #efece6 !important;
   border-bottom: 1px solid #dddddf !important;
+  font-size: 18px !important;
+  color: #0e1122 !important;
 }
 
 .max-w-438 {
@@ -1035,9 +1037,9 @@
     max-width: 438px;
   }
 
-  .accordion_heading {
+  /* .accordion_heading {
     max-width: 230px;
-  }
+  } */
 
   .lh_166 {
     line-height: 166%;
