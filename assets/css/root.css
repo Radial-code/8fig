@@ -1,104 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+@font-face {
+  font-family: "font-abril-semibold";
+  src: url("../font/Abril_Display/Abril_Display_SemiBold.otf");
+}
+
+.font-abril-semibold {
+  font-family: "font-abril-semibold", sans-serif;
+}
+
+@font-face {
+  font-family: "font-abril-bold";
+  src: url("../font/Abril_Display/Abril_Display_Bold.otf");
+}
+
+.font-abril-bold {
+  font-family: "font-abril-bold", sans-serif;
+}
+
 :root {
-  --font-xsm: 10px;
-  --font-xxs: 12px;
-  --font-xs: 14px;
-  --font-sm: 16px;
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-base: 16px;
   --font-md: 18px;
-  --font-md-large: 19px;
-  --font-lg: 21px;
+  --font-lg: 20px;
   --font-xl: 22px;
   --font-2xl: 28px;
-  --font-3xl: 29px;
-  --font-4xl: 39px;
-  --font-5xl: 50px;
-  --font-6xl: 62px;
-  --light-grey: #95959d;
-  --dark-white: #afafb5;
-  --grey: #dddddd;
-  --dark-grey: #76767f;
-  --blue: #4c57ff;
-  --light-black: #0e1122;
-  --black: #000000;
-  --light-yellow: #efece6;
+  --font-3xl: 40px;
+  --font-4xl: 50px;
+  --font-5xl: 62px;
 }
 
 @media (max-width: 1199.98px) {
   :root {
-    --font-5xl: 42px;
+    --font-sm: 12px;
+    --font-base: 14px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-3xl: 32px;
+    --font-4xl: 42px;
+    --font-5xl: 54px;
   }
 }
 
 @media (max-width: 991.98px) {
   :root {
-    --font-sm: 16px;
-    --font-md: 18px;
+    --font-md: 16px;
     --font-lg: 18px;
-    --font-xl: 22px;
-    --font-2xl: 26px;
-    --font-3xl: 26px;
-    --font-4xl: 34px;
-    --font-6xl: 60px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  :root {
-    --font-sm: 16px;
-    --font-md: 18px;
-    --font-lg: 20px;
-    --font-xl: 20px;
-    --font-2xl: 26px;
-    --font-3xl: 26px;
-    --font-4xl: 30px;
-    --font-6xl: 52px;
+    --font-xl: 18px;
+    --font-3xl: 28px;
+    --font-4xl: 38px;
+    --font-5xl: 50px;
   }
 }
 
 @media (max-width: 575.98px) {
   :root {
-    --font-sm: 14px;
-    --font-md: 12px;
-    --font-md-large: 12px;
-    --font-lg: 20px;
-    --font-xl: 18px;
-    --font-2xl: 26px;
-    --font-3xl: 26px;
-    --font-4xl: 28px;
-    --font-5xl: 31px;
-    --font-6xl: 47px;
+    --font-md: 14px;
+    --font-lg: 16px;
+    --font-2xl: 28px;
+    --font-4xl: 32px;
+    --font-5xl: 47px;
   }
 }
 
-.font-xxs {
-  font-size: var(--font-xxs);
+@media (max-width: 374.98px) {
+  :root {
+    --font-2xl: 24px;
+    --font-4xl: 38px;
+    --font-5xl: 36px;
+  }
 }
 
 .font-xs {
-  font-size: var(--font-xs) !important;
-}
-
-.font-xsm {
-  font-size: var(--font-xsm) !important;
+  font-size: var(--font-xs);
 }
 
 .font-sm {
   font-size: var(--font-sm);
 }
 
+.font-base {
+  font-size: var(--font-base);
+}
+
 .font-md {
   font-size: var(--font-md);
-}
-
-.font-md-large {
-  font-size: var(--font-md-large);
-}
-
-.font-lg {
-  font-size: var(--font-lg);
-}
-
-.font-xl {
-  font-size: var(--font-xl);
 }
 
 .font-lg {
@@ -123,10 +123,6 @@
 
 .font-5xl {
   font-size: var(--font-5xl);
-}
-
-.font-6xl {
-  font-size: var(--font-6xl);
 }
 
 .text-blue {
@@ -169,8 +165,30 @@
   background-color: var(--light-yellow) !important;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* .heading {
+  font-size: var(--font-3xl);
+  font-weight: 600;
+  font-family: "font-abril-semibold";
+} */
+
 .transition_03s {
   transition: all 0.3s ease-in-out;
+}
+
+.transition_05s {
+  transition: all .5s linear;
+}
+
+.top_n_100 {
+  top: -100px;
+}
+
+.top_0 {
+  top: 0 !important;
 }
 
 .image_zoom_hover {
@@ -180,6 +198,7 @@
 .image_zoom_hover:hover img {
   transform: scale(1.06);
 }
+
 .layer_bg {
   position: absolute;
   top: 0;
@@ -191,6 +210,27 @@
   z-index: 1;
   opacity: 0.6;
 }
+
 .min_h_hero {
   min-height: 800px !important;
+}
+
+/* HERO CSS START HERE */
+.container_modified {
+  max-width: 1240px;
+}
+
+.hero_parent {
+  margin-top: -64px;
+}
+
+.hero_img_parent {
+  z-index: -1;
+  height: 100vh !important;
+  object-fit: cover;
+}
+
+.hero_blur_card {
+  max-width: 365px;
+  transform: translateX(80px);
 }
