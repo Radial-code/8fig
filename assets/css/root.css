@@ -14,21 +14,26 @@ body {
 }
 
 @font-face {
-  font-family: "font-abril-semibold";
+  font-family: font-abril-semibold;
   src: url("../font/Abril_Display/Abril_Display_SemiBold.otf");
-}
-
-.font-abril-semibold {
-  font-family: "font-abril-semibold", sans-serif;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "font-abril-bold";
+  font-family: font-abril-bold;
   src: url("../font/Abril_Display/Abril_Display_Bold.otf");
+  font-style: normal;
+  font-display: swap;
+
+}
+
+.font-abril-semibold {
+  font-family: font-abril-semibold;
 }
 
 .font-abril-bold {
-  font-family: "font-abril-bold", sans-serif;
+  font-family: font-abril-bold;
 }
 
 :root {
@@ -40,7 +45,7 @@ body {
   --font-lg: 20px;
   --font-xl: 22px;
   --font-2xl: 28px;
-  --font-3xl: 40px;
+  --font-3xl: 39px;
   --font-4xl: 50px;
   --font-5xl: 62px;
 
@@ -195,7 +200,7 @@ body {
 }
 
 .letter_spacing {
-  letter-spacing: 8%;
+  letter-spacing: 1px !important;
 }
 
 .hide_header {
