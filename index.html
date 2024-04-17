@@ -69,7 +69,8 @@ AI technology that predicts, plans, and protects your cash flow." />
     </div>
     <div class="hero_slider h-100">
       <div class="m-0 overflow-hidden">
-        <video loop autoplay muted class="w-100 hero_img_parent position-absolute pointer-event-none">
+        <video id="myVideo" loop playsinline muted autoplay
+          class="w-100 hero_img_parent position-absolute pointer-event-none">
           <source src="./assets/video/hero-video.mp4" type="video/mp4">
         </video>
         <div class="container container_modified px-0 px-md-3 d-flex justify-content-between align-items-center
@@ -952,6 +953,12 @@ AI technology that predicts, plans, and protects your cash flow." />
   <script src="/assets/js/header.js"></script>
   <script src="./assets/js/gsap.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script>  var video = document.getElementById("myVideo");
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    if (isSafari) {
+      video.setAttribute("playsinline", "");
+      video.setAttribute("webkit-playsinline", "");
+    }</script>
 </body>
 
 </html>
