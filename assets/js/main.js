@@ -21,20 +21,6 @@ $(document).ready(function () {
 var currentYear = new Date().getFullYear();
 document.getElementById("currentYear").innerText = currentYear;
 
-// hero js code 
-$(document).ready(function () {
-    $(".hero_slider").slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
-        speed: 2000,
-        slidesToShow: 1,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 8000,
-    });
-});
-
 // JOIN COMMUNITY SLIDER CODE
  $(".slider_new_custom").slick({
      dots: true,
