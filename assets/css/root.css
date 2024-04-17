@@ -32,6 +32,7 @@ body {
 }
 
 :root {
+  /* FONT-SIZES */
   --font-xs: 12px;
   --font-sm: 14px;
   --font-base: 16px;
@@ -42,7 +43,19 @@ body {
   --font-3xl: 40px;
   --font-4xl: 50px;
   --font-5xl: 62px;
+
+  /* COLORS */
+  --light-grey: #95959d;
+  --dark-white: #afafb5;
+  --grey: #dddddd;
+  --dark-grey: #76767f;
+  --blue: #4c57ff;
+  --light-black: #0e1122;
+  --black: #000000;
+  --light-yellow: #efece6;
 }
+
+
 
 @media (max-width: 1199.98px) {
   :root {
