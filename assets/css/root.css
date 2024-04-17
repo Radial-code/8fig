@@ -228,12 +228,7 @@ body {
   max-width: 1240px;
 }
 
-/* .hero_parent {
-  margin-top: -64px;
-} */
-
 .hero_img_parent {
-  z-index: -1;
   height: 100vh !important;
   object-fit: cover;
 }
