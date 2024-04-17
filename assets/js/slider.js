@@ -1,14 +1,16 @@
 const tl2 = gsap.timeline({
   scrollTrigger: {
     fastScrollEnd: true,
-    trigger: ".pin_scroll",
+    trigger: ".pinned-section",
     start: "top top ",
-    end: "+=300%",
+    end: "+=350%",
     scrub: 1,
     pin: true,
+    pinSpacing: true,
+    markers:true
   },
 });
- 
+ gsap.set(".pin_scroll",{height:"100vh"})
 if (window.innerWidth >=1300 ) {tl2
   .to(
     ".card-img-1",
@@ -64,19 +66,29 @@ if (window.innerWidth >=1300 ) {tl2
     }
   )
   .fromTo(
-    [".animate_garident"],
+    [".animate_garident svg"],
     {
-      width: 0,
-      opacity: 0,
-      height: 15,
+      height: 15, y:-7,width:0
     },
     {
       width: 300,
-      height: 15,
-      opacity: 1,
+      opacity: 1,y:-7,width:200,x:-2
     },
     "-=.5"
-  )
+)
+  .fromTo(
+    [".card-img-6"],
+    {
+     
+      opacity: 0,x:30
+    },
+    {
+    
+      opacity: 1,x:10
+    },
+    "-=.5"
+)
+  
   .fromTo(
     [".dot-4"],
     {
@@ -93,10 +105,13 @@ if (window.innerWidth >=1300 ) {tl2
   .fromTo(
     [".animate_garident_second"],
     {
-      opacity: 0,
+            height: 15,width:0,
+
+      opacity: 1,y:-1
     },
     {
-      opacity: 1,
+      opacity: 1,      height: 15,width:400,y:-1
+
     }
   )
 
@@ -107,7 +122,7 @@ if (window.innerWidth >=1300 ) {tl2
     },
     {
       opacity: 0,
-    }
+    },"-=.3"
   )
   .fromTo(
     [".card-img-5"],
@@ -134,10 +149,11 @@ if (window.innerWidth >=1300 ) {tl2
   .fromTo(
     [".animate_garident_third"],
     {
-      opacity: 0,
+      width:0,
+      opacity: 0,y:-1
     },
-    {
-      opacity: 1,
+    {width:150,
+      opacity: 1,y:-1
     }
   )
   .fromTo(
@@ -148,7 +164,7 @@ if (window.innerWidth >=1300 ) {tl2
     },
     {
       opacity: 1,
-      x: 300,
+      x: 250,
     }
   )
   .fromTo(
@@ -234,19 +250,29 @@ else if (window.innerWidth >=1100 && window.innerWidth < 1299) {tl2
     }
   )
   .fromTo(
-    [".animate_garident"],
+    [".animate_garident svg"],
     {
-      width: 0,
-      opacity: 0,
-      height: 15,
+      height: 15, y:-7,width:0
     },
     {
       width: 300,
-      height: 15,
-      opacity: 1,
+      opacity: 1,y:-7,width:200,x:-2
     },
     "-=.5"
-  )
+)
+  .fromTo(
+    [".card-img-6"],
+    {
+     
+      opacity: 0,x:30
+    },
+    {
+    
+      opacity: 1,x:10
+    },
+    "-=.5"
+)
+  
   .fromTo(
     [".dot-4"],
     {
@@ -263,10 +289,13 @@ else if (window.innerWidth >=1100 && window.innerWidth < 1299) {tl2
   .fromTo(
     [".animate_garident_second"],
     {
-      opacity: 0,
+            height: 15,width:0,
+
+      opacity: 1,y:-1
     },
     {
-      opacity: 1,
+      opacity: 1,      height: 15,width:400,y:-1
+
     }
   )
 
@@ -277,7 +306,7 @@ else if (window.innerWidth >=1100 && window.innerWidth < 1299) {tl2
     },
     {
       opacity: 0,
-    }
+    },"-=.3"
   )
   .fromTo(
     [".card-img-5"],
@@ -304,10 +333,11 @@ else if (window.innerWidth >=1100 && window.innerWidth < 1299) {tl2
   .fromTo(
     [".animate_garident_third"],
     {
-      opacity: 0,
+      width:0,
+      opacity: 0,y:-1
     },
-    {
-      opacity: 1,
+    {width:150,
+      opacity: 1,y:-1
     }
   )
   .fromTo(
@@ -318,7 +348,7 @@ else if (window.innerWidth >=1100 && window.innerWidth < 1299) {tl2
     },
     {
       opacity: 1,
-      x: 300,
+      x: 250,
     }
   )
   .fromTo(
@@ -340,13 +370,12 @@ else if (window.innerWidth >=1100 && window.innerWidth < 1299) {tl2
       duration: 2,
     },
     {
-      x: -800,
+      x: -750,
+
       duration: 2,
     },
     "-=2"
   );
-
-    
 }
 else if (window.innerWidth >=1024 && window.innerWidth < 1199) {tl2
   .to(
@@ -403,19 +432,41 @@ else if (window.innerWidth >=1024 && window.innerWidth < 1199) {tl2
     }
   )
   .fromTo(
-    [".animate_garident"],
+    [".animate_garident svg"],
     {
-      width: 0,
-      opacity: 0,
-      height: 15,
+      height: 15, y:-7,width:0
     },
     {
       width: 300,
-      height: 15,
-      opacity: 1,
+      opacity: 1,y:-7,width:200,x:-2
     },
     "-=.5"
+)
+  .fromTo(
+    [".scroll_element"],
+    {
+      x: 0,
+      duration: 2,
+    },
+    {
+      x: -500,
+
+      duration: 2,
+    }
   )
+  .fromTo(
+    [".card-img-6"],
+    {
+     
+      opacity: 0,x:30
+    },
+    {
+    
+      opacity: 1,x:10
+    },
+    "-=.5"
+)
+  
   .fromTo(
     [".dot-4"],
     {
@@ -427,16 +478,20 @@ else if (window.innerWidth >=1024 && window.innerWidth < 1199) {tl2
       opacity: 1,
       x: 21,
       scale: 1,
-    }
+    },"-=.5"
   )
   .fromTo(
     [".animate_garident_second"],
     {
-      opacity: 0,
+            height: 15,width:0,
+
+      opacity: 1,y:-1
     },
     {
-      opacity: 1,
+      opacity: 1,      height: 15,width:400,y:-1
+
     }
+    ,"-=.8"
   )
 
   .fromTo(
@@ -446,7 +501,7 @@ else if (window.innerWidth >=1024 && window.innerWidth < 1199) {tl2
     },
     {
       opacity: 0,
-    }
+    },"-=.3"
   )
   .fromTo(
     [".card-img-5"],
@@ -473,10 +528,11 @@ else if (window.innerWidth >=1024 && window.innerWidth < 1199) {tl2
   .fromTo(
     [".animate_garident_third"],
     {
-      opacity: 0,
+      width:0,
+      opacity: 0,y:-1
     },
-    {
-      opacity: 1,
+    {width:150,
+      opacity: 1,y:-1
     }
   )
   .fromTo(
@@ -487,7 +543,7 @@ else if (window.innerWidth >=1024 && window.innerWidth < 1199) {tl2
     },
     {
       opacity: 1,
-      x: 300,
+      x: 250,
     }
   )
   .fromTo(
@@ -502,20 +558,20 @@ else if (window.innerWidth >=1024 && window.innerWidth < 1199) {tl2
     }
   )
 
-  .fromTo(
+    .fromTo(
     [".scroll_element"],
     {
-      x: 0,
+      x: -500,
       duration: 2,
     },
     {
-      x: -970,
+      x: -1000,
+
       duration: 2,
-    },
-    "-=2.6"
-  );
-
-
+      }
+    ,"-=2"
+)
+  
 }
 else if (window.innerWidth >=768 && window.innerWidth < 1023) {tl2
   .to(
@@ -570,21 +626,43 @@ else if (window.innerWidth >=768 && window.innerWidth < 1023) {tl2
 
       x: 0,
     }
+  )  .fromTo(
+    [".scroll_element"],
+    {
+      x: 0,
+      duration: 2,
+    },
+    {
+      x: -500,
+
+      duration: 2,
+    },"-=1"
   )
   .fromTo(
-    [".animate_garident"],
+    [".animate_garident svg"],
     {
-      width: 0,
-      opacity: 0,
-      height: 15,
+      height: 15, y:-7,width:0
     },
     {
       width: 300,
-      height: 15,
-      opacity: 1,
+      opacity: 1,y:-7,width:200,x:-2
     },
-    "-=.5"
-  )
+  "-=1.7"
+)
+
+  .fromTo(
+    [".card-img-6"],
+    {
+     
+      opacity: 0,x:30
+    },
+    {
+    
+      opacity: 1,x:10
+    },
+    
+)
+  
   .fromTo(
     [".dot-4"],
     {
@@ -596,17 +674,21 @@ else if (window.innerWidth >=768 && window.innerWidth < 1023) {tl2
       opacity: 1,
       x: 21,
       scale: 1,
-    }
+    },
   )
   .fromTo(
     [".animate_garident_second"],
     {
-      opacity: 0,
+            height: 15,width:0,
+
+      opacity: 1,y:-1
     },
     {
-      opacity: 1,
+      opacity: 1,      height: 15,width:400,y:-1
+
     }
-)
+    ,"-=.8"
+  )
 
   .fromTo(
     [".animate_garident"],
@@ -615,8 +697,9 @@ else if (window.innerWidth >=768 && window.innerWidth < 1023) {tl2
     },
     {
       opacity: 0,
-    }
-  )
+    },
+)
+
   .fromTo(
     [".card-img-5"],
     {
@@ -625,7 +708,7 @@ else if (window.innerWidth >=768 && window.innerWidth < 1023) {tl2
     {
       x: 250,
     },
-    "-=.5"
+    
   )
 
   .fromTo(
@@ -642,10 +725,11 @@ else if (window.innerWidth >=768 && window.innerWidth < 1023) {tl2
   .fromTo(
     [".animate_garident_third"],
     {
-      opacity: 0,
+      width:0,
+      opacity: 0,y:-1
     },
-    {
-      opacity: 1,
+    {width:150,
+      opacity: 1,y:-1
     }
   )
   .fromTo(
@@ -656,7 +740,7 @@ else if (window.innerWidth >=768 && window.innerWidth < 1023) {tl2
     },
     {
       opacity: 1,
-      x: 300,
+      x: 250,
     }
   )
   .fromTo(
@@ -671,23 +755,25 @@ else if (window.innerWidth >=768 && window.innerWidth < 1023) {tl2
     }
   )
 
-  .fromTo(
+    .fromTo(
     [".scroll_element"],
     {
-      x: 0,
+      x: -500,
       duration: 2,
     },
     {
       x: -1250,
+
       duration: 2,
-    },
-    "-=3.2"
-  );
+      }
+    ,"-=2.8"
+)
 }
 else if (window.innerWidth >=576 && window.innerWidth < 767) {tl2
-  .to(
+   .to(
     ".card-img-1",
-    {
+     {
+      scale:.8,
       opacity: 1,
     },
     "-0.1"
@@ -701,7 +787,7 @@ else if (window.innerWidth >=576 && window.innerWidth < 767) {tl2
     },
     {
       opacity: 1,
-      x: 0,
+      x: -50,
     }
   )
   .fromTo(
@@ -712,7 +798,7 @@ else if (window.innerWidth >=576 && window.innerWidth < 767) {tl2
     },
     {
       opacity: 1,
-      x: 0,
+      x: -50,
     }
   )
   .fromTo(
@@ -725,17 +811,6 @@ else if (window.innerWidth >=576 && window.innerWidth < 767) {tl2
       opacity: 1,
       x: 0,
     }
-  )   .fromTo(
-    [".scroll_element"],
-    {
-      x: 0,
-      duration: 2,
-    },
-    {
-      x: -500,
-      duration: 2,
-    },
-    
   )
   .fromTo(
     [".card-img-5"],
@@ -748,22 +823,43 @@ else if (window.innerWidth >=576 && window.innerWidth < 767) {tl2
 
       x: 0,
     }
-)
- 
-  .fromTo(
-    [".animate_garident"],
+  )  .fromTo(
+    [".scroll_element"],
     {
-      width: 0,
-      opacity: 0,
-      height: 15,
+      x: 0,
+      duration: 2,
+    },
+    {
+      x: -600,
+
+      duration: 2,
+    },"-=1.2"
+  )
+  .fromTo(
+    [".animate_garident svg"],
+    {
+      height: 15, y:-7,width:0
     },
     {
       width: 300,
-      height: 15,
-      opacity: 1,
+      opacity: 1,y:-7,width:200,x:-2
     },
-    "-=.5"
-  )
+  "-=1.4"
+)
+
+  .fromTo(
+    [".card-img-6"],
+    {
+     
+      opacity: 0,x:30
+    },
+    {
+    
+      opacity: 1,x:10
+    },
+    
+)
+  
   .fromTo(
     [".dot-4"],
     {
@@ -775,31 +871,22 @@ else if (window.innerWidth >=576 && window.innerWidth < 767) {tl2
       opacity: 1,
       x: 21,
       scale: 1,
-    }
-)
-  
-
+    },
+  )
   .fromTo(
     [".animate_garident_second"],
     {
-      opacity: 0,
+            height: 15,width:0,
+
+      opacity: 1,y:-1
     },
     {
-      opacity: 1,
+      opacity: 1,      height: 15,width:400,y:-1
+
     }
-)
-   .fromTo(
-    [".scroll_element"],
-    {
-      x: -500,
-      duration: 2,
-    },
-    {
-      x: -800,
-      duration: 2,
-    },
-    
+    ,"-=.8"
   )
+
   .fromTo(
     [".animate_garident"],
     {
@@ -807,8 +894,9 @@ else if (window.innerWidth >=576 && window.innerWidth < 767) {tl2
     },
     {
       opacity: 0,
-    }
-  )
+    },
+)
+
   .fromTo(
     [".card-img-5"],
     {
@@ -817,7 +905,7 @@ else if (window.innerWidth >=576 && window.innerWidth < 767) {tl2
     {
       x: 250,
     },
-    "-=.5"
+    
   )
 
   .fromTo(
@@ -834,10 +922,11 @@ else if (window.innerWidth >=576 && window.innerWidth < 767) {tl2
   .fromTo(
     [".animate_garident_third"],
     {
-      opacity: 0,
+      width:0,
+      opacity: 0,y:-1
     },
-    {
-      opacity: 1,
+    {width:150,
+      opacity: 1,y:-1
     }
   )
   .fromTo(
@@ -848,7 +937,7 @@ else if (window.innerWidth >=576 && window.innerWidth < 767) {tl2
     },
     {
       opacity: 1,
-      x: 300,
+      x: 250,
     }
   )
   .fromTo(
@@ -863,27 +952,30 @@ else if (window.innerWidth >=576 && window.innerWidth < 767) {tl2
     }
   )
 
-  .fromTo(
+    .fromTo(
     [".scroll_element"],
     {
-      x: -800,
+      x: -600,
       duration: 2,
     },
     {
-      x: -1400,
+      x: -1430,
+
       duration: 2,
-    },
-    "-=1.4"
-  );
+      }
+    ,"-=2.8"
+)
 }
 else if (window.innerWidth >=0 && window.innerWidth < 576) {tl2
-  .to(
+    .to(
     ".card-img-1",
-    {
+     {
+      scale:.8,
       opacity: 1,
     },
     "-0.1"
   )
+
   .fromTo(
     [".card-img-2", ".dot-1"],
     {
@@ -892,18 +984,7 @@ else if (window.innerWidth >=0 && window.innerWidth < 576) {tl2
     },
     {
       opacity: 1,
-      x: 0,
-    }
-)
-   .fromTo(
-    [".scroll_element"],
-    {
-      x: 0,
-      duration: 2,
-    },
-    {
-      x: -250,
-      duration: 2,
+      x: -50,
     }
   )
   .fromTo(
@@ -914,18 +995,7 @@ else if (window.innerWidth >=0 && window.innerWidth < 576) {tl2
     },
     {
       opacity: 1,
-      x: 0,
-    }
-)
-     .fromTo(
-    [".scroll_element"],
-    {
-      x: -250,
-      duration: 2,
-    },
-    {
-      x: -300,
-      duration: 2,
+      x: -50,
     }
   )
   .fromTo(
@@ -950,33 +1020,43 @@ else if (window.innerWidth >=0 && window.innerWidth < 576) {tl2
 
       x: 0,
     }
-)
-     .fromTo(
+  )  .fromTo(
     [".scroll_element"],
     {
-      x: -300,
+      x: 0,
       duration: 2,
     },
     {
-      x: -650,
+      x: -800,
+
       duration: 2,
-    }
+    },"-=1.6"
   )
   .fromTo(
-    [".animate_garident"],
+    [".animate_garident svg"],
     {
-      width: 0,
-      opacity: 0,
-      height: 15,
+      height: 15, y:-7,width:0
     },
     {
       width: 300,
-      height: 15,
-      opacity: 1,
+      opacity: 1,y:-7,width:200,x:-2
     },
-    "-=.5"
+  "-=1.4"
 )
 
+  .fromTo(
+    [".card-img-6"],
+    {
+     
+      opacity: 0,x:30
+    },
+    {
+    
+      opacity: 1,x:10
+    },
+    
+)
+  
   .fromTo(
     [".dot-4"],
     {
@@ -988,28 +1068,21 @@ else if (window.innerWidth >=0 && window.innerWidth < 576) {tl2
       opacity: 1,
       x: 21,
       scale: 1,
-    }
-)
-       .fromTo(
-    [".scroll_element"],
-    {
-      x: -650,
-      duration: 2,
     },
-    {
-      x: -850,
-      duration: 2,
-    }
   )
   .fromTo(
     [".animate_garident_second"],
     {
-      opacity: 0,
+            height: 15,width:0,
+
+      opacity: 1,y:-1
     },
     {
-      opacity: 1,
+      opacity: 1,      height: 15,width:400,y:-1
+
     }
-)
+    ,"-=.8"
+  )
 
   .fromTo(
     [".animate_garident"],
@@ -1018,19 +1091,9 @@ else if (window.innerWidth >=0 && window.innerWidth < 576) {tl2
     },
     {
       opacity: 0,
-    }
-)
-         .fromTo(
-    [".scroll_element"],
-    {
-      x: -850,
-      duration: 2,
     },
-    {
-      x: -1250,
-      duration: 2,
-    }
-  )
+)
+
   .fromTo(
     [".card-img-5"],
     {
@@ -1039,8 +1102,8 @@ else if (window.innerWidth >=0 && window.innerWidth < 576) {tl2
     {
       x: 250,
     },
-    "-=.5"
-)
+    
+  )
 
   .fromTo(
     [".card_green_2", ".dot-6"],
@@ -1052,16 +1115,15 @@ else if (window.innerWidth >=0 && window.innerWidth < 576) {tl2
       opacity: 1,
       x: 0,
     }
-)
-  
-    
+  )
   .fromTo(
     [".animate_garident_third"],
     {
-      opacity: 0,
+      width:0,
+      opacity: 0,y:-1
     },
-    {
-      opacity: 1,
+    {width:150,
+      opacity: 1,y:-1
     }
   )
   .fromTo(
@@ -1072,7 +1134,7 @@ else if (window.innerWidth >=0 && window.innerWidth < 576) {tl2
     },
     {
       opacity: 1,
-      x: 300,
+      x: 250,
     }
   )
   .fromTo(
@@ -1086,16 +1148,18 @@ else if (window.innerWidth >=0 && window.innerWidth < 576) {tl2
       x: 100,
     }
   )
-         .fromTo(
+
+    .fromTo(
     [".scroll_element"],
     {
-      x: -1250,
+      x: -800,
       duration: 2,
     },
     {
-      x: -1600,
+      x: -1630,
+
       duration: 2,
-    },"-=1.5"
-  )
- 
+      }
+    ,"-=1.9"
+)
 }
