@@ -37,15 +37,24 @@ AI technology that predicts, plans, and protects your cash flow." />
 
     <!-- Meta Tags Generated with https://metatags.io -->
     <style>
-        .hide_header {
-            transform: translateY(-100%);
+        .transition_05s {
+            transition: all .5s linear;
+        }
+
+        .top_n_100 {
+            top: -100px;
+        }
+
+        .top_0 {
+            top: 0 !important;
         }
     </style>
 </head>
 
 <body>
     <!-- header start  -->
-    <div class="d-flex content-container justify-content-between position-sticky top-0 px-4 py-3 z-3 transition_03s">
+    <div
+        class="d-flex content-container justify-content-between position-sticky px-4 py-3 z-3 transition_05s top_n_100">
         <a href="/"><svg class="cursor-pointer z-2" width="51" height="32" viewBox="0 0 51 32" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path class="path_fill transition_03s"
@@ -65,7 +74,7 @@ AI technology that predicts, plans, and protects your cash flow." />
                     fill="white" />
             </svg>
         </a>
-        <button class="font-poppins fw-medium font-xxs get-btn">
+        <button class="font-poppins fw-medium font-xxs get-btn get_nav_btn d-none">
             Get Funded
         </button>
     </div>
@@ -1072,33 +1081,7 @@ AI technology that predicts, plans, and protects your cash flow." />
     </script>
 
     <!-- HEADER BG CODE -->
-    <script>
-        let prevScrollPosition = 0;
-        let isHeaderVisible = false;
-
-        function handleScroll() {
-            const currentScrollPosition = window.scrollY;
-            let visibleHeader = isHeaderVisible;
-
-            if (currentScrollPosition > 768) {
-                visibleHeader = prevScrollPosition > currentScrollPosition;
-                document.querySelector(".content-container").classList.add("hide_header")
-            }
-
-            prevScrollPosition = currentScrollPosition;
-            isHeaderVisible = visibleHeader;
-
-            if (isHeaderVisible === true) {
-                document.querySelector(".content-container").classList.add("background_blur_header");
-                document.querySelector(".content-container").classList.remove("hide_header")
-            } else {
-                document.querySelector(".content-container").classList.remove("background_blur_header");
-                document.querySelector(".content-container").classList.remove("hide_header")
-
-            }
-        }
-
-        window.addEventListener("scroll", handleScroll);
+    <script src="/assets/js/header.js">
 
     </script>
 
