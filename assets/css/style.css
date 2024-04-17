@@ -405,7 +405,7 @@
   line-height: 106%;
 }
 .accordion-item{ border: 0 !important;}
-.accordion-button:not(.collapsed) { color: #4c57ff !important;}
+.accordion-button:not(.collapsed) { color: black !important;}
 @media (max-width: 1279.98px) {
   .blur-card-1 {
     top: -17%;
