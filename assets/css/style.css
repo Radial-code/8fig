@@ -116,7 +116,7 @@
   background: #4c57ff;
   border-radius: 24px;
   padding: 10px 49px;
-  border: 1px solid #4c57ff;
+  border: 1.5px solid #4c57ff;
   transition: all 200ms linear;
 }
 
@@ -129,11 +129,11 @@
 }
 
 .get-btn2:hover {
-  background: transparent;
+  background: #ffffff;
   border-radius: 24px;
   color: #4c57ff !important;
   padding: 10px 49px;
-  border: 1px solid #4c57ff;
+  border: 1.5px solid #4c57ff;
 }
 
 .mt_6 {
@@ -404,7 +404,8 @@
 .lh_106 {
   line-height: 106%;
 }
-
+.accordion-item{ border: 0 !important;}
+.accordion-button:not(.collapsed) { color: #4c57ff !important;}
 @media (max-width: 1279.98px) {
   .blur-card-1 {
     top: -17%;
@@ -489,6 +490,9 @@
   .get-btn2 {
     padding: 10px 24px;
   }
+  .get-btn2:hover {
+    padding: 10px 24px !important;
+  }
 
   .mx_slider_custom {
     margin-left: 20px;
@@ -540,6 +544,7 @@
 }
 
 @media (max-width: 575.98px) {
+  .fw_normal_mobile{ font-weight: 400 !important;}
   .study {
     padding-top: 60px;
   }
@@ -562,13 +567,13 @@
     object-fit: cover !important;
   }
 
-  .image_zoom_hover {
+  /* .image_zoom_hover {
     border-radius: 0px !important;
   }
 
   .image_zoom_hover:hover img {
     transform: unset !important;
-  }
+  } */
 
   .rating_icon {
     width: 55px;
@@ -644,13 +649,11 @@
     border-radius: 40px;
     width: 330 !important;
     object-fit: cover;
-  }
-
-  .image_zoom_hover .study-img-2 {
+  }  .image_zoom_hover .study-img-2 {
     transform: translateX(-60px);
     border-radius: 40px;
     max-height: 270px !important;
-    object-fit: cover !important;
+    object-fit: cover !important; 
   }
 }
 
@@ -705,7 +708,6 @@
   outline: none !important;
   box-shadow: none !important;
   background-color: #efece6 !important;
-  border: 0px !important;
   border-bottom: 1px solid #dddddf !important;
   font-size: 18px !important;
   padding: 20px 16px !important;
@@ -1121,7 +1123,15 @@
   fill: black;
 }
 
+
 @media (min-width: 768px) {
+  .image_zoom_hover {
+  border-radius: 40px;
+}
+
+.image_zoom_hover:hover img {
+  transform: scale(1.06);
+}
   .slick-dotted.slick-slider {
     margin-bottom: 48px !important;
   }

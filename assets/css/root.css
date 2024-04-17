@@ -25,7 +25,6 @@ body {
   src: url("../font/Abril_Display/Abril_Display_Bold.otf");
   font-style: normal;
   font-display: swap;
-
 }
 
 .font-abril-semibold {
@@ -185,11 +184,12 @@ body {
   cursor: pointer;
 }
 
-/* .heading {
-  font-size: var(--font-3xl);
-  font-weight: 600;
-  font-family: "font-abril-semibold";
-} */
+.pointer-event-none {
+  pointer-events: none;
+}
+.pointer-event-all {
+  pointer-events: all;
+}
 
 .transition_03s {
   transition: all 0.3s ease-in-out;
@@ -205,14 +205,6 @@ body {
 
 .hide_header {
   transform: translateY(-100%);
-}
-
-.image_zoom_hover {
-  border-radius: 40px;
-}
-
-.image_zoom_hover:hover img {
-  transform: scale(1.06);
 }
 
 .layer_bg {
