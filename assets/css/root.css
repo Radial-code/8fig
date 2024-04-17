@@ -95,8 +95,11 @@ body {
 @media (max-width: 374.98px) {
   :root {
     --font-2xl: 24px;
-    --font-4xl: 38px;
+    --font-4xl: 30px;
     --font-5xl: 36px;
+  }
+  .line_height_mobile_1 {
+    line-height: 100% !important;
   }
 }
 

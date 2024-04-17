@@ -375,7 +375,8 @@ AI technology that predicts, plans, and protects your cash flow." />
                     operations.”
                   </p>
                 </div>
-                <p class="text-black fw-bold font-abril-bold mb-0 font-4xl d-flex align-items-center">
+                <p
+                  class="align-items-center d-flex justify-content-between w-100 line_height_mobile_1 text-black fw-bold font-abril-bold mb-0 font-3xl d-flex align-items-center">
                   450%<span class="fw-semibold font-abril-bold ms-2 ps-1 font-lg">Shopify store
                     growth</span>
                 </p>
@@ -399,7 +400,7 @@ AI technology that predicts, plans, and protects your cash flow." />
                 an incredibly short amount of time.”
               </p>
               <p
-                class="text-blackn pt-2 pt-sm-0 pt-xl-1 fw-bold font-abril-bold font-4xl d-flex align-items-center mt-5 pt-xl-4 mb-0">
+                class="align-items-center d-flex justify-content-between w-100 line_height_mobile_1 text-blackn pt-2 pt-sm-0 pt-xl-1 fw-bold font-abril-bold font-3xl d-flex align-items-center mt-5 pt-xl-4 mb-0">
                 $5M<span class="fw-semibold font-abril-bold ms-2 ps-1 font-lg">Net revenue</span>
               </p>
             </div>
@@ -421,8 +422,9 @@ AI technology that predicts, plans, and protects your cash flow." />
                 8Fig, it was growth, growth, growth.”
               </p>
               <p
-                class="text-black pt-3 pt-sm-1 fw-bold font-abril-bold font-4xl d-flex align-items-lg-end align-items-xl-center mt-xl-5 pt-xl-4 mb-0">
-                639%<span class="fw-semibold font-abril-bold ms-2 ps-1 pe-xl-4 font-lg">Amazon store
+                class="align-items-center d-flex justify-content-between w-100 line_height_mobile_1  text-black pt-3 pt-sm-1 fw-bold font-abril-bold font-3xl d-flex align-items-lg-end align-items-xl-center mt-xl-5 pt-xl-4 mb-0">
+                639%<span class="fw-semibold font-abril-bold ms-2 ps-1 pe-xl-4 font-lg line_height_mobile_1">Amazon
+                  store
                   growth
                   in a year</span>
               </p>
@@ -446,7 +448,7 @@ AI technology that predicts, plans, and protects your cash flow." />
                 integrity”
               </p>
               <p
-                class="text-black fw-bold font-abril-bold font-4xl d-flex align-items-center mt-4 mt-sm-0 mt-xl-4 pt-3 pt-sm-4 mb-0">
+                class="align-items-center d-flex justify-content-between w-100 line_height_mobile_1 text-black fw-bold font-abril-bold font-3xl d-flex align-items-center mt-4 mt-sm-0 mt-xl-4 pt-3 pt-sm-4 mb-0">
                 370%<span class="fw-semibold font-abril-bold ms-2 ps-1 me-3 lh-sm font-xl f font-lg-lg">Shopify
                   store growth</span>
               </p>
@@ -470,7 +472,7 @@ AI technology that predicts, plans, and protects your cash flow." />
                 integrity”
               </p>
               <p
-                class="text-black fw-bold font-abril-bold font-4xl d-flex align-items-center mt-4 mt-sm-0 mt-xl-4 pt-3 pt-sm-4 mb-0">
+                class="align-items-center d-flex justify-content-between w-100 line_height_mobile_1 text-black fw-bold font-abril-bold font-3xl d-flex align-items-center mt-4 mt-sm-0 mt-xl-4 pt-3 pt-sm-4 mb-0">
                 5 to 7 figures
                 <span class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg">in 2021</span>
               </p>
@@ -493,7 +495,7 @@ AI technology that predicts, plans, and protects your cash flow." />
                 an incredibly short amount of time.”
               </p>
               <p
-                class="text-blackn pt-2 pt-sm-0 pt-sm-0 pt-xl-1 fw-bold font-abril-bold font-4xl d-flex align-items-center mt-5 pt-xl-4 mb-0">
+                class="align-items-center d-flex justify-content-between w-100 line_height_mobile_1 text-blackn pt-2 pt-sm-0 pt-sm-0 pt-xl-1 fw-bold font-abril-bold font-3xl d-flex align-items-center mt-5 pt-xl-4 mb-0">
                 $5M<span class="fw-semibold font-abril-bold ms-2 ps-1 font-lg">Net revenue</span>
               </p>
             </div>
@@ -892,7 +894,7 @@ AI technology that predicts, plans, and protects your cash flow." />
               ©
             </p>
             <p
-              class="mb-0 d-none d-lg-block font-sm text-dark-grey text-capaitalize text-uppercase fw-medium fw_normal_mobile">
+              class="mb-0 d-none d-lg-block font-sm text-dark-grey text-capaitalize text-uppercase fw-medium fw_normal_mobile ls_8">
               <span id="currentYear"></span> 8fig - All Rights Reserved
             </p>
           </div>
@@ -958,7 +960,17 @@ AI technology that predicts, plans, and protects your cash flow." />
     if (isSafari) {
       video.setAttribute("playsinline", "");
       video.setAttribute("webkit-playsinline", "");
-    }</script>
+    }
+    function backToTopOnReload() {
+      window.onload = function () {
+        // Scroll the window to the top
+        window.scrollTo(0, 0);
+      }
+    }
+
+    // Call the function to enable back to top on window reload
+    backToTopOnReload();
+  </script>
 </body>
 
 </html>
