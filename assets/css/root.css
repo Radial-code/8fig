@@ -253,6 +253,7 @@ body {
 
 .hero_heading_width {
   max-width: 470px;
+  font-family: font-abril-bold;
 }
 
 .hero_para_width {
@@ -282,5 +283,9 @@ body {
     position: absolute;
     right: 0;
     bottom: 50%;
+  }
+
+  .hero_heading_width {
+    font-family: font-abril-semibold;
   }
 }
