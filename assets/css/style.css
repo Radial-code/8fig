@@ -478,6 +478,10 @@
 }
 
 @media (max-width: 767.98px) {
+  .my_n_18_below_md {
+    margin-top: -18px;
+    margin-bottom: -18px;
+  }
   .study {
     padding-top: 100px;
   }
