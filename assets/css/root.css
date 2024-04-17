@@ -237,9 +237,9 @@ body {
   max-width: 1240px;
 }
 
-.hero_parent {
+/* .hero_parent {
   margin-top: -64px;
-}
+} */
 
 .hero_img_parent {
   z-index: -1;
@@ -252,6 +252,14 @@ body {
   transform: translateX(80px);
 }
 
+.hero_heading_width {
+  max-width: 470px;
+}
+
+.hero_para_width {
+  max-width: 400px;
+}
+
 @media (max-width:1399.98px) {
   .hero_blur_card {
     transform: translateX(0px);
@@ -261,5 +269,19 @@ body {
 @media (max-width: 767.98px) {
   .hero_blur_card {
     max-width: 180px;
+  }
+
+  .hero_para_width {
+    max-width: 330px;
+  }
+
+  .hero_content {
+    padding: 0px 32px;
+  }
+
+  .hero_small_img {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
   }
 }
