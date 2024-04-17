@@ -29,7 +29,7 @@
             if (currentScrollPosition > 100) {
                 contentContainer.classList.add("hide_header");
 
-                if (currentScrollPosition > 768) {
+                if (currentScrollPosition >  window.innerHeight) {
                     visibleHeader = prevScrollPosition > currentScrollPosition;
                     contentContainer.classList.add("background_blur_header");
                     contentContainer.classList.remove("hide_header");
@@ -45,7 +45,7 @@
             }
             prevScrollPosition = currentScrollPosition;
             isHeaderVisible = visibleHeader;
-            if (currentScrollPosition > 1000 && !isHeaderVisible && contentContainer.classList.contains("background_blur_header")) {
+            if (currentScrollPosition >  window.innerHeight+300 && !isHeaderVisible && contentContainer.classList.contains("background_blur_header")) {
                 contentContainer.classList.add("hide_header");
             }
         }
