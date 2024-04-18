@@ -1,0 +1,190 @@
+.blur_box_bg {
+    background-color: rgba(222, 222, 222, 0.5);
+    backdrop-filter: blur(10px);
+}
+.hero_small_box_bg {
+    background-color: rgba(243, 245, 255, 0.22);
+    backdrop-filter: blur(10px);
+}
+
+.cash_flow_box {
+    width: 230px;
+    height: 165px;
+    padding: 20px 24px;
+    border-radius: 32px;
+}
+.cash_flow_box h2 {
+    color: #56565d;
+    margin-bottom: 18px;
+    letter-spacing: 8%;
+}
+.revenue_box {
+    width: 218px;
+    height: 171px;
+    padding: 18px;
+    border-radius: 20px;
+}
+.revenue_box h2 {
+    color: #56565d;
+    margin-bottom: 6px;
+    letter-spacing: 2px;
+    max-width: 158px;
+}
+.manufacturing_text {
+    background-color: rgba(255, 255, 255, 0.48);
+    border-radius: 26px;
+    padding: 1px 8px;
+    font-size: 10.49px;
+    border: none;
+    color: #333645;
+}
+.manufacturing_card h2 {
+    font-size: 15.73px;
+}
+.manufacturing_card {
+    padding: 13px 14px;
+    border-radius: 21px;
+    gap: 11px;
+}
+.shipping_card {
+    max-width: 229px;
+    transform: translateX(-35px);
+}
+
+.hero_blur_card {
+    background-color: #d7d9e031;
+    width: 248px;
+    height: 156px;
+    padding: 12px 7px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+.hero_upcoming_card {
+    width: 160px;
+    height: 75px;
+    padding: 12px;
+    border-radius: 12px;
+    top: -42px;
+    left: -58px;
+}
+.forecasted_card {
+    width: 175px;
+    height: 78px;
+    padding: 12px;
+    border-radius: 12px;
+    top: unset !important;
+    left: unset !important;
+    bottom: -19px;
+    right: -38px;
+}
+.hero_upcoming_card div h2 {
+    font-size: 28px;
+}
+.upcoming_text {
+    color: #f2f2f3;
+}
+.sales_card {
+    background-color: rgba(243, 245, 255, 0.22);
+    width: 250px;
+    height: 100px;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    margin-top: 29px;
+    padding: 12px 12px 15px 12px;
+    transform: translateX(-80px);
+}
+.sales_card div h2 {
+    letter-spacing: 2px;
+}
+.hero_start_linear {
+    background: linear-gradient(291.92deg, #f99f55 25.32%, #4c57ff 80.04%);
+    width: 100%;
+    height: 1.5px;
+    margin-top: 11px;
+}
+.hero_blur_all_card {
+    right: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media (max-width: 1199.98px) {
+    .blur-card-1 {
+        left: 0 !important;
+    }
+    .revenue_box {
+        width: 180px;
+        height: 130px;
+    }
+    .cash_flow_box {
+        width: 220px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero_blur_all_card {
+        right: 50px;
+    }
+}
+@media (max-width: 767.98px) {
+    .cash_flow_box {
+        width: 199px;
+        height: 143px;
+        padding: 17px 20px;
+        border-radius: 27px;
+    }
+    .cash_flow_box h2 {
+        font-size: 12px !important;
+        margin-bottom: 12px;
+    }
+    .revenue_box {
+        width: 175px !important;
+        height: 139px !important;
+        padding: 15px;
+        border-radius: 16px;
+    }
+    .revenue_box h2 {
+        font-size: 12px !important;
+        max-width: 128px;
+    }
+    .shipping_card {
+        max-width: 181px;
+        transform: translateX(-27px);
+    }
+    .manufacturing_card {
+        gap: 8px;
+        padding: 10px;
+    }
+    .manufacturing_card h2 {
+        font-size: 12px !important;
+    }
+    .manufacturing_text {
+        font-size: 8px;
+    }
+    .hero_blur_all_card {
+        right: -108px;
+        top: 35%;
+    }
+    .hero_upcoming_card {
+        top: 109px;
+    }
+    .blur-card-1 {
+        left: -15% !important;
+    }
+}
+@media (max-width: 575.98px) {
+    .blur-card-1 {
+        left: 7% !important;
+    }
+}
+@media (max-width: 374.98px) {
+    .blur-card-1 {
+        left: 13% !important;
+    }
+}
+@media (min-width: 1200px) {
+    .cash_flow_box {
+        top: -24px;
+        left: -60px;
+    }
+}
