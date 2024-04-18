@@ -1170,7 +1170,7 @@
   }
 
   #centermode .slick-current,
-  #centermode .slick-clone-current {
+  #centermode .slick-clone-current .slide {
     min-width: 655px;
   }
 
