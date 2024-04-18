@@ -24,17 +24,16 @@ document.getElementById("currentYear").innerText = currentYear;
 // JOIN COMMUNITY SLIDER CODE
  $(".slider_new_custom").slick({
      dots: true,
-
-     infinite: window.innerWidth > 1536 ?true:true,
-     speed: window.innerWidth > 1536 ? 0:0,
-     slidesToShow: 6,
+     infinite: true,
+     speed: 0,
+     slidesToShow: 5,
      centerMode: true,
-    //  focusOnSelect: true,
-     centerPadding: 0,
+     focusOnSelect: true,
+     centerPadding: 60,
      slidesToScroll: 1,
      draggable: false,
      accessibility: false,
-     variableWidth: window.innerWidth > 1536 ?true:true,
+     variableWidth: true,
      prevArrow: $(".custom-prev"),
      nextArrow: $(".custom-next"),
      responsive: [{
@@ -72,5 +71,3 @@ document.getElementById("currentYear").innerText = currentYear;
          },
      ],
  });
-
-$('.slider_new_custom').slick('slickGoTo', 3);
