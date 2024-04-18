@@ -66,10 +66,10 @@ function playAnimation() {
       [".card-img-5"],
       {
         opacity: 0,
-        x: -150,
+        x: -150,scale:1.2
       },
       {
-        opacity: 1,
+        opacity: 1,scale:1.2,
 
         x: 0,
       }
@@ -252,10 +252,10 @@ function playAnimation() {
       [".card-img-5"],
       {
         opacity: 0,
-        x: -150,
+        x: -150,scale:1.2
       },
       {
-        opacity: 1,
+        opacity: 1,scale:1.2,
 
         x: 0,
       }
@@ -436,10 +436,10 @@ function playAnimation() {
       [".card-img-5"],
       {
         opacity: 0,
-        x: -150,
+        x: -150,scale:1.2
       },
       {
-        opacity: 1,
+        opacity: 1,scale:1.2,
 
         x: 0,
       }
@@ -634,10 +634,10 @@ function playAnimation() {
       [".card-img-5"],
       {
         opacity: 0,
-        x: -150,
+        x: -150,scale:1.2
       },
       {
-        opacity: 1,
+        opacity: 1,scale:1.2,
 
         x: 0,
       }
@@ -833,10 +833,10 @@ function playAnimation() {
       [".card-img-5"],
       {
         opacity: 0,
-        x: -150,
+        x: -150,scale:1.2
       },
       {
-        opacity: 1,
+        opacity: 1,scale:1.2,
 
         x: 0,
       }
@@ -1032,10 +1032,10 @@ function playAnimation() {
       [".card-img-5"],
       {
         opacity: 0,
-        x: -150,
+        x: -150,scale:1.2
       },
       {
-        opacity: 1,
+        opacity: 1,scale:1.2,
 
         x: 0,
       }
