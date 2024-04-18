@@ -460,7 +460,6 @@
   .mt_263 {
     margin-top: 200px;
   }
-
   .blur-position {
     top: 142px;
     right: 35px;
@@ -1414,21 +1413,19 @@
   .slide_add>div .slider_content {
     padding: 40px !important;
     z-index: 2;
-    opacity: 100%;
     max-width: 600px !important;
     transition: all 150ms linear;
     width: 100%;
   }
 
   .slider_content {
-    transform: translateX(100px) scale(0.7) !important;
-    transition: transform 1s ease-in-out !important;
-  }
+    transform: translateX(80%) scale(0.7) !important;  opacity: 0 !important;
+ transition: opacity 1000ms ease, transform 1000ms ease !important;   }
 
   .slick-current .slider_content,
   .slide_add .slider_content {
     transform: translateX(0px) scale(1) !important;
-    transition: transform 300ms linear !important;
+     transition: opacity 500ms ease, transform 500ms ease !important; opacity: 1 !important; 
   }
 
   .mx_slider_custom {
@@ -1436,12 +1433,12 @@
   }
 
   #centermode .slick-slide {
-    width: 200px !important;
+    width: 208px !important;
   }
 
   #centermode .slick-current,
   #centermode .slide_add {
-    min-width: 640px;
+    min-width: 580px;
   }
 
   #community .slick-track .slick-active {
@@ -1451,8 +1448,8 @@
     justify-content: flex-start !important;
   }
 
-  #community .slick-track .slick-active+.slick-active {
-    transform: scale(1) translateX(-6%);
+  #community .slick-track .slick-active + .slick-active {
+    transform: scale(.7) translateX(-6%);
     z-index: 8;
     position: relative;
   }
@@ -1499,7 +1496,13 @@
   justify-content: flex-end;
   align-items: center;
 }
-
+@media (min-width: 992px) {
+   #community .slick-track .slick-active + .slick-active {
+    transform: scale(1) translateX(-6%);
+    z-index: 8;
+    position: relative;
+  }
+}
 @media (min-width: 1200px) {
   .slider_bttns {
     bottom: -20px;
@@ -1523,7 +1526,6 @@
   .slide_add .slider_content {
     padding: 40px !important;
     z-index: 2;
-    opacity: 100%;
     max-width: 600px !important;
     transition: all 150ms linear;
     width: 100%;
@@ -1542,7 +1544,6 @@
   .slide_add>div .slider_content {
     padding: 40px !important;
     z-index: 2;
-    opacity: 100%;
     max-width: 600px !important;
     transition: all 150ms linear;
   }

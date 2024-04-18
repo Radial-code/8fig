@@ -8,24 +8,24 @@
 
             const contentContainer = document.querySelector(".content-container");
             const getNavBtn = document.querySelector(".get_nav_btn");
-
-            if (currentScrollPosition > 100) {
-                contentContainer.classList.add("hide_header");
+   contentContainer.style.top = -currentScrollPosition + "px";            if (currentScrollPosition < 100) {
+                contentContainer.classList.remove("show_header");
                     contentContainer.classList.remove("background_blur_header");
 
-                if (currentScrollPosition >  window.innerHeight) {
-                    visibleHeader = prevScrollPosition > currentScrollPosition;
-                    contentContainer.classList.add("background_blur_header");
-                    contentContainer.classList.remove("hide_header");
-                    getNavBtn.classList.remove("d-none");
-                }
-            } else {
+               
+   } else {
                 visibleHeader = false;
-                contentContainer.classList.remove("hide_header");
+                contentContainer.classList.remove("show_header");
                     contentContainer.classList.remove("background_blur_header");
                     getNavBtn.classList.add("d-none");
                 
             }
+    if (currentScrollPosition >  window.innerHeight) {
+                    visibleHeader = prevScrollPosition > currentScrollPosition;
+                    contentContainer.classList.add("background_blur_header");
+                    contentContainer.classList.add("show_header");
+                    getNavBtn.classList.remove("d-none");
+                }
             prevScrollPosition = currentScrollPosition;
             isHeaderVisible = visibleHeader;
       

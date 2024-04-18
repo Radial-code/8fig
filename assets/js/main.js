@@ -46,33 +46,33 @@ $(".slider_new_custom").slick({
             settings: {
                 slidesToShow: 5,
 
-            },
-        },
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                centerMode: false,
-            },
-        },
-        {
-            breakpoint: 767.9,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                centerMode: false,
-                centerPadding: 30,
-                speed: 300,
-            },
-        },
-        {
-            breakpoint: 425,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 2,
-                speed: 300,
-            },
-        },
-    ],
-});
+             },
+         },
+         {
+             breakpoint: 992,
+             settings: {
+                 slidesToShow: 3,
+                 slidesToScroll: 1,
+                 centerMode: false,
+             },
+         },
+         {
+             breakpoint: 767.9,
+             settings: {
+                 slidesToShow: 3,
+                 slidesToScroll: 1,
+                 centerMode: false,
+                 centerPadding: 30,
+               
+             },
+         },
+         {
+             breakpoint: 425,
+             settings: {
+                 slidesToShow: 1,
+                 slidesToScroll: 2,
+               
+             },
+         },
+     ],
+ });
