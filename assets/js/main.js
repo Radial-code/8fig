@@ -25,7 +25,7 @@ document.getElementById("currentYear").innerText = currentYear;
  $(".slider_new_custom").slick({
      dots: true,
      infinite: true,
-     speed: 0,
+     speed: 1000,
      slidesToShow: 5,
      centerMode: true,
      focusOnSelect: true,
@@ -33,7 +33,7 @@ document.getElementById("currentYear").innerText = currentYear;
      slidesToScroll: 1,
      draggable: false,
      accessibility: false,
-     variableWidth: true,
+    //  variableWidth: true,
      prevArrow: $(".custom-prev"),
      nextArrow: $(".custom-next"),
      responsive: [{
@@ -70,4 +70,4 @@ document.getElementById("currentYear").innerText = currentYear;
              },
          },
      ],
- });
+ });  $('.slider_new_custom').slick('slickGoTo', 3);
