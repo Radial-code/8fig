@@ -1,0 +1,9 @@
+.slider_content {
+  opacity: 100% !important;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 318px !important;
+  min-height: 300px;
+  padding: 20px !important;
+}
