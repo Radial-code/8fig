@@ -1521,6 +1521,16 @@
 }
 
 @media (min-width: 1536px) {
+  #centermode [aria-hidden="true"] {
+    display: none !important;
+  }
+
+  #centermode .slick-track [aria-hidden="false"] {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
   .slick-dotted.slick-slider {
     margin-bottom: 48px !important;
   }
@@ -1623,16 +1633,6 @@
     z-index: 6;
     position: relative;
   }
-}
-
-/* [aria-hidden="true"] {
-  display: none !important;
-}
-
-.slick-track [aria-hidden="false"] {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 /* new  animation  */

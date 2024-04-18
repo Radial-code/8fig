@@ -25,7 +25,7 @@ document.getElementById("currentYear").innerText = currentYear;
  $(".slider_new_custom").slick({
      dots: true,
      infinite: true,
-     speed: 1000,
+     speed: window.innerWidth > 1536 ? 0:1000,
      slidesToShow: 5,
      centerMode: true,
     //  focusOnSelect: true,
@@ -33,7 +33,7 @@ document.getElementById("currentYear").innerText = currentYear;
      slidesToScroll: 1,
      draggable: false,
      accessibility: false,
-    //  variableWidth: true,
+     variableWidth: window.innerWidth > 1536 ?true:false,
      prevArrow: $(".custom-prev"),
      nextArrow: $(".custom-next"),
      responsive: [{
@@ -71,28 +71,4 @@ document.getElementById("currentYear").innerText = currentYear;
          },
      ],
  });
-
-// const $originalSlides = $('.slider_new_custom  ');
-
-
-//  $('.slider_new_custom').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
-//   // Remove the class from all slides
-//   $originalSlides.removeClass('slick-clone-current');
-
-//   // Determine if next slide is first or last
-//   const slideCount = $originalSlides.length - 1;
-//   const nextSlideIsFirst = currentSlide === slideCount;
-//   const nextSlideIsLast = nextSlide === slideCount;
-
-//   // Add class to appropriate next or previous slide
-// //   if (nextSlideIsFirst) {
-// //     $originalSlides.eq(0).addClass('slick-clone-current');
-// //   }
-//   if (nextSlideIsLast) {
-//     $originalSlides.eq(slideCount).addClass('slick-clone-current');
-//   }
-// });
-// // $('.slider_new_custom').on('afterChange', function(e, slick, currentSlide, nextSlide) {
-// //   $('.slick-clone-current').removeClass('slick-clone-current');
-// // })
 
