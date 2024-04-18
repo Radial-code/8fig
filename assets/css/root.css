@@ -212,8 +212,8 @@ body {
   z-index: 1;
 }
 
-.hide_header {
-  transform: translateY(-100%);
+.show_header {
+  top: 0 !important;
 }
 
 .min_h_hero {
