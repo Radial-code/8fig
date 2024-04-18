@@ -28,7 +28,7 @@ document.getElementById("currentYear").innerText = currentYear;
      speed: 1000,
      slidesToShow: 5,
      centerMode: true,
-     focusOnSelect: true,
+    //  focusOnSelect: true,
      centerPadding: 60,
      slidesToScroll: 1,
      draggable: false,
@@ -70,4 +70,29 @@ document.getElementById("currentYear").innerText = currentYear;
              },
          },
      ],
- });  $('.slider_new_custom').slick('slickGoTo', 3);
+ });
+
+const $originalSlides = $('.slider_new_custom  ');
+
+
+ $('.slider_new_custom').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+  // Remove the class from all slides
+  $originalSlides.removeClass('slick-clone-current');
+
+  // Determine if next slide is first or last
+  const slideCount = $originalSlides.length - 1;
+  const nextSlideIsFirst = currentSlide === slideCount;
+  const nextSlideIsLast = nextSlide === slideCount;
+
+  // Add class to appropriate next or previous slide
+//   if (nextSlideIsFirst) {
+//     $originalSlides.eq(0).addClass('slick-clone-current');
+//   }
+  if (nextSlideIsLast) {
+    $originalSlides.eq(slideCount).addClass('slick-clone-current');
+  }
+});
+// $('.slider_new_custom').on('afterChange', function(e, slick, currentSlide, nextSlide) {
+//   $('.slick-clone-current').removeClass('slick-clone-current');
+// })
+
