@@ -54,11 +54,11 @@ document.getElementById("currentYear").innerText = currentYear;
          {
              breakpoint: 767.9,
              settings: {
-                 slidesToShow: 2,
+                 slidesToShow: 3,
                  slidesToScroll: 1,
                  centerMode: false,
                  centerPadding: 30,
-                 speed: 300,
+               
              },
          },
          {
@@ -66,7 +66,7 @@ document.getElementById("currentYear").innerText = currentYear;
              settings: {
                  slidesToShow: 1,
                  slidesToScroll: 2,
-                 speed: 300,
+               
              },
          },
      ],
