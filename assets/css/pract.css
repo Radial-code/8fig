@@ -29,8 +29,8 @@
   border-radius: 0 40px 40px 0;
 }
 .content_box {
-  /* max-width: 0; */
-  position: absolute;
+  max-width: 0;
+  /* position: absolute; */
   overflow: hidden;
   transform: rotateY(-40deg) translateX(80%) scale(0.5);
   transition: all 0ms linear !important;
@@ -52,4 +52,14 @@
 .swiper-slide.swiper-slide-active {
   min-width: 650px !important;
   max-width: 650px !important;
+}
+
+[aria-hidden="true"] {
+  display: none !important;
+}
+
+.slick-track [aria-hidden="false"] {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
