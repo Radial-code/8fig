@@ -924,7 +924,7 @@
 .cash_flow_box h2 {
   color: #56565d;
   margin-bottom: 18px;
-  letter-spacing: 8%;
+  letter-spacing: 8% !important;
 }
 
 .revenue_box {
@@ -1414,6 +1414,17 @@
     width: 100%;
   }
 
+  .slider_content {
+    transform: translateX(100px) scale(0.7) !important;
+    transition: transform 1s ease-in-out !important;
+  }
+
+  .slick-current .slider_content,
+  .slick-clone-current .slide .slider_content {
+    transform: translateX(0px) scale(1) !important;
+    transition: transform 300ms linear !important;
+  }
+
   .mx_slider_custom {
     transition: all 0.3s ease-in-out;
   }
@@ -1594,16 +1605,6 @@
   transition: all 0.3s ease-in-out;
   scale: 1;
 } */
-.slider_content {
-  transform: translateX(100px) scale(0.7) !important;
-  transition: transform 1s ease-in-out !important;
-}
-
-.slick-current .slider_content,
-.slick-clone-current .slide .slider_content {
-  transform: translateX(0px) scale(1) !important;
-  transition: transform 300ms linear !important;
-}
 
 /* .slick-track {
   width: 2060px !important;
