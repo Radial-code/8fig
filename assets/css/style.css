@@ -595,14 +595,7 @@
     object-fit: cover;
   }
 
-  .study-img-2 {
-    transform: translateX(-87px);
-    border-radius: 40px;
-    max-height: 270px !important;
-    object-fit: cover !important;
-  }
-
-  /* .image_zoom_hover {
+  .image_zoom_hover {
     border-radius: 0px !important;
   }
 
@@ -733,7 +726,9 @@
   background-image: url("../images/svg/cross.svg") !important;
   transform: rotate(45deg);
 }
-
+.accordion-button:not(.collapsed) {
+  color: #0e1122 !important;
+}
 .accordion-button:not(.collapsed)::after {
   background-image: url("../images/svg/cross.svg") !important;
   transform: none !important;
@@ -749,13 +744,14 @@
   background-color: #efece6 !important;
   border-bottom: 1px solid #dddddf !important;
   font-size: 18px !important;
-  padding: 20px 16px !important;
+  padding: 20px !important;
 }
 
 .accordion-body {
   padding: 0px 16px 20px 16px !important;
   max-width: 1030px;
   background-color: #efece6 !important;
+  border-bottom: 1px solid #dddddf !important;
   font-size: 18px !important;
   color: #0e1122 !important;
 }
