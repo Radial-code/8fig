@@ -30,9 +30,9 @@
 .swiper-slide-active {
   width: 100% !important;
 }
-.swiper-slide-active > .card_parent {
+/* .swiper-slide-active > .card_parent {
   width: 100% !important;
-}
+} */
 
 .swiper-slide:not(.swiper-slide-active) .img_parent {
   border-radius: 40px !important;
@@ -51,7 +51,7 @@
   place-items: center;
   width: 230px;
   /* min-height: 500px; */
-  border-radius: 10px;
+  /* border-/radius: 10px; */
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {

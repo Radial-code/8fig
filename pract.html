@@ -66,6 +66,7 @@ AI technology that predicts, plans, and protects your cash flow." />
                         class="hover_slider_btn  m-0 swiper-button-prev border-0 bg-transparent ms-5 d-flex align-items-center">
                         <img src="./assets/images/svg/next-arrow.svg" alt="arrow" />
                     </button>
+                    <div class="pagination"></div>
                 </div>
                 <div class="my-slider-container overflow-hidden">
                     <div class="swiper-wrapper">
@@ -247,7 +248,7 @@ AI technology that predicts, plans, and protects your cash flow." />
 
                         <!-- Repeat the above slide code for 3 more times -->
                     </div>
-                    <div class="swiper-pagination"></div>
+
                 </div>
 
             </div>
@@ -305,26 +306,23 @@ AI technology that predicts, plans, and protects your cash flow." />
                 centeredSlides: true,
                 updateOnWindowResize: true,
                 effect: "coverflow",
-                loop: true,
+                initialSlide: 2,
+                // loop: true,
+
                 breakpoints: {
-                    // when window width is >= 320px
                     320: {
                         slidesPerView: 1,
                         effect: "coverflow",
-
                     },
-                    // when window width is >= 768px
                     768: {
                         slidesPerView: "auto",
-                        effect: 'coverflow', // Back to coverflow for iPads
+                        effect: 'coverflow',
                     },
-
                     1280: {
-                        slidesPerView: "auto", // 5 cards for desktops
-                        effect: 'coverflow', // Coverflow for desktop
+                        slidesPerView: "auto",
+                        effect: 'coverflow',
                     }
                 },
-
                 coverflowEffect: {
                     rotate: 0,
                     stretch: 0,
@@ -333,8 +331,8 @@ AI technology that predicts, plans, and protects your cash flow." />
                     slideShadows: false
                 },
                 navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
+                    nextEl: '.swiper-button-prev',
+                    prevEl: '.swiper-button-next',
                 },
                 pagination: {
                     el: '.pagination',
@@ -346,12 +344,9 @@ AI technology that predicts, plans, and protects your cash flow." />
                 swiper.updateSlides();
                 swiper.slideReset();
             });
-            swiper.on('slideChangeTransitionEnd', function () {
-                swiper.slideTo(0); // This will navigate to the first slide
-            });
-
         });
     </script>
+
 </body>
 
 </html>
