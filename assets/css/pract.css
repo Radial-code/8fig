@@ -52,7 +52,15 @@
   height: 100% !important;
 }
 
+@media (max-width: 374.9px) {
+  .swiper-slide {
+    scale: 0.9;
+  }
+}
 @media (min-width: 768px) {
+  .swiper-slide-active {
+    scale: 0.8;
+  }
   .content_box,
   .content_box .card_val,
   .card_parent {
@@ -88,8 +96,14 @@
   .swiper-slide-active {
     width: 70% !important;
   }
+  .swiper-slide-active {
+    scale: 0.8;
+  }
 }
 @media (min-width: 1200px) {
+  .swiper-slide-active {
+    scale: 1;
+  }
   .swiper-slide-active {
     width: 640px !important;
   }
