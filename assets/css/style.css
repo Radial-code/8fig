@@ -904,11 +904,13 @@
 /* BLUR CARDS CSS CODE HERE============================================= */
 .blur_box_bg {
   background-color: rgba(222, 222, 222, 0.5);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
 .hero_small_box_bg {
   background-color: rgba(243, 245, 255, 0.22);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -967,6 +969,7 @@
   width: 248px;
   height: 156px;
   padding: 12px 7px;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 20px;
 }
@@ -1003,6 +1006,7 @@
   background-color: rgba(243, 245, 255, 0.22);
   width: 250px;
   height: 100px;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 12px;
   margin-top: 29px;
