@@ -9,8 +9,7 @@
             const contentContainer = document.querySelector(".content-container");
             const getNavBtn = document.querySelector(".get_nav_btn");
           
-             contentContainer.style.top = -currentScrollPosition + "px";
-           
+             contentContainer.style.top = currentScrollPosition >0 ?-currentScrollPosition + "px":0;
 
             if (currentScrollPosition < 100) {
                 contentContainer.classList.remove("show_header");
