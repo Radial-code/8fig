@@ -8,11 +8,13 @@
 
             const contentContainer = document.querySelector(".content-container");
             const getNavBtn = document.querySelector(".get_nav_btn");
-   contentContainer.style.top = -currentScrollPosition + "px";            if (currentScrollPosition < 100) {
+          
+             contentContainer.style.top = -currentScrollPosition + "px";
+           
+
+            if (currentScrollPosition < 100) {
                 contentContainer.classList.remove("show_header");
                     contentContainer.classList.remove("background_blur_header");
-
-               
    } else {
                 visibleHeader = false;
                 contentContainer.classList.remove("show_header");
@@ -31,4 +33,6 @@
       
         }
 
-        window.addEventListener("scroll", handleScroll);
+window.addEventListener("resize", handleScroll);
+window.addEventListener("load", handleScroll); // Note: Use "load" event instead of "onload"
+window.addEventListener("scroll", handleScroll);
