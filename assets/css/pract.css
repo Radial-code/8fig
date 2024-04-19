@@ -49,11 +49,14 @@
 .swiper-slide {
   display: flex;
   place-items: center;
-  width: 23.125%;
-  min-height: 500px;
+  width: 230px;
+  /* min-height: 500px; */
   border-radius: 10px;
 }
-
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none !important;
+}
 @media (min-width: 768px) {
   .content_box .card_val {
     padding: 40px;
