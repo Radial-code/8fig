@@ -68,7 +68,7 @@
     height: 375px;
   }
   .swiper-slide {
-    height: auto;
+    height: 386px;
   }
   .content_box {
     width: 0;
@@ -91,6 +91,6 @@
 }
 @media (min-width: 1200px) {
   .swiper-slide-active {
-    width: 48% !important;
+    width: 640px !important;
   }
 }
