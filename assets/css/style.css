@@ -1,3 +1,22 @@
+/* HERO CSS START HERE */
+.container_custom_hero {
+  max-width: 1240px;
+}
+
+.hero_video_parent {
+  height: 100vh !important;
+  object-fit: cover;
+}
+
+.w_hero_title {
+  max-width: 470px;
+  font-family: font-abril-bold;
+}
+
+.w_hero_description {
+  max-width: 400px;
+}
+
 /* BACK TO TOP CSS HERE */
 .back_to_top_arrow_size {
   max-width: 40px !important;
@@ -35,31 +54,22 @@
   padding-right: 24px;
 }
 
-.content-container {
+.content_container {
   background-color: transparent;
   transition: background-color 0.3s ease;
 }
 
-.black-background {
+/* .black-background {
   background-color: black;
   width: 100%;
   transition: background-color 0.3s ease;
-}
+} */
 
-.max_w_1060 {
+.cards_section_width {
   max-width: 1060px;
 }
 
-::-webkit-scrollbar {
-  width: 4px !important;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--blue) !important;
-  border-radius: 50px !important;
-}
-
-.get-btn {
+.get_btn {
   background: transparent;
   border-radius: 24px;
   color: #4c57ff !important;
@@ -68,12 +78,12 @@
   transition: all 200ms linear;
 }
 
-.get-btn:hover {
+.get_btn:hover {
   background: #4c57ff;
   color: white !important;
 }
 
-.commerce {
+.commerce_image {
   width: 101px;
   height: 23px;
 }
@@ -86,7 +96,7 @@
   transition: all 200ms linear;
 }
 
-.mt_60 {
+.eligible_heading_space {
   margin-top: 60px !important;
 }
 
@@ -97,11 +107,11 @@
   border: 1.5px solid #4c57ff;
 }
 
-.mt_6 {
+.cards_number_top_mt {
   margin-top: 6px;
 }
 
-.apply-btn {
+.apply_btn {
   background: #4c57ff;
   border-radius: 24px;
   padding: 6px 19px;
@@ -109,7 +119,7 @@
   transition: all 200ms linear;
 }
 
-.apply-btn:hover {
+.apply_btn:hover {
   background: transparent;
   border-radius: 24px;
   color: #4c57ff !important;
@@ -117,39 +127,38 @@
   border: 1px solid #4c57ff;
 }
 
-.mt_-80 {
+/* .mt_-80 {
   margin-top: -80px !important;
-}
+} */
 
-.ml_168 {
+/* .ml_168 {
   margin-left: 168px;
-}
+} */
 
-.mt_263 {
+/* .mt_263 {
   margin-top: 263px;
-}
+} */
 
-.mt_20 {
+.cards_btn_top_space {
   margin-top: 20px;
 }
 
-.max_w_1440 {
+.section_custom_width {
   max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
-.shopping-box {
+.shopping_box {
   margin-top: -1px;
   padding-top: 46px;
   padding-bottom: 54px;
 }
 
-.shopping-box a {
+.shopping_box a {
   transition: all 0.3s ease-in-out;
 }
 
-.shopping-box a:hover {
+.shopping_box a:hover {
   opacity: 0.7;
 }
 
@@ -161,7 +170,7 @@
   max-width: 360px;
 }
 
-.max_w_355 {
+.card_one_para_width {
   max-width: 355px;
 }
 
@@ -169,44 +178,44 @@
   max-width: 350px;
 }
 
-.max_w_470 {
+/* .max_w_470 {
   max-width: 470px;
-}
+} */
 
-.max_w_400 {
+/* .max_w_400 {
   max-width: 400px;
-}
+} */
 
-.max_w_620 {
+.works_text_width {
   max-width: 620px;
 }
 
-.mt_180 {
+/* .mt_180 {
   margin-top: 180px;
-}
+} */
 
-.pb_62 {
+.works_top_space {
   padding-bottom: 62px;
 }
 
-.card-img-1 {
+.card_img_1 {
   width: 180px;
   height: 171px;
 }
 
-.card-img-2 {
+.card_img_2 {
   margin-left: 73px;
   width: 146px;
   height: 73px;
 }
 
-.card-img-3 {
+.card_img_3 {
   margin-left: 450px;
   width: 113px;
   height: 73px;
 }
 
-.card-img-4 {
+.card_img_4 {
   margin-left: 141px;
   width: 191px;
   height: 54px;
@@ -217,6 +226,7 @@
   width: 115px;
   height: 40px;
 } */
+
 .card_prod_done,
 .card_prod_start,
 .card_prod_delay {
@@ -230,92 +240,92 @@
   position: relative;
 }
 
-.card-img-6 {
+.card_img_6 {
   margin-left: 125px;
   width: 254px;
   height: 103px;
 }
 
-.card-img-7 {
+.card_img_7 {
   margin-left: 292px;
   width: 92px;
   height: 40px;
 }
 
-.card-img-8 {
+.card_img_8 {
   margin-left: 189px;
   width: 231px;
   height: 168px;
 }
 
-.color-dots {
+.color_dots {
   margin-bottom: -24px !important;
   margin-left: 50px;
 }
 
-.dot-1 {
+.dot_1 {
   margin-left: 234px;
   position: relative;
 }
 
-.dot-2 {
+.dot_2 {
   margin-left: 165px;
 }
 
-.dot-3 {
+.dot_3 {
   margin-left: 66px;
 }
 
-.dot-4 {
+.dot_4 {
   margin-left: 363px;
 }
 
-.dot-5 {
+.dot_5 {
   margin-left: 170px;
 }
 
-.dot-6 {
+.dot_6 {
   margin-left: 132px;
 }
 
-.dot-7 {
+.dot_7 {
   margin-left: 256px;
 }
 
-.dot-8 {
+.dot_8 {
   left: -708px;
 }
 
-.bg-line {
+.bg_line {
   min-width: 2540px;
   margin-left: 54px;
 }
 
-.pt_66 {
+.works_top_padding {
   padding-top: 60px;
 }
 
-.blur-card {
+.blur_card {
   max-width: 365px;
 }
 
-.blur-position {
+/* .blur-position {
   top: 280px;
   right: 35px;
-}
+} */
 
 .custom_spacing_study_box {
   padding-top: 120px;
   padding-bottom: 122px;
 }
 
-.study-img {
+.study_img {
   width: 480px;
   max-height: 320px;
   object-fit: cover;
 }
 
-.study-img-2 {
+.study_img_2 {
   width: 480px;
   max-height: 320px;
   object-fit: cover;
@@ -332,19 +342,19 @@
   background: #0e1122;
 }
 
-.header-img {
+/* .header-img {
   height: 100vh !important;
   min-height: 750px !important;
   object-fit: cover;
-}
+} */
 
-.blur-card-1 {
+.blur_card_1 {
   /* max-width: 218px; */
   top: 20%;
   left: -20%;
 }
 
-.blur-card-2 {
+.blur_card_2 {
   /* max-width: 302px; */
   top: -8%;
   right: -20%;
@@ -354,7 +364,7 @@
   margin-top: 180px;
 }
 
-.mt_164 {
+.third_card_top_space {
   margin-top: 164px;
 }
 
@@ -362,15 +372,15 @@
   margin-top: 0px;
 }
 
-.mt_121 {
+.lottie_top_space {
   margin-top: 121px;
 }
 
-.mt_54 {
+.card_two_top_space {
   margin-top: 0px;
 }
 
-.mt_67 {
+.card_three_top_space {
   margin-top: 0px;
 }
 
@@ -385,12 +395,12 @@
 .slider_parent {
   padding-bottom: 100px;
 }
+
 .hide_back_to_top {
   top: 110% !important;
 }
 
 /* dev css */
-
 .custom_container {
   max-width: 1264px;
 }
@@ -404,7 +414,7 @@
   gap: 36px !important;
 }
 
-.coman_btn {
+/* .coman_btn {
   transition: all 300ms ease-in-out;
   border: 1px transparent;
   border-radius: 24px;
@@ -413,7 +423,7 @@
 
 .coman_btn:hover {
   background: #000;
-}
+} */
 
 /* accordian */
 .accordion-button.collapsed::after {
@@ -450,7 +460,7 @@
   color: #0e1122 !important;
 }
 
-.max-w-438 {
+.text_custom_width {
   max-width: 438px;
 }
 
@@ -468,14 +478,14 @@
   border-radius: 100px;
 }
 
-.benfit_card_bg3 {
+.benefit_card_bg3 {
   padding: 6px 10px;
   margin-top: 42px;
   background: #3c3f4e;
   border-radius: 24px;
 }
 
-.benfit_card_bg {
+.benefit_card_bg {
   background: #3c3f4e;
   border-radius: 16px;
 }
@@ -488,7 +498,7 @@
   margin-right: 8px;
 } */
 
-.benfit_card_bg4 {
+.benefit_card_bg4 {
   width: 95px;
   height: 84px;
   margin-top: 24px;
@@ -496,17 +506,17 @@
   border-radius: 16px;
 }
 
-.benifit_card_1 {
+.benefit_card_1 {
   margin-top: 42px;
   width: 122px;
   height: 84px;
 }
 
-.benifits_container {
+.benefits_container {
   max-width: 1236px;
 }
 
-.benifit_card_2 {
+.benefit_card_2 {
   width: 205px;
   height: 79px;
 }
@@ -587,7 +597,7 @@
   padding: 64px 52px;
 }
 
-.max_w_572 {
+.join_text_width {
   max-width: 572px;
 }
 
@@ -725,7 +735,7 @@
   transform: translateY(-50%);
 }
 
-/*   ------------------------------ slider --------------- */
+/* ------------------------------ slider --------------- */
 .card_parent {
   justify-content: center;
 }
@@ -733,9 +743,11 @@
 .swiper-slide-active .content_box {
   width: auto;
 }
+
 .swiper-slide-active {
   width: 100% !important;
 }
+
 /* .swiper-slide-active > .card_parent {
   width: 100% !important;
 } */
@@ -747,20 +759,24 @@
   height: 444px;
   /* border-/radius: 10px; */
 }
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none !important;
 }
+
 .card_parent .img_parent img {
   min-width: 318px;
   height: 162px;
 }
+
 .content_box .card_val {
   padding: 22px;
   width: 318px;
   border-radius: 0px 0px 20px 20px;
   background-color: white;
 }
+
 .content_box,
 .content_box .card_val,
 .card_parent {
@@ -827,7 +843,7 @@
   padding: 3.5px 8px;
 }
 
-.mt_10 {
+.rating_text_top_space {
   margin-top: 10px;
 }
 
