@@ -89,30 +89,30 @@
 }
 
 @media (max-width: 1279.98px) {
-  .blur-card-1 {
+  .blur_card_1 {
     top: -17%;
     left: -9%;
   }
 
-  .blur-card-2 {
+  .blur_card_2 {
     right: -12%;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .study-img {
+  .study_img {
     width: 387px;
     max-height: 258px;
     border-radius: 40px;
   }
 
-  .study-img-2 {
+  .study_img_2 {
     width: 387px;
     max-height: 258px;
     border-radius: 40px;
   }
 
-  .blur-card-1 {
+  .blur_card_1 {
     left: 0 !important;
   }
 
@@ -128,16 +128,16 @@
 }
 
 @media (max-width: 1024.98px) {
-  .mt_263 {
+  /* .mt_263 {
     margin-top: 200px;
-  }
+  } */
 
   .blur-position {
     top: 142px;
     right: 35px;
   }
 
-  /* .blur-card-1 {
+  /* .blur_card_1 {
     top: -17%;
     left: 0%;
     width: 150px;
@@ -154,20 +154,20 @@
     padding-bottom: 72px;
   }
 
-  .ml_168 {
+  /* .ml_168 {
     margin-left: 38px;
-  }
+  } */
 
-  .mt_263 {
+  /* .mt_263 {
     margin-top: 280px !important;
-  }
+  } */
 
   .blur-position {
     top: 170px;
     right: 0px !important;
   }
 
-  .blur-card {
+  .blur_card {
     max-width: 305px;
   }
 
@@ -175,7 +175,7 @@
     gap: 50px;
   }
 
-  .blur-card-2 {
+  .blur_card_2 {
     right: 0%;
   }
 
@@ -190,6 +190,18 @@
 }
 
 @media (max-width: 767.98px) {
+  .w_hero_description {
+    max-width: 330px;
+  }
+
+  .hero_content_parent {
+    padding: 0px 32px;
+  }
+
+  .w_hero_title {
+    font-family: font-abril-semibold;
+  }
+
   .cash_flow_box {
     width: 205px;
     height: 143px;
@@ -242,7 +254,7 @@
     top: 109px;
   }
 
-  .blur-card-1 {
+  .blur_card_1 {
     left: -15% !important;
   }
 
@@ -267,7 +279,7 @@
     padding: 10px 24px !important;
   }
 
-  .blur-card-1 {
+  .blur_card_1 {
     /* max-width: 175px; */
     top: -12%;
     left: -7%;
@@ -277,12 +289,12 @@
     gap: 0px;
   }
 
-  .blur-card-2 {
+  .blur_card_2 {
     /* max-width: 230px; */
     top: -5%;
   }
 
-  .blur-card {
+  .blur_card {
     max-width: 180px;
   }
 
@@ -290,7 +302,7 @@
     margin-top: 100px;
   }
 
-  .mt_164 {
+  .third_card_top_space {
     margin-top: 100px;
   }
 
@@ -298,17 +310,17 @@
     margin-top: 84px;
   }
 
-  .mt_54 {
+  .card_two_top_space {
     margin-top: 54px;
   }
 
-  .mt_67 {
+  .card_three_top_space {
     margin-top: 67px;
   }
 
-  .mt_263 {
+  /* .mt_263 {
     margin-top: 369px !important;
-  }
+  } */
 
   .manufacturing_btn {
     transform: translateX(20px);
@@ -324,7 +336,7 @@
     max-width: 240px;
   }
 
-  .benifit_card_1 {
+  .benefit_card_1 {
     margin-top: 24px;
   }
 
@@ -340,7 +352,7 @@
     padding: 20px 3px;
   }
 
-  .max-w-438 {
+  .text_custom_width {
     max-width: 438px;
   }
 
@@ -378,7 +390,7 @@
     gap: 23px !important;
   }
 
-  .blur-card-1 {
+  .blur_card_1 {
     left: 7% !important;
     top: -18% !important;
   }
@@ -404,12 +416,12 @@
     font-size: 12px;
   }
 
-  .study-img {
+  .study_img {
     transform: translateX(80px) !important;
     width: 411px !important;
   }
 
-  .study-img-2 {
+  .study_img_2 {
     transform: translateX(-92px);
   }
 
@@ -427,21 +439,22 @@
     height: 21px;
   }
 
+  /* 
   .ml_168 {
     margin-left: 16px !important;
-  }
+  } */
 
-  .blur-card-1 {
+  .blur_card_1 {
     /* max-width: 175px; */
     top: -10%;
     left: 9% !important;
   }
 
-  .blur-card-2 {
+  .blur_card_2 {
     right: 10%;
   }
 
-  .shopping-box {
+  .shopping_box {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -468,15 +481,15 @@
 }
 
 @media (max-width: 390.98px) {
-  .blur-card-1 {
+  .blur_card_1 {
     left: 7% !important;
   }
 
-  .blur-card-2 {
+  .blur_card_2 {
     right: 4%;
   }
 
-  .blur-card_last {
+  .blur_card_last {
     left: 5% !important;
   }
 
@@ -492,18 +505,18 @@
     font-size: 18px !important;
   }
 
-  .image_zoom_hover .study-img {
+  .image_zoom_hover .study_img {
     transform: translateX(45px) !important;
   }
 
-  .image_zoom_hover .study-img-2 {
+  .image_zoom_hover .study_img_2 {
     transform: translateX(-32px);
     max-height: 270px !important;
   }
 }
 
 @media (max-width: 374.98px) {
-  .blur-card-1 {
+  .blur_card_1 {
     left: 13% !important;
   }
 

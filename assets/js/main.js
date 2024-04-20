@@ -6,7 +6,7 @@ function handleScroll() {
   const currentScrollPosition = window.scrollY;
   let visibleHeader = isHeaderVisible;
 
-  const contentContainer = document.querySelector(".content-container");
+  const contentContainer = document.querySelector(".content_container");
   const getNavBtn = document.querySelector(".get_nav_btn");
 
   contentContainer.style.top = currentScrollPosition > 0 ? -currentScrollPosition + "px" : 0;
@@ -76,6 +76,7 @@ if (isSafari) {
   video.setAttribute("playsinline", "");
   video.setAttribute("webkit-playsinline", "");
 }
+
 function backToTopOnReload() {
   window.onload = function () {
     // Scroll the window to the top

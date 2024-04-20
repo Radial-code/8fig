@@ -108,15 +108,19 @@ body {
 .lh_106 {
   line-height: 106%;
 }
+
 .lh_157 {
   line-height: 157% !important;
 }
+
 .lh_166 {
   line-height: 166%;
 }
+
 .lh_136 {
   line-height: 136%;
 }
+
 .lh-133 {
   line-height: 133% !important;
 }
@@ -213,35 +217,12 @@ body {
   top: 0 !important;
 }
 
-/* HERO CSS START HERE */
-.container_custom_hero {
-  max-width: 1240px;
+/* SCROLLBAR DESIGN CODE HERE */
+::-webkit-scrollbar {
+  width: 4px !important;
 }
 
-.hero_video_parent {
-  height: 100vh !important;
-  object-fit: cover;
-}
-
-.w_hero_title {
-  max-width: 470px;
-  font-family: font-abril-bold;
-}
-
-.w_hero_description {
-  max-width: 400px;
-}
-
-@media (max-width: 767.98px) {
-  .w_hero_description {
-    max-width: 330px;
-  }
-
-  .hero_content_parent {
-    padding: 0px 32px;
-  }
-
-  .w_hero_title {
-    font-family: font-abril-semibold;
-  }
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue) !important;
+  border-radius: 50px !important;
 }
