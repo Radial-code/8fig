@@ -482,7 +482,7 @@
 
 @media (max-width: 390.98px) {
   .blur_card_1 {
-    left: 7% !important;
+    left: 8% !important;
   }
 
   .blur_card_2 {
@@ -490,7 +490,7 @@
   }
 
   .blur_card_last {
-    left: 5% !important;
+    left: 8% !important;
   }
 
   .fs_xxs {
@@ -506,7 +506,7 @@
   }
 
   .image_zoom_hover .study_img {
-    transform: translateX(45px) !important;
+    transform: translateX(50px) !important;
   }
 
   .image_zoom_hover .study_img_2 {
