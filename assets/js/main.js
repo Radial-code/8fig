@@ -34,6 +34,18 @@ window.addEventListener("resize", handleScroll);
 window.addEventListener("load", handleScroll); // Note: Use "load" event instead of "onload"
 window.addEventListener("scroll", handleScroll);
 
+// BACk-TO-TOP
+$(document).ready(function () {
+
+  $("#back-to-top").click(function () {
+    $("html, body").animate({
+        scrollTop: 0,
+      },
+      40
+    );
+    return false;
+  });
+});
 document.addEventListener("DOMContentLoaded", function () {
   var backToTop = document.getElementById("back-to-top");
 
@@ -46,9 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   backToTop.addEventListener("click", function () {
-    scrollToTop(400); // Adjust the duration as needed
+    scrollToTop(0); // Adjust the duration as needed
   });
 });
+
 
 // YEAR CHANGER FUNCTION
 var currentYearElements = document.getElementsByClassName("currentYear");
