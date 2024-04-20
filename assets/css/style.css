@@ -8,8 +8,8 @@
 }
 
 .back_to_top_hover:hover {
-  -webkit-box-shadow: 0px 5px 10px 0px #ffffff !important;
-  box-shadow: 0px 5px 10px 0px #ffffff !important;
+  -webkit-box-shadow: 0px 0px 20px 0px #4c57ff !important;
+  box-shadow: 0px 0px 20px 0px #4c57ff !important;
 }
 
 .back_to_top_animation {
@@ -511,7 +511,7 @@
     overflow: unset;
   }
 
-  .my_n_18_below_md {
+  .my_n_18 {
     margin-top: -18px;
     margin-bottom: -18px;
   }
@@ -689,11 +689,11 @@
     font-size: 12px !important;
   }
 
-  .fs_clasic {
+  .text_xsm_base {
     font-size: 16px !important;
   }
 
-  .fs_render {
+  .text_xsm_md {
     font-size: 18px !important;
   }
 
@@ -715,7 +715,7 @@
 
 /* dev css */
 
-.custon_container {
+.custom_container {
   max-width: 1264px;
 }
 
@@ -859,7 +859,7 @@
   background: #4c57ff;
 }
 
-.toltip {
+.tool_tip {
   position: absolute;
   left: 16%;
   top: -42%;
@@ -893,7 +893,7 @@
   background: #4c4f5d;
 }
 
-.seller_women {
+.women_with_cup {
   border-radius: 20px;
   object-fit: cover;
   max-width: 440px;
@@ -1390,7 +1390,7 @@
     line-height: 166%;
   }
 
-  .seller_women {
+  .women_with_cup {
     width: 417px;
     height: 278px;
     transform: translateX(-18%);
