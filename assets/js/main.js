@@ -34,22 +34,19 @@ window.addEventListener("resize", handleScroll);
 window.addEventListener("load", handleScroll); // Note: Use "load" event instead of "onload"
 window.addEventListener("scroll", handleScroll);
 
-// BACk-TO-TOP
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $("#back-to-top").fadeIn();
+document.addEventListener("DOMContentLoaded", function () {
+  var backToTop = document.getElementById("back-to-top");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      backToTop.classList.remove("hide_back_to_top");
     } else {
-      $("#back-to-top").fadeOut();
+      backToTop.classList.add("hide_back_to_top");
     }
   });
-  $("#back-to-top").click(function () {
-    $("html, body").animate({
-        scrollTop: 0,
-      },
-      40
-    );
-    return false;
+
+  backToTop.addEventListener("click", function () {
+    scrollToTop(400); // Adjust the duration as needed
   });
 });
 

@@ -105,6 +105,22 @@ body {
   }
 }
 
+.lh_106 {
+  line-height: 106%;
+}
+.lh_157 {
+  line-height: 157% !important;
+}
+.lh_166 {
+  line-height: 166%;
+}
+.lh_136 {
+  line-height: 136%;
+}
+.lh-133 {
+  line-height: 133% !important;
+}
+
 .font-xsm {
   font-size: var(--font-xsm);
 }
