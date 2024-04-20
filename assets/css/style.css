@@ -61,7 +61,7 @@
 }
 
 /* find css */
-.my-container {
+.container_custom {
   max-width: 1264px;
   margin-left: auto;
   margin-right: auto;
@@ -112,7 +112,7 @@
   height: 23px;
 }
 
-.get-btn2 {
+.get_btn_v2 {
   background: #4c57ff;
   border-radius: 24px;
   padding: 10px 49px;
@@ -128,7 +128,7 @@
   line-height: 157% !important;
 }
 
-.get-btn2:hover {
+.get_btn_v2:hover {
   background: #313df0;
   border-radius: 24px;
   padding: 10px 49px;
@@ -191,11 +191,11 @@
   opacity: 0.7;
 }
 
-.gap_52 {
+.gap_sm_52 {
   gap: 52px;
 }
 
-.max_w_360 {
+.max_w_revenue_content {
   max-width: 360px;
 }
 
@@ -203,7 +203,7 @@
   max-width: 355px;
 }
 
-.max_w_350 {
+.max_w_custom_analyzing_description {
   max-width: 350px;
 }
 
@@ -342,7 +342,7 @@
   right: 35px;
 }
 
-.study {
+.custom_spacing_study_box {
   padding-top: 120px;
   padding-bottom: 122px;
 }
@@ -359,7 +359,7 @@
   object-fit: cover;
 }
 
-.gap_100 {
+.revenue_cards_custom_gap {
   gap: 100px;
 }
 
@@ -388,7 +388,7 @@
   right: -20%;
 }
 
-.mt_195 {
+.mt_funded_card_custom {
   margin-top: 180px;
 }
 
@@ -396,7 +396,7 @@
   margin-top: 164px;
 }
 
-.mt_84 {
+.mt_84_below_md {
   margin-top: 0px;
 }
 
@@ -471,7 +471,7 @@
 }
 
 @media (max-width: 991.98px) {
-  .study {
+  .custom_spacing_study_box {
     padding-top: 120px;
     padding-bottom: 100px;
   }
@@ -497,7 +497,7 @@
     max-width: 305px;
   }
 
-  .gap_100 {
+  .revenue_cards_custom_gap {
     gap: 50px;
   }
 
@@ -516,15 +516,15 @@
     margin-bottom: -18px;
   }
 
-  .study {
+  .custom_spacing_study_box {
     padding-top: 100px;
   }
 
-  .get-btn2 {
+  .get_btn_v2 {
     padding: 10px 24px;
   }
 
-  .get-btn2:hover {
+  .get_btn_v2:hover {
     padding: 10px 24px !important;
   }
 
@@ -539,7 +539,7 @@
     left: -7%;
   }
 
-  .gap_100 {
+  .revenue_cards_custom_gap {
     gap: 0px;
   }
 
@@ -552,7 +552,7 @@
     max-width: 180px;
   }
 
-  .mt_195 {
+  .mt_funded_card_custom {
     margin-top: 100px;
   }
 
@@ -560,7 +560,7 @@
     margin-top: 100px;
   }
 
-  .mt_84 {
+  .mt_84_below_md {
     margin-top: 84px;
   }
 
@@ -578,16 +578,16 @@
 }
 
 @media (max-width: 575.98px) {
-  .study {
+  .custom_spacing_study_box {
     padding-top: 60px;
     padding-bottom: 100px;
   }
 
-  .max_w_350 {
+  .max_w_custom_analyzing_description {
     max-width: 306px;
   }
 
-  .max_w_360 {
+  .max_w_revenue_content {
     max-width: 305px;
   }
 
@@ -605,7 +605,7 @@
     font-weight: 400 !important;
   }
 
-  .funding_small_text {
+  .text_xs_mobile {
     font-size: 12px;
   }
 
@@ -663,7 +663,7 @@
     min-height: 280px !important;
   }
 
-  .gap_52 {
+  .gap_sm_52 {
     gap: 0px;
   }
 
@@ -671,15 +671,15 @@
     max-width: 290px;
   }
 
-  .w_100 {
+  .w_full_mobile {
     width: 100%;
   }
 
-  .mt_30 {
+  .mt_30_mobile {
     margin-top: 30px;
   }
 
-  .mt_44 {
+  .mt_44_mobile {
     margin-top: 44px;
   }
 }
@@ -926,7 +926,7 @@
   backdrop-filter: blur(10px);
 }
 
-.hero_small_box_bg {
+.blur_card_small {
   background-color: rgba(243, 245, 255, 0.22);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -958,7 +958,7 @@
   max-width: 158px;
 }
 
-.manufacturing_text {
+.funded_blur_card_content {
   background-color: rgba(255, 255, 255, 0.48);
   border-radius: 26px;
   padding: 1px 8px;
@@ -967,11 +967,11 @@
   color: #333645;
 }
 
-.manufacturing_card h2 {
+.funded_blur_card h2 {
   font-size: 15.73px;
 }
 
-.manufacturing_card {
+.funded_blur_card {
   padding: 13px 14px;
   border-radius: 21px;
   gap: 11px;
@@ -992,7 +992,7 @@
   border-radius: 20px;
 }
 
-.hero_upcoming_card {
+.blur_card {
   width: 160px;
   height: 75px;
   padding: 12px;
@@ -1001,7 +1001,7 @@
   left: -58px;
 }
 
-.forecasted_card {
+.forecasted_card_parent {
   width: 175px;
   height: 78px;
   padding: 12px;
@@ -1012,15 +1012,15 @@
   right: -38px;
 }
 
-.hero_upcoming_card div h2 {
+.blur_card div h2 {
   font-size: 28px;
 }
 
-.upcoming_text {
+.blur_card_title {
   color: #f2f2f3;
 }
 
-.sales_card {
+.sales_card_parent {
   background-color: rgba(243, 245, 255, 0.22);
   width: 250px;
   height: 100px;
@@ -1032,18 +1032,18 @@
   transform: translateX(-80px);
 }
 
-.sales_card div h2 {
+.sales_card_parent div h2 {
   letter-spacing: 2px;
 }
 
-.hero_start_linear {
+.gradient_line {
   background: linear-gradient(291.92deg, #f99f55 25.32%, #4c57ff 80.04%);
   width: 100%;
   height: 1.5px;
   margin-top: 11px;
 }
 
-.hero_blur_all_card {
+.blur_card_parent {
   right: -17px;
   top: 50%;
   transform: translateY(-50%);
@@ -1057,7 +1057,7 @@
 }
 
 @media (max-width: 1379.98px) {
-  .hero_blur_all_card {
+  .blur_card_parent {
     right: 75px;
     top: 50%;
     transform: translateY(-50%);
@@ -1085,7 +1085,7 @@
     padding: 52px;
   }
 
-  .hero_blur_all_card {
+  .blur_card_parent {
     right: 25px;
     scale: 0.8;
   }
@@ -1121,26 +1121,26 @@
     transform: translateX(-27px);
   }
 
-  .manufacturing_card {
+  .funded_blur_card {
     gap: 8px;
     padding: 10px;
   }
 
-  .manufacturing_card h2 {
+  .funded_blur_card h2 {
     font-size: 12px !important;
   }
 
-  .manufacturing_text {
+  .funded_blur_card_content {
     font-size: 8px;
   }
 
-  .hero_blur_all_card {
+  .blur_card_parent {
     right: -108px;
     top: 35%;
     scale: 1;
   }
 
-  .hero_upcoming_card {
+  .blur_card {
     top: 109px;
   }
 
@@ -1264,8 +1264,8 @@
   opacity: 100%;
 } */
 
-.slick-current~div,
-.slide_add~div {
+.slick-current ~ div,
+.slide_add ~ div {
   border-radius: 40px;
 }
 
@@ -1471,8 +1471,8 @@
     margin-bottom: 48px !important;
   }
 
-  .slick-current>div .slider_content,
-  .slide_add>div .slider_content {
+  .slick-current > div .slider_content,
+  .slide_add > div .slider_content {
     padding: 40px !important;
     z-index: 2;
     max-width: 600px !important;
@@ -1513,39 +1513,65 @@
     justify-content: flex-start !important;
   }
 
-  #community .slick-track .slick-active+.slick-active {
+  #community .slick-track .slick-active + .slick-active {
     transform: scale(0.7) translateX(-6%);
     z-index: 8;
     position: relative;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active {
+  #community .slick-track .slick-active + .slick-active + .slick-active {
     transform: scale(1);
     z-index: 10;
     position: relative;
     display: block;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(1) translateX(6%);
     z-index: 8;
     position: relative;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(0.8);
     z-index: 6;
     position: relative;
     display: flex;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(0.8);
     z-index: 6;
     position: relative;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(0.7);
     z-index: 6;
     position: relative;
@@ -1553,7 +1579,7 @@
 }
 
 @media (min-width: 992px) {
-  #community .slick-track .slick-active+.slick-active {
+  #community .slick-track .slick-active + .slick-active {
     transform: scale(1) translateX(-6%);
     z-index: 8;
     position: relative;
@@ -1579,7 +1605,7 @@
     margin-bottom: 48px !important;
   }
 
-  .slick-current>div .slider_content,
+  .slick-current > div .slider_content,
   .slide_add .slider_content {
     padding: 40px !important;
     z-index: 2;
@@ -1597,8 +1623,8 @@
     min-width: 655px;
   }
 
-  .slick-current>div .slider_content,
-  .slide_add>div .slider_content {
+  .slick-current > div .slider_content,
+  .slide_add > div .slider_content {
     padding: 40px !important;
     z-index: 2;
     max-width: 600px !important;
@@ -1612,39 +1638,65 @@
     justify-content: flex-start !important;
   }
 
-  #community .slick-track .slick-active+.slick-active {
+  #community .slick-track .slick-active + .slick-active {
     transform: scale(1) translateX(-6%);
     z-index: 8;
     position: relative;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active {
+  #community .slick-track .slick-active + .slick-active + .slick-active {
     transform: scale(1);
     z-index: 10;
     position: relative;
     display: block;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(1) translateX(6%);
     z-index: 8;
     position: relative;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(0.8);
     z-index: 6;
     position: relative;
     display: flex;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(0.8);
     z-index: 6;
     position: relative;
   }
 
-  #community .slick-track .slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+  #community
+    .slick-track
+    .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active
+    + .slick-active {
     transform: scale(0.7);
     z-index: 6;
     position: relative;
