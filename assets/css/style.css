@@ -59,12 +59,6 @@
   transition: background-color 0.3s ease;
 }
 
-/* .black-background {
-  background-color: black;
-  width: 100%;
-  transition: background-color 0.3s ease;
-} */
-
 .cards_section_width {
   max-width: 1060px;
 }
@@ -127,18 +121,6 @@
   border: 1px solid #4c57ff;
 }
 
-/* .mt_-80 {
-  margin-top: -80px !important;
-} */
-
-/* .ml_168 {
-  margin-left: 168px;
-} */
-
-/* .mt_263 {
-  margin-top: 263px;
-} */
-
 .cards_btn_top_space {
   margin-top: 20px;
 }
@@ -178,127 +160,8 @@
   max-width: 350px;
 }
 
-/* .max_w_470 {
-  max-width: 470px;
-} */
-
-/* .max_w_400 {
-  max-width: 400px;
-} */
-
 .works_text_width {
   max-width: 620px;
-}
-
-/* .mt_180 {
-  margin-top: 180px;
-} */
-
-/* .works_top_space {
-  padding-bottom: 62px;
-} */
-
-.card_img_1 {
-  width: 180px;
-  height: 171px;
-}
-
-.card_img_2 {
-  margin-left: 73px;
-  width: 146px;
-  height: 73px;
-}
-
-.card_img_3 {
-  margin-left: 450px;
-  width: 113px;
-  height: 73px;
-}
-
-.card_img_4 {
-  margin-left: 141px;
-  width: 191px;
-  height: 54px;
-}
-
-/* .card-img-5 {
-  margin-left: 317px;
-  width: 115px;
-  height: 40px;
-} */
-
-.card_prod_done,
-.card_prod_start,
-.card_prod_delay {
-  margin-left: 317px;
-  width: 115px;
-  height: 40px;
-}
-
-.card_prod_delay {
-  left: -115px;
-  position: relative;
-}
-
-.card_img_6 {
-  margin-left: 125px;
-  width: 254px;
-  height: 103px;
-}
-
-.card_img_7 {
-  margin-left: 292px;
-  width: 92px;
-  height: 40px;
-}
-
-.card_img_8 {
-  margin-left: 189px;
-  width: 231px;
-  height: 168px;
-}
-
-.color_dots {
-  margin-bottom: -24px !important;
-  margin-left: 50px;
-}
-
-.dot_1 {
-  margin-left: 234px;
-  position: relative;
-}
-
-.dot_2 {
-  margin-left: 165px;
-}
-
-.dot_3 {
-  margin-left: 66px;
-}
-
-.dot_4 {
-  margin-left: 363px;
-}
-
-.dot_5 {
-  margin-left: 170px;
-}
-
-.dot_6 {
-  margin-left: 132px;
-}
-
-.dot_7 {
-  margin-left: 256px;
-}
-
-.dot_8 {
-  left: -708px;
-}
-
-.bg_line {
-  min-width: 2540px;
-  margin-left: 54px;
 }
 
 .works_top_padding {
@@ -308,11 +171,6 @@
 .blur_card {
   max-width: 365px;
 }
-
-/* .blur-position {
-  top: 280px;
-  right: 35px;
-} */
 
 .custom_spacing_study_box {
   padding-top: 120px;
@@ -341,12 +199,6 @@
   border-radius: 50%;
   background: #0e1122;
 }
-
-/* .header-img {
-  height: 100vh !important;
-  min-height: 750px !important;
-  object-fit: cover;
-} */
 
 .blur_card_1 {
   /* max-width: 218px; */
@@ -413,17 +265,6 @@
 .gap_36 {
   gap: 36px !important;
 }
-
-/* .coman_btn {
-  transition: all 300ms ease-in-out;
-  border: 1px transparent;
-  border-radius: 24px;
-  padding: 7px 48px 13px 48px;
-}
-
-.coman_btn:hover {
-  background: #000;
-} */
 
 /* accordian */
 .accordion-button.collapsed::after {
@@ -493,10 +334,6 @@
 .equlity_svg {
   margin-top: -6px;
 }
-
-/* .manufacturing_svg {
-  margin-right: 8px;
-} */
 
 .benefit_card_bg4 {
   width: 95px;
@@ -748,16 +585,11 @@
   width: 100% !important;
 }
 
-/* .swiper-slide-active > .card_parent {
-  width: 100% !important;
-} */
-
 .swiper-slide {
   display: flex;
   place-items: center;
   width: 230px;
   height: 444px;
-  /* border-/radius: 10px; */
 }
 
 .swiper-button-prev::after,
