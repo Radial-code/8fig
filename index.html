@@ -297,7 +297,7 @@ AI technology that predicts, plans, and protects your cash flow." />
   </section>
 
   <!-----------------------------  HOW IT WORKS---------------------------  -->
-  <section class="bg-light-black overflow-hidden">
+  <section class="bg-light-black overflow-hidden" >
     <div class="section_custom_width pinned-section">
       <div
         class="container_custom works_top_padding works_top_space d-flex flex-column justify-content-between justify-content-xl-center pin_scroll">
@@ -310,11 +310,14 @@ AI technology that predicts, plans, and protects your cash flow." />
             AI technology that predicts, plans, and protects your cash flow
           </h2>
         </div>
-        <div class=" lottie_parent">
-          <lottie-player style="width: 100%; height: 100%;" src="./assets/lottie/how-it-works.json"
-            background="transparent" speed="1" loop autoplay>
+        <div class="lottie_parent">
+          <lottie-player id="desktop_version" class="d-none d-sm-block" style="width: 100%; height: 100%;" src="./assets/lottie/how-it-works.json"
+                         background="transparent" speed="1" >
           </lottie-player>
-        </div>
+          <lottie-player id="mobile_version" class="d-sm-none d-block" style="width: 100%; height: 100%;" src="./assets/lottie/mobile.json"
+                         background="transparent" speed="1" >
+          </lottie-player>
+      </div>
       </div>
     </div>
   </section>
@@ -989,6 +992,7 @@ AI technology that predicts, plans, and protects your cash flow." />
   <!-- Your JavaScript -->
   <script src="/assets/js/main.js">
   </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
   <!-- lottie cdn link -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -999,8 +1003,37 @@ AI technology that predicts, plans, and protects your cash flow." />
   <!-- slick.min.js link  -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <!-- CUSTOM JS FILES -->
+
   <!-- <script src="./assets/js/gsap.js"></script> -->
   <script src="./assets/js/main.js"></script>
+  <script>
+    // Wait for the DOM to load
+    document.addEventListener("DOMContentLoaded", function() {
+        LottieInteractivity.create({
+            mode: "scroll",
+            player: "#desktop_version",
+            actions: [{
+                visibility: [0, 1.0],
+                type: "seek",
+                frames: [0, 300],
+            }]
+        });
+    });
+</script>
+<script>
+  // Wait for the DOM to load
+  document.addEventListener("DOMContentLoaded", function() {
+      LottieInteractivity.create({
+          mode: "scroll",
+          player: "#mobile_version",
+          actions: [{
+              visibility: [0, 1.0],
+              type: "seek",
+              frames: [0, 0],
+          }]
+      });
+  });
+</script>
 
 </body>
 
