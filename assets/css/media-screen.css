@@ -332,6 +332,15 @@
 }
 
 @media (max-width: 575.98px) {
+  .lottie_parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #pinned-section{
+    height: 700px;
+  }
   .faq_heading_width {
     max-width: 240px;
   }

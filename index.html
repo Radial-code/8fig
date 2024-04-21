@@ -454,7 +454,7 @@ AI technology that predicts, plans, and protects your cash flow."
     </section>
 
     <!-----------------------------  HOW IT WORKS---------------------------  -->
-    <section class="bg-light-black overflow-hidden">
+    <section class="bg-light-black overflow-hidden z-1 position-relative">
       <div class="section_custom_width" id="pinned-section">
         <div
           class="container_custom works_top_padding works_top_space d-flex flex-column justify-content-between justify-content-xl-center pin_scroll"
@@ -1641,7 +1641,7 @@ AI technology that predicts, plans, and protects your cash flow."
             {
               visibility: [0, 1.0],
               type: "seek",
-              frames: [0, 300],
+              frames: [0, 400],
             },
           ],
         });
@@ -1660,6 +1660,24 @@ AI technology that predicts, plans, and protects your cash flow."
         document.getElementById("desktop_version").pause();
       }
 
+      // if (window.matchMedia("(min-width: 576px)").matches) {
+      //   gsap.to("#pinned-section", {
+      //     scrollTrigger: {
+      //       trigger: "#pinned-section",
+      //       start: "top 20%",
+      //       end: "bottom top",
+      //       pin: true,
+      //       scrub: true,
+      //       onUpdate: function (self) {
+      //         if (self.isActive) {
+      //           playLottie();
+      //         } else {
+      //           stopLottie();
+      //         }
+      //       },
+      //     },
+      //   });
+      // }
       gsap.to("#pinned-section", {
         scrollTrigger: {
           trigger: "#pinned-section",
