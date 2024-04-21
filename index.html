@@ -1660,40 +1660,40 @@ AI technology that predicts, plans, and protects your cash flow."
         document.getElementById("desktop_version").pause();
       }
 
-      // if (window.matchMedia("(min-width: 576px)").matches) {
-      //   gsap.to("#pinned-section", {
-      //     scrollTrigger: {
-      //       trigger: "#pinned-section",
-      //       start: "top 20%",
-      //       end: "bottom top",
-      //       pin: true,
-      //       scrub: true,
-      //       onUpdate: function (self) {
-      //         if (self.isActive) {
-      //           playLottie();
-      //         } else {
-      //           stopLottie();
-      //         }
-      //       },
-      //     },
-      //   });
-      // }
-      gsap.to("#pinned-section", {
-        scrollTrigger: {
-          trigger: "#pinned-section",
-          start: "top 20%",
-          end: "bottom top",
-          pin: true,
-          scrub: true,
-          onUpdate: function (self) {
-            if (self.isActive) {
-              playLottie();
-            } else {
-              stopLottie();
-            }
+      if (window.matchMedia("(min-width: 576px)").matches) {
+        gsap.to("#pinned-section", {
+          scrollTrigger: {
+            trigger: "#pinned-section",
+            start: "top 20%",
+            end: "bottom top",
+            pin: true,
+            scrub: true,
+            onUpdate: function (self) {
+              if (self.isActive) {
+                playLottie();
+              } else {
+                stopLottie();
+              }
+            },
           },
-        },
-      });
+        });
+      }
+      // gsap.to("#pinned-section", {
+      //   scrollTrigger: {
+      //     trigger: "#pinned-section",
+      //     start: "top 20%",
+      //     end: "bottom top",
+      //     pin: true,
+      //     scrub: true,
+      //     onUpdate: function (self) {
+      //       if (self.isActive) {
+      //         playLottie();
+      //       } else {
+      //         stopLottie();
+      //       }
+      //     },
+      //   },
+      // });
     </script>
   </body>
 </html>
