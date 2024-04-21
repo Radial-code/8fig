@@ -1631,22 +1631,7 @@ AI technology that predicts, plans, and protects your cash flow."
       });
     </script>
      -->
-    <script>
-      // Wait for the DOM to load
-      document.addEventListener("DOMContentLoaded", function () {
-        LottieInteractivity.create({
-          mode: "scroll",
-          player: "#mobile_version",
-          actions: [
-            {
-              visibility: [0, 1.0],
-              type: "seek",
-              frames: [0, 400],
-            },
-          ],
-        });
-      });
-    </script>
+  
     <script>
       gsap.registerPlugin(ScrollTrigger);
 
@@ -1658,6 +1643,14 @@ AI technology that predicts, plans, and protects your cash flow."
       // Function to stop the Lottie animation
       function stopLottie() {
         document.getElementById("desktop_version").pause();
+      }
+      function playMobileLottie() {
+        document.getElementById("mobile_version").play();
+      }
+
+      // Function to stop the Lottie animation
+      function stopMobileLottie() {
+        document.getElementById("mobile_version").pause();
       }
 
       // if (window.matchMedia("(min-width: 576px)").matches) {
@@ -1688,8 +1681,11 @@ AI technology that predicts, plans, and protects your cash flow."
           onUpdate: function (self) {
             if (self.isActive) {
               playLottie();
+              playMobileLottie()
             } else {
               stopLottie();
+              stopMobileLottie()
+
             }
           },
         },
