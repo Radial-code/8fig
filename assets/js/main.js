@@ -83,9 +83,9 @@ function backToTopOnReload() {
     window.scrollTo(0, 0);
   }
 }
-
 // Call the function to enable back to top on window reload
 backToTopOnReload();
+
 
 // JOIN COMMUNITY SLIDER CODE
 document.addEventListener('DOMContentLoaded', function () {
