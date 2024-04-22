@@ -316,12 +316,13 @@ AI technology that predicts, plans, and protects your cash flow." />
           </h2>
         </div>
         <div class="lottie_parent">
-          <lottie-player id="desktop_version" class="d-none d-sm-block" style="width: 100%; height: 100%"
+          <!-- <lottie-player id="desktop_version" class="d-none d-sm-block" style="width: 100%; height: 100%"
             src="./assets/lottie/how-it-works.json" background="transparent" speed="1">
-          </lottie-player>
-          <lottie-player id="mobile_version" class="d-sm-none d-block" style="width: 100%; height: 100%"
+          </lottie-player> -->
+          <!-- <lottie-player id="mobile_version" class="d-sm-none d-block" style="width: 100%; height: 100%"
             src="./assets/lottie/mobile.json" background="transparent" speed="1">
-          </lottie-player>
+          </lottie-player> -->
+          <div id="desktop_version"></div>
         </div>
       </div>
     </div>
@@ -991,112 +992,61 @@ AI technology that predicts, plans, and protects your cash flow." />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- Your JavaScript -->
   <script src="/assets/js/main.js"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+  <!-- <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script> -->
 
   <!-- lottie cdn link -->
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <!-- Include ScrollTrigger plugin -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <!-- slick.min.js link  -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <!-- Include Lottie -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
   <!-- CUSTOM JS FILES -->
 
-  <!-- <script src="./assets/js/gsap.js"></script> -->
-  <script src="./assets/js/main.js"></script>
-  <!-- <script>
-      // Wait for the DOM to load
-      document.addEventListener("DOMContentLoaded", function () {
-        LottieInteractivity.create({
-          mode: "scroll",
-          player: "#desktop_version",
-          actions: [
-            {
-              visibility: [0, 1.0],
-              type: "seek",
-              frames: [0, 300],
-            },
-          ],
-        });
-      });
-      // GSAP ScrollTrigger for mobile version
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.to("#pinned-section", {
-        scrollTrigger: {
-          trigger: "#pinned-section", // element to trigger the animation
-          start: "top 20%", // start of the trigger
-          end: " top bottom", // end of the trigger
-          markers: true,
-          pin: true, // pin the element
-          // scrub: true, // smooth scrolling
-        },
-      });
-    </script>
-     -->
-  <script>
-    // Wait for the DOM to load
-    document.addEventListener("DOMContentLoaded", function () {
-      LottieInteractivity.create({
-        mode: "scroll",
-        player: "#mobile_version",
-        actions: [
-          {
-            visibility: [0, 1.0],
-            type: "seek",
-            frames: [0, 400],
-          },
-        ],
-      });
-    });
-  </script>
   <script>
     gsap.registerPlugin(ScrollTrigger);
 
-    // Function to play the Lottie animation
-    function playLottie() {
-      document.getElementById("desktop_version").play();
-    }
+    // Load the Lottie animations
+    var lottieElement = lottie.loadAnimation({
+      container: document.getElementById('desktop_version'), // the dom element
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      path: './assets/lottie/how-it-works.json' // the path to the animation json
+    });
 
-    // Function to stop the Lottie animation
-    function stopLottie() {
-      document.getElementById("desktop_version").pause();
-    }
-
-    if (window.matchMedia("(min-width: 576px)").matches) {
-      gsap.to("#pinned-section", {
-        scrollTrigger: {
-          trigger: "#pinned-section",
-          start: "top 20%",
-          end: "bottom top",
-          pin: true,
-          scrub: true,
-          onUpdate: function (self) {
-            if (self.isActive) {
-              playLottie();
-            } else {
-              stopLottie();
-            }
-          },
-        },
-      });
-    }
-    // gsap.to("#pinned-section", {
-    //   scrollTrigger: {
-    //     trigger: "#pinned-section",
-    //     start: "top 20%",
-    //     end: "bottom top",
-    //     pin: true,
-    //     scrub: true,
-    //     onUpdate: function (self) {
-    //       if (self.isActive) {
-    //         playLottie();
-    //       } else {
-    //         stopLottie();
-    //       }
-    //     },
-    //   },
+    // var mobileLottieElement = lottie.loadAnimation({
+    //   container: document.getElementById('desktop_version'), // the dom element
+    //   renderer: 'svg',
+    //   loop: false,
+    //   autoplay: false,
+    //   path: './assets/lottie/how-it-works.json' // the path to the mobile animation json
     // });
+
+    // Wait for the Lottie animations to be loaded
+    lottieElement.addEventListener('DOMLoaded', function () {
+      gsap.to(lottieElement, {
+        scrollTrigger: {
+          trigger: '#pinned-section',
+          start: 'top 20%',
+          end: 'bottom top',
+          pin: true,
+          scrub: 0.1,
+          onUpdate: function (self) {
+            const progress = self.progress;
+            const totalFrames = lottieElement.totalFrames;
+            const frame = Math.round(progress * totalFrames);
+            lottieElement.goToAndStop(frame, true);
+          }
+        }
+      });
+    });
+
+    // Repeat the same for the mobileLottieElement
+
   </script>
 </body>
 
