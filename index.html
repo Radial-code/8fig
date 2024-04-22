@@ -62,8 +62,9 @@ AI technology that predicts, plans, and protects your cash flow." />
     </div>
 
     <div class="m-0 overflow-hidden h-100">
-      <video id="myVideo" loop muted autoplay class="w-100 hero_video_parent position-absolute pointer-event-none">
-        <source src="./assets/video/hero-video.webm" type="video/mp4" />
+      <video poster="/assets/images/webp/vidoe-poster.webp" id="myVideo" loop playsinline muted autoplay
+        class="w-100 hero_video_parent position-absolute pointer-event-none">
+        <source src="./assets/video/hero-video.webm" type="video/webm" />
       </video>
       <div
         class="container container_custom_hero px-0 px-md-3 d-flex justify-content-between align-items-center flex-column-reverse flex-md-row min-vh-100 pb-5 pb-md-0 position-relative">
@@ -1028,9 +1029,9 @@ AI technology that predicts, plans, and protects your cash flow." />
         scrollTrigger: {
           trigger: '#pinned-section',
           start: 'top 40px',
-          end: 'bottom top',
+          end: '=300%',
           pin: true,
-          scrub: 0.1,
+          scrub: 1,
           onUpdate: function (self) {
             const progress = self.progress;
             const totalFrames = lottieElement.totalFrames;
