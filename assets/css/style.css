@@ -720,3 +720,14 @@
   height: 15px;
   z-index: -1;
 }
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-moz-media-controls {
+  display: none !important;
+}
+
+video::media-controls {
+  display: none !important;
+}

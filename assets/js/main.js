@@ -35,17 +35,18 @@ window.addEventListener("load", handleScroll); // Note: Use "load" event instead
 window.addEventListener("scroll", handleScroll);
 
 // BACk-TO-TOP
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function() {
+  var backToTopButton = document.getElementById('back-to-top');
 
-  $("#back-to-top").click(function () {
-    $("html, body").animate({
-        scrollTop: 0,
-      },
-      40
-    );
-    return false;
+  backToTopButton.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
   });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   var backToTop = document.getElementById("back-to-top");
 
