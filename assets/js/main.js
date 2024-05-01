@@ -93,9 +93,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const swiper = new Swiper('.my-slider-container', {
     spaceBetween: 20,
     slidesPerView: "auto",
-    centeredSlides: true,
-    updateOnWindowResize: true,
+   centeredSlides: true,
+    centeredSlidesBounds: true,
+    updateOnWindowResize: true, speed:600,
     effect: "coverflow",
+    loop:true,
     allowTouchMove: false,
     breakpoints: {
       320: {
@@ -104,20 +106,16 @@ document.addEventListener('DOMContentLoaded', function () {
         effect: "coverflow",
       },
       768: {
-        loop: false,
-        slidesPerView: "auto",
         effect: 'coverflow',
-
         coverflowEffect: {
           rotate: 0,
           stretch: 0,
-          depth: 420,
+          depth: 400,
           modifier: 1,
           slideShadows: false
         },
       },
       1280: {
-        slidesPerView: "auto",
         effect: 'coverflow',
       }
     },
@@ -133,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
       prevEl: '.swiper-button-next',
     },
     pagination: {
-      el: '.pagination',
+el: '.pagination',
       clickable: true,
     },
   });
@@ -143,4 +141,10 @@ document.addEventListener('DOMContentLoaded', function () {
     swiper.slideReset();
   });
   swiper.slideTo(2);
+  // Assuming you have already initialized your Swiper instance as 'swiper'
+window.addEventListener('resize', function() {
+  // Update Swiper
+  swiper.update();
+});
+
 });

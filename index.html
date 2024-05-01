@@ -330,7 +330,6 @@ AI technology that predicts, plans, and protects your cash flow." />
       </div>
     </div>
   </section>
-
   <!-------------------- join community ------------------------>
   <div id="community" class="bg-yellow overflow-hidden slider_parent">
     <div class="pb-5 pt-2 pt-md-4 position-relative">
@@ -355,9 +354,44 @@ AI technology that predicts, plans, and protects your cash flow." />
           </button>
           <div class="pagination"></div>
         </div>
-        <div class="my-slider-container overflow-hidden">
-          <div class="swiper-wrapper">
+
+        <div class="my-slider-container overflow-hidden d-flex justify-content-center">
+          <div class="swiper-wrapper d-flex justify-content-start">
             <!-- First slide -->
+            <div class="swiper-slide d-flex justify-content-center d-xl-block">
+              <div class="card_parent h-100 d-flex flex-column flex-md-row text-start justify-content-center">
+                <div class="img_parent">
+                  <img loading="lazy" src="/assets/images/webp/ali-kaminetsky.webp" width="232px" height="360px"
+                    class="object-fit-cover d-none d-md-block slider_img_radius" alt="ali-kaminetsky" />
+                  <img loading="lazy" src="/assets/images/webp/ali-kaminetsky-mobile.webp" width="318px" height="162px"
+                    class="object-fit-cover d-md-none" alt="ali-kaminetsky" />
+                </div>
+                <div class="content_box d-flex flex-grow-1">
+                  <div class="card_val d-flex justify-content-between flex-column">
+                    <div>
+                      <h4 class="font-base fw-bold text-black mb-1">
+                        Ali Kaminetsky
+                      </h4>
+                      <p class="text-uppercase fw-medium fw_normal_mobile font-sm text-dark-grey pb-3 mb-1">
+                        Shopify seller
+                      </p>
+                      <p class="fw-medium fw_normal_mobile font-base text-black mb-0">
+                        “8fig helped us meet demand and grow 450% in sales to
+                        $6 million without tying up cash flow. Their funding
+                        and tools were crucial in optimizing our supply chain
+                        and operations.”
+                      </p>
+                    </div>
+                    <p
+                      class="d-flex align-items-center justify-content-start w-100 line_height_mobile_1 text-black fw-bold font-abril-bold font-3xl mb-0">
+                      450%
+                      <span class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg">Shopify store growth
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="swiper-slide d-flex justify-content-center d-xl-block">
               <div class="card_parent h-100 d-flex flex-column flex-md-row text-start justify-content-center">
                 <div class="img_parent">
@@ -520,6 +554,7 @@ AI technology that predicts, plans, and protects your cash flow." />
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -1025,25 +1060,41 @@ AI technology that predicts, plans, and protects your cash flow." />
 
     // Wait for the Lottie animations to be loaded
     lottieElement.addEventListener('DOMLoaded', function () {
-      gsap.to(lottieElement, {
+      // Set initial frames to 10
+      lottieElement.goToAndStop(10, true);
+      lottieElementMobile.goToAndStop(10, true);
+
+      const anim = gsap.to(lottieElement, {
         scrollTrigger: {
           trigger: '#pinned-section',
           start: 'top 40px',
-          end: '=300%',
+          end: '=100%',
           pin: true,
           scrub: 1,
           onUpdate: function (self) {
             const progress = self.progress;
             const totalFrames = lottieElement.totalFrames;
             const totalFramesMobile = lottieElementMobile.totalFrames;
-            const frame = Math.round(progress * totalFrames);
-            const frameMobile = Math.round(progress * totalFramesMobile);
+            const frame = Math.round(progress * (totalFrames - 10)) + 10; // Start from frame 10
+            const frameMobile = Math.round(progress * (totalFramesMobile - 10)) + 10; // Start from frame 10
             lottieElement.goToAndStop(frame, true);
             lottieElementMobile.goToAndStop(frameMobile, true);
+          },
+          onScrubComplete: function () {
+            // When the animation is over, kill the ScrollTrigger animation
+            anim.scrollTrigger.kill();
+            const totalFrames = lottieElement.totalFrames;
+            const totalFramesMobile = lottieElementMobile.totalFrames;
+
+            // Reset Lottie to initial frame
+            lottieElement.goToAndStop(totalFrames, true);
+            lottieElementMobile.goToAndStop(totalFramesMobile, true);
           }
         }
       });
     });
+
+
 
     // Repeat the same for the mobileLottieElement
 

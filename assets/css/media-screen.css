@@ -26,9 +26,8 @@
   }
 
   .content_box {
-    width: 0;
+    max-width: 0;
     overflow: hidden;
-    transition: all 3ms linear !important;
   }
 
   .content_box .card_val {
@@ -66,7 +65,7 @@
   }
 
   .swiper-slide-active {
-    width: 640px !important;
+    width: auto !important;
   }
 
   .cash_flow_box {
@@ -127,7 +126,7 @@
 }
 
 @media (max-width: 1024.98px) {
-   .blur-position {
+  .blur-position {
     top: 142px;
     right: 35px;
   }
@@ -313,7 +312,7 @@
     left: 0;
     z-index: -1;
   }
-  #pinned-section{
+  #pinned-section {
     height: 700px;
   }
   .faq_heading_width {
