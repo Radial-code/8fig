@@ -117,6 +117,10 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       1280: {
         effect: 'coverflow',
+      },
+      1536: {
+        centeredSlidesBounds: false,
+        loop:false
       }
     },
     coverflowEffect: {

@@ -721,3 +721,12 @@ video::-moz-media-controls {
 video::media-controls {
   display: none !important;
 }
+.base-linelotty {
+  position: absolute;
+  top: 70%;
+  transform: translate(76%, -87%) scale(1.1);
+  left: 0;
+  width: 1000px;
+  right: 0;
+  height: 2px;
+}
