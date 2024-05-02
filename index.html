@@ -1064,47 +1064,39 @@ AI technology that predicts, plans, and protects your cash flow." />
       // Set initial frames to 10
       lottieElement.goToAndStop(10, true);
       lottieElementMobile.goToAndStop(10, true);
+      let customVal = true;
+      // Define a function to reset the ScrollTrigger's end value
+      function resetEnd(scrollTrigger) {
+        scrollTrigger.end = () => "+=0%"; // This will effectively set the end to the same as the start
+        scrollTrigger.update(); // Update the ScrollTrigger to apply the new end value
+      }
 
       const anim = gsap.to(lottieElement, {
         scrollTrigger: {
           trigger: '#pinned-section',
           start: 'top 40px',
-          end: '=100%',
+          end: '+=100%', // This will dynamically calculate the end based on the start
           pin: true,
-          // scrub: 1,
-          // once: true,
+          markers: true,
           onUpdate: function (self) {
-            const progress = self.progress;
-            const totalFrames = lottieElement.totalFrames;
-            const totalFramesMobile = lottieElementMobile.totalFrames;
-            const frame = Math.round(progress * (totalFrames - 10)) + 10; // Start from frame 10
-            const frameMobile = Math.round(progress * (totalFramesMobile - 10)) + 10; // Start from frame 10
-            lottieElement.goToAndStop(frame, true);
-            lottieElementMobile.goToAndStop(frameMobile, true);
-          },
-
-
-
-          // onEnterBack: function () {
-          //  const totalFrames = lottieElement.totalFrames;
-          //   const totalFramesMobile = lottieElementMobile.totalFrames;
-          //   // Reset Lottie to initial frame
-          //   lottieElement.goToAndStop(totalFrames, true);
-          //   lottieElementMobile.goToAndStop(totalFramesMobile, true);
-          //   // resetPinnedElement();
-          // },
-
-          onComplete: function (self) {
-            if (self.direction > 0) {
-              // When the animation is over, kill the ScrollTrigger animation
-              anim.scrollTrigger.kill();
-              // const totalFrames = lottieElement.totalFrames;
-              // const totalFramesMobile = lottieElementMobile.totalFrames;
-              // // Reset Lottie to initial frame
-              // lottieElement.goToAndStop(totalFrames, true);
-              // lottieElementMobile.goToAndStop(totalFramesMobile, true);
-
+            if (customVal) {
+              const progress = self.progress;
+              const totalFrames = lottieElement.totalFrames;
+              const totalFramesMobile = lottieElementMobile.totalFrames;
+              const frame = Math.round(progress * (totalFrames - 10)) + 10; // Start from frame 10
+              const frameMobile = Math.round(progress * (totalFramesMobile - 10)) + 10; // Start from frame 10
+              lottieElement.goToAndStop(frame, true);
+              lottieElementMobile.goToAndStop(frameMobile, true);
             }
+          },
+          onEnterBack: function (self) {
+            console.log("Entered back");
+            customVal = false;
+            resetEnd(self.scrollTrigger); // Call the function to reset the end value
+          },
+          onComplete: function (self) {
+            customVal = false;
+            resetEnd(self.scrollTrigger); // Call the function to reset the end value
           }
         }
       });
