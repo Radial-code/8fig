@@ -730,3 +730,13 @@ video::media-controls {
   right: 0;
   height: 2px;
 }
+
+/* Hide all bullets */
+.swiper-pagination-bullet {
+  display: none !important;
+}
+
+/* Show only the first four bullets */
+.swiper-pagination-bullet:nth-child(-n + 4) {
+  display: inline-block !important;
+}

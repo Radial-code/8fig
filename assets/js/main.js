@@ -105,13 +105,23 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 1,
         effect: "coverflow",
       },
-      768: {
+      767: {
         effect: 'coverflow',
         coverflowEffect: {
           rotate: 0,
           stretch: 0,
-          depth: 400,
-          modifier: 1,
+          depth:150,
+          modifier: 3,
+          slideShadows: false
+        },
+      },
+      992: {
+        effect: 'coverflow',
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth:150,
+          modifier: 2,
           slideShadows: false
         },
       },
@@ -119,8 +129,26 @@ document.addEventListener('DOMContentLoaded', function () {
         effect: 'coverflow',
       },
       1536: {
+         coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 200,
+      modifier: .5,
+      slideShadows: false
+    },
         centeredSlidesBounds: false,
-        loop:false
+        loop:true
+      },
+      1750: {
+         coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false
+    },
+        centeredSlidesBounds: false,
+        loop:true
       }
     },
     coverflowEffect: {
@@ -137,6 +165,7 @@ document.addEventListener('DOMContentLoaded', function () {
     pagination: {
 el: '.pagination',
       clickable: true,
+  
     },
   });
 
@@ -144,7 +173,7 @@ el: '.pagination',
     swiper.updateSlides();
     swiper.slideReset();
   });
-  swiper.slideTo(2);
+  swiper.slideTo(5);
   // Assuming you have already initialized your Swiper instance as 'swiper'
 window.addEventListener('resize', function() {
   // Update Swiper
