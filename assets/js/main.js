@@ -9,7 +9,8 @@ function handleScroll() {
   const contentContainer = document.querySelector(".content_container");
   const getNavBtn = document.querySelector(".get_nav_btn");
 
-  contentContainer.style.top = currentScrollPosition > 0 ? -currentScrollPosition + "px" : 0;
+  contentContainer.style.top =
+    currentScrollPosition > 0 ? -currentScrollPosition + "px" : 0;
 
   if (currentScrollPosition < 100) {
     contentContainer.classList.remove("show_header");
@@ -35,14 +36,14 @@ window.addEventListener("load", handleScroll); // Note: Use "load" event instead
 window.addEventListener("scroll", handleScroll);
 
 // BACk-TO-TOP
-document.addEventListener('DOMContentLoaded', function() {
-  var backToTopButton = document.getElementById('back-to-top');
+document.addEventListener("DOMContentLoaded", function () {
+  var backToTopButton = document.getElementById("back-to-top");
 
-  backToTopButton.addEventListener('click', function() {
+  backToTopButton.addEventListener("click", function () {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   });
 });
@@ -63,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 // YEAR CHANGER FUNCTION
 var currentYearElements = document.getElementsByClassName("currentYear");
 for (var i = 0; i < currentYearElements.length; i++) {
@@ -82,22 +82,22 @@ function backToTopOnReload() {
   window.onload = function () {
     // Scroll the window to the top
     window.scrollTo(0, 0);
-  }
+  };
 }
 // Call the function to enable back to top on window reload
 backToTopOnReload();
 
-
 // JOIN COMMUNITY SLIDER CODE
-document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.my-slider-container', {
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".my-slider-container", {
     spaceBetween: 20,
     slidesPerView: "auto",
-   centeredSlides: true,
+    centeredSlides: true,
     centeredSlidesBounds: true,
-    updateOnWindowResize: true, speed:600,
+    updateOnWindowResize: true,
+    speed: 600,
     effect: "coverflow",
-    loop:true,
+    loop: true,
     allowTouchMove: false,
     breakpoints: {
       320: {
@@ -106,62 +106,44 @@ document.addEventListener('DOMContentLoaded', function () {
         effect: "coverflow",
       },
       768: {
-        effect: 'coverflow',
+        effect: "coverflow",
         coverflowEffect: {
           rotate: 0,
           stretch: 0,
           depth: 200,
           modifier: 1,
-          slideShadows: false
+          slideShadows: false,
         },
       },
       1280: {
-        effect: 'coverflow',
-       
+        effect: "coverflow",
       },
-      1536: {
-        centeredSlidesBounds: false, 
-                    // slidesPerView: 3,
-
-        loop:false,
-  //           slidesPerView: 3.5,
-  // coverflowEffect: {
-  //         rotate: 0,
-  //         stretch: 0,
-  //         depth: 350,
-  //         modifier: 2.9,
-  //         slideShadows: false
-  //      } 
-      },
-     
-      
     },
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
       depth: 320,
-      modifier: .5,
-      slideShadows: false
+      modifier: 0.5,
+      slideShadows: false,
     },
     navigation: {
-      nextEl: '.swiper-button-prev',
-      prevEl: '.swiper-button-next',
+      nextEl: ".swiper-button-prev",
+      prevEl: ".swiper-button-next",
     },
     pagination: {
-el: '.pagination',
+      el: ".pagination",
       clickable: true,
     },
   });
 
-  swiper.on('slideChangeTransitionStart', function () {
+  swiper.on("slideChangeTransitionStart", function () {
     swiper.updateSlides();
     swiper.slideReset();
   });
-  swiper.slideTo(2);
+  swiper.slideTo(3);
   // Assuming you have already initialized your Swiper instance as 'swiper'
-window.addEventListener('resize', function() {
-  // Update Swiper
-  swiper.update();
-});
-
+  window.addEventListener("resize", function () {
+    // Update Swiper
+    swiper.update();
+  });
 });
