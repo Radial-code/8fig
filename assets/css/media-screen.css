@@ -76,6 +76,10 @@
     bottom: -30px;
   }
 }
+.swiper-slide.d-none.justify-content-center.d_2xl_block{display: none !important;}
+@media (min-width: 1600px) {
+.d_2xl_block{}
+}
 /* .swiper-slide.hide_slide{display: none;}
 @media (min-width: 1600px) {
 .swiper-slide.hide_slide{display: block;}
