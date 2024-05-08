@@ -505,7 +505,65 @@ AI technology that predicts, plans, and protects your cash flow." />
                 </div>
               </div>
             </div>
-            <div class="swiper-slide d-flex justify-content-center d-xl-block" role="group" aria-label="6 / 6" style="transform: translate3d(0px, 0px, -329.552px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 0; transition-duration: 0ms; width: 670px; margin-right: 20px;" data-swiper-slide-index="5">
+             <div class="swiper-slide d-none justify-content-center d-xxl-block" role="group" aria-label="6 / 6" style="transform: translate3d(0px, 0px, -329.552px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 0; transition-duration: 0ms; width: 670px; margin-right: 20px;" data-swiper-slide-index="5">
+              <div class="card_parent h-100 d-flex flex-column flex-md-row text-start justify-content-center">
+                <div class="img_parent">
+                  <img loading="lazy" src="/assets/images/webp/felix-leshno.webp" width="232px" height="356px" class="object-fit-cover d-none d-md-block slider_img_radius" alt="ali-kaminetsky">
+                  <img loading="lazy" src="/assets/images/webp/felix-leshno-mobile.webp" width="318px" height="162px" class="object-fit-cover d-md-none" alt="ali-kaminetsky">
+                </div>
+                <div class="content_box d-flex flex-grow-1">
+                  <div class="card_val d-flex justify-content-between flex-column">
+                    <div>
+                      <h4 class="font-base fw-bold text-black mb-1">
+                        Felix Leshno
+                      </h4>
+                      <p class="text-uppercase fw-medium fw_normal_mobile font-sm text-dark-grey pb-3 mb-1">
+                        co founder &amp; cxo, Underoutfit
+                      </p>
+                      <p class="fw-medium fw_normal_mobile font-base text-black mb-0">
+                        “8fig funding terms and flexibility provided the
+                        resources we needed to propel our growth while
+                        maintaining our brand’s integrity”
+                      </p>
+                    </div>
+                    <p class="d-flex align-items-center justify-content-start w-100 line_height_mobile_1 text-black fw-bold font-abril-bold font-3xl mb-0">
+                      5 to 7 figures
+                      <span class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg">in 2021</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>  <div class="swiper-slide d-none justify-content-center d-xxl-block" role="group" aria-label="6 / 6" style="transform: translate3d(0px, 0px, -329.552px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 0; transition-duration: 0ms; width: 670px; margin-right: 20px;" data-swiper-slide-index="5">
+              <div class="card_parent h-100 d-flex flex-column flex-md-row text-start justify-content-center">
+                <div class="img_parent">
+                  <img loading="lazy" src="/assets/images/webp/david-lang.webp" width="232px" height="356px" class="object-fit-cover d-none d-md-block slider_img_radius" alt="ali-kaminetsky">
+                  <img loading="lazy" src="/assets/images/webp/david-lang-mobile.webp" width="318px" height="162px" class="object-fit-cover d-md-none" alt="ali-kaminetsky">
+                </div>
+                <div class="content_box d-flex flex-grow-1">
+                  <div class="card_val d-flex justify-content-between flex-column">
+                    <div>
+                      <h4 class="font-base fw-bold text-black mb-1">
+                        Felix Leshno
+                      </h4>
+                      <p class="text-uppercase fw-medium fw_normal_mobile font-sm text-dark-grey pb-3 mb-1">
+                        co founder &amp; cxo, Underoutfit
+                      </p>
+                      <p class="fw-medium fw_normal_mobile font-base text-black mb-0">
+                        “8fig funding terms and flexibility provided the
+                        resources we needed to propel our growth while
+                        maintaining our brand’s integrity”
+                      </p>
+                    </div>
+                    <p class="d-flex align-items-center justify-content-start w-100 line_height_mobile_1 text-black fw-bold font-abril-bold font-3xl mb-0">
+                      5 to 7 figures
+                      <span class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg">in 2021</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+            <div class="swiper-slide d-none justify-content-center d-xxl-block" role="group" aria-label="6 / 6" style="transform: translate3d(0px, 0px, -329.552px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 0; transition-duration: 0ms; width: 670px; margin-right: 20px;" data-swiper-slide-index="5">
               <div class="card_parent h-100 d-flex flex-column flex-md-row text-start justify-content-center">
                 <div class="img_parent">
                   <img loading="lazy" src="/assets/images/webp/felix-leshno.webp" width="232px" height="356px" class="object-fit-cover d-none d-md-block slider_img_radius" alt="ali-kaminetsky">
@@ -1101,14 +1159,18 @@ AI technology that predicts, plans, and protects your cash flow." />
             autoplay: false,
             path: './assets/lottie/mobile.json'
         });
+        lottieElement.goToAndStop(12, true); // For frame number
+         lottieElementMobile.goToAndStop(17, true);
+
 
         function animateLottie(animation, progress) {
             const totalFrames = animation.totalFrames;
-       if (window.innerWidth <768) {     const frame = Math.round(progress * (totalFrames - 17)) + 17;
-            animation.goToAndStop(frame, true);
+      //  if (window.innerWidth < 768) {     const frame = Math.round(progress * (totalFrames - 17)) + 17;
+      //       animation.goToAndStop(frame, true);
         
-       }else{     const frame = Math.round(progress * (totalFrames - 12)) + 12;
-            animation.goToAndStop(frame, true);}
+      //  }  
+       const frame = Math.round(progress * (totalFrames - 17)) + 17;
+            animation.goToAndStop(frame, true);
         }
 
         gsap.to('.pinned_section', {
@@ -1120,9 +1182,23 @@ AI technology that predicts, plans, and protects your cash flow." />
                 pin: true,
                 pinSpacing: true,
                 onUpdate: function (self) {
-                    const progress = self.progress;
-                    animateLottie(lottieElement, progress);
-                    animateLottie(lottieElementMobile, progress);
+                  
+                 if (window.innerWidth < 768) {
+                   const progress = self.progress;
+            const totalFrames = lottieElement.totalFrames;
+            const totalFramesMobile = lottieElementMobile.totalFrames;
+            const frame = Math.round(progress * (totalFrames - 17)) + 17; // Start from frame 17
+            const frameMobile = Math.round(progress * (totalFramesMobile - 17)) + 17; // Start from frame 17
+            lottieElement.goToAndStop(frame, true);
+            lottieElementMobile.goToAndStop(frameMobile, true);
+                 }
+                 else{ const progress = self.progress;
+            const totalFrames = lottieElement.totalFrames;
+            const totalFramesMobile = lottieElementMobile.totalFrames;
+            const frame = Math.round(progress * (totalFrames - 12)) + 12; // Start from frame 12
+            const frameMobile = Math.round(progress * (totalFramesMobile - 12)) + 12; // Start from frame 12
+            lottieElement.goToAndStop(frame, true);
+            lottieElementMobile.goToAndStop(frameMobile, true);}
                 }
             }
         });

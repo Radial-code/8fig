@@ -120,15 +120,19 @@ document.addEventListener('DOMContentLoaded', function () {
        
       },
       1536: {
-        centeredSlidesBounds: true,
-            slidesPerView: 3.5,
-  coverflowEffect: {
-          rotate: 0,
-          stretch: 0,
-          depth: 300,
-          modifier: 2.9,
-          slideShadows: false
-       } },
+        // centeredSlidesBounds: false, 
+                    // slidesPerView: 3,
+
+        // loop:false
+  //           slidesPerView: 3.5,
+  // coverflowEffect: {
+  //         rotate: 0,
+  //         stretch: 0,
+  //         depth: 300,
+  //         modifier: 2.9,
+  //         slideShadows: false
+  //      } 
+      },
      
       
     },
