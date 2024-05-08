@@ -591,7 +591,8 @@
 
 .card_parent .img_parent img {
   min-width: 318px;
-  height: 162px;
+  height: 162px;  border-radius: 20px 20px 0px 0px;
+
 }
 
 .content_box .card_val {
