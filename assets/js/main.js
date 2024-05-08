@@ -110,23 +110,27 @@ document.addEventListener('DOMContentLoaded', function () {
         coverflowEffect: {
           rotate: 0,
           stretch: 0,
-          depth: 400,
+          depth: 200,
           modifier: 1,
           slideShadows: false
         },
       },
       1280: {
         effect: 'coverflow',
+       
       },
-      1900: {
-         coverflowEffect: {
+      1536: {
+        centeredSlidesBounds: true,
+            slidesPerView: 3.5,
+  coverflowEffect: {
           rotate: 0,
           stretch: 0,
-          depth: 200,
-          modifier: 1,
+          depth: 300,
+          modifier: 2.9,
           slideShadows: false
-        },
-      }
+       } },
+     
+      
     },
     coverflowEffect: {
       rotate: 0,

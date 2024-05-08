@@ -355,16 +355,9 @@ AI technology that predicts, plans, and protects your cash flow." />
           <div class="pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 4" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span></div>
         </div>
 
-        <div class="my-slider-container overflow-hidden d-flex justify-content-center swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress">
+        <div style="max-width: 1920px;" class="my-slider-container mx-auto overflow-hidden d-flex justify-content-center swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress">
           <div class="swiper-wrapper d-flex justify-content-start" id="swiper-wrapper-6e93c09de55b687d" aria-live="polite" style="transform: translate3d(-2070px, 0px, 0px); transition-duration: 0ms; transition-delay: 0ms;">
-            <!-- First slide -->
-            
-            
-            
-            
-            
-            
-          <div class="swiper-slide d-flex justify-content-center d-xl-block" role="group" aria-label="1 / 6" style="transform: translate3d(0px, 0px, -494.328px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -1; transition-duration: 0ms; width: 670px; margin-right: 20px;" data-swiper-slide-index="0">
+            <!-- First slide --><div class="swiper-slide d-flex justify-content-center d-xl-block" role="group" aria-label="1 / 6" style="transform: translate3d(0px, 0px, -494.328px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -1; transition-duration: 0ms; width: 670px; margin-right: 20px;" data-swiper-slide-index="0">
               <div class="card_parent h-100 d-flex flex-column flex-md-row text-start justify-content-center">
                 <div class="img_parent">
                   <img loading="lazy" src="/assets/images/webp/ali-kaminetsky.webp" width="232px" height="360px" class="object-fit-cover d-none d-md-block slider_img_radius" alt="ali-kaminetsky">
@@ -1027,7 +1020,7 @@ AI technology that predicts, plans, and protects your cash flow." />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
   <!-- CUSTOM JS FILES -->
 
-  <script>
+  <!-- <script>
     gsap.registerPlugin(ScrollTrigger);
     // Load the Lottie animations
     var lottieElement = lottie.loadAnimation({
@@ -1048,8 +1041,8 @@ AI technology that predicts, plans, and protects your cash flow." />
     // Wait for the Lottie animations to be loaded
     lottieElement.addEventListener('DOMLoaded', function () {
       // Set initial frames to 10
-      lottieElement.goToAndStop(10, true);
-      lottieElementMobile.goToAndStop(10, true);
+      lottieElement.goToAndStop(12, true);
+      lottieElementMobile.goToAndStop(12, true);
       let customVal = true;
       const anim = gsap.to(lottieElement, {
         scrollTrigger: {
@@ -1063,8 +1056,8 @@ AI technology that predicts, plans, and protects your cash flow." />
             const progress = self.progress;
             const totalFrames = lottieElement.totalFrames;
             const totalFramesMobile = lottieElementMobile.totalFrames;
-            const frame = Math.round(progress * (totalFrames - 10)) + 10; // Start from frame 10
-            const frameMobile = Math.round(progress * (totalFramesMobile - 10)) + 10; // Start from frame 10
+            const frame = Math.round(progress * (totalFrames - 12)) + 12; // Start from frame 12
+            const frameMobile = Math.round(progress * (totalFramesMobile - 12)) + 12; // Start from frame 12
             lottieElement.goToAndStop(frame, true);
             lottieElementMobile.goToAndStop(frameMobile, true);
             // }
@@ -1086,8 +1079,54 @@ AI technology that predicts, plans, and protects your cash flow." />
 
     });
     // Repeat the same for the mobileLottieElement
-  </script>
+  </script> -->
 
+      <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.set(".pinned_section", { minHeight: "100vh" });
+
+        // Load the Lottie animations
+        const lottieElement = lottie.loadAnimation({
+            container: document.getElementById('desktop_version'),
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: './assets/lottie/how-it-works.json'
+        });
+
+        const lottieElementMobile = lottie.loadAnimation({
+            container: document.getElementById('mobile_version'),
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: './assets/lottie/mobile.json'
+        });
+
+        function animateLottie(animation, progress) {
+            const totalFrames = animation.totalFrames;
+       if (window.innerWidth <768) {     const frame = Math.round(progress * (totalFrames - 17)) + 17;
+            animation.goToAndStop(frame, true);
+        
+       }else{     const frame = Math.round(progress * (totalFrames - 12)) + 12;
+            animation.goToAndStop(frame, true);}
+        }
+
+        gsap.to('.pinned_section', {
+            scrollTrigger: {
+                trigger: '.pinned_section',
+                start: 'top top',
+                end: '+=300%',
+                scrub: true,
+                pin: true,
+                pinSpacing: true,
+                onUpdate: function (self) {
+                    const progress = self.progress;
+                    animateLottie(lottieElement, progress);
+                    animateLottie(lottieElementMobile, progress);
+                }
+            }
+        });
+    </script>
   <script src="./assets/js/main.js"></script>
 
 </body>

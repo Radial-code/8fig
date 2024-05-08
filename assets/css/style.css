@@ -731,9 +731,9 @@ video::media-controls {
   height: 2px;
 }
 
-
-
-/* Show only the first four bullets */
-/* .swiper-pagination-bullet:nth-child(-n + 5) {
-  display: inline-block !important;
-} */
+#desktop_version svg,
+#mobile_version svg
+{ 
+  -webkit-scale:1.06 !important;
+  scale:1.06 !important;
+}
