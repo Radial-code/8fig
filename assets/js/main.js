@@ -104,8 +104,10 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
         slidesPerView: 1,
         effect: "coverflow",
+        allowTouchMove: true,
       },
       768: {
+        allowTouchMove: false,
         effect: "coverflow",
         coverflowEffect: {
           rotate: 0,
