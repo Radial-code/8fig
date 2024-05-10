@@ -1,3 +1,12 @@
 {
-    "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "terminal.integrated.tabs.defaultColor": null,
+  "editor.minimap.autohide": true,
+  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+  "workbench.preferredHighContrastColorTheme": "Visual Studio Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "git-graph.tabIconColourTheme": "colour",
+  "editor.fontFamily": "Lucida-Console-Regular"
 }
