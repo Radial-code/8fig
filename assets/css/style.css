@@ -591,8 +591,8 @@
 
 .card_parent .img_parent img {
   min-width: 318px;
-  height: 162px;  border-radius: 20px 20px 0px 0px;
-
+  height: 162px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .content_box .card_val {
@@ -733,8 +733,11 @@ video::media-controls {
 }
 
 #desktop_version svg,
-#mobile_version svg
-{ 
-  -webkit-scale:1.06 !important;
-  scale:1.06 !important;
+#mobile_version svg {
+  -webkit-scale: 1.06 !important;
+  scale: 1.06 !important;
 }
+/* 
+.content_box {
+  display: none !important;
+} */

@@ -35,18 +35,18 @@ window.addEventListener("resize", handleScroll);
 window.addEventListener("load", handleScroll); // Note: Use "load" event instead of "onload"
 window.addEventListener("scroll", handleScroll);
 
-// BACk-TO-TOP
-document.addEventListener("DOMContentLoaded", function () {
-  var backToTopButton = document.getElementById("back-to-top");
+// // BACk-TO-TOP
+// document.addEventListener("DOMContentLoaded", function () {
+//   var backToTopButton = document.getElementById("back-to-top");
 
-  backToTopButton.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  });
-});
+//   backToTopButton.addEventListener("click", function () {
+//     window.scrollTo({
+//       top: 0,
+//       left: 0,
+//       behavior: "smooth",
+//     });
+//   });
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
   var backToTop = document.getElementById("back-to-top");

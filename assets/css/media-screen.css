@@ -88,9 +88,8 @@
     scale: 1;
   }
 
-  .w_3xl_vh_full .lottie_parent #desktop_version svg{
-
-    scale: 1.048!important;
+  .w_3xl_vh_full .lottie_parent #desktop_version svg {
+    scale: 1.048 !important;
   }
 }
 .swiper-slide.d-none.justify-content-center.d_2xl_block {
@@ -339,6 +338,9 @@
 }
 
 @media (max-width: 575.98px) {
+  .works_text_width {
+    max-width: 344px;
+  }
   .lottie_parent {
     position: absolute;
     top: -180px !important;
