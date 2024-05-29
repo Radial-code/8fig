@@ -718,7 +718,9 @@ video::-webkit-media-controls {
 video::-moz-media-controls {
   display: none !important;
 }
-
+.transform_y_heading {
+  transform: translateY(14px);
+}
 video::media-controls {
   display: none !important;
 }
