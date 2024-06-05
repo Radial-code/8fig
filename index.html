@@ -8,9 +8,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./assets/css/root.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="./assets/css/media-screen.css" />
+  <link rel="stylesheet" href="./assets/css/root.css?v=20220601" />
+  <link rel="stylesheet" href="./assets/css/style.css?v=20220601" />
+  <link rel="stylesheet" href="./assets/css/media-screen.css?v=20220601" />
   <!-- Primary Meta Tags -->
   <title>8Fig</title>
   <meta name="title" content="8fig" />
@@ -30,11 +30,27 @@ AI technology that predicts, plans, and protects your cash flow." />
   <meta property="twitter:description" content="Get AI funding for your store
 AI technology that predicts, plans, and protects your cash flow." />
   <meta property="twitter:image" content="https://fig-ce1e4.web.app/seo.png" />
+  <style>
+    @supports (-webkit-touch-callout: none) {
+      .min-vh-100 {
+        min-height: 100dvh !important;
+        transition: all 400ms linear;
+      }
+    }
+
+    @supports not (-webkit-touch-callout: none) {
+      .min-vh-100 {
+        min-height: 100dvh !important;
+        transition: all 400ms linear;
+
+      }
+    }
+  </style>
 </head>
 
 <body>
   <!-- Hero start  -->
-  <section class="bg-yellow overflow-hidden min-vh-100 my_n_18 position-relative z-5">
+  <section id="ios_setting" class="bg-yellow overflow-hidden min-vh-100 my_n_18 position-relative z-5">
     <!-- header start  -->
     <div class="d-flex content_container justify-content-between position-fixed px-4 py-3 z-3 transition_03s w-100">
       <a aria-label="link to landing page" href="/"><svg class="cursor-pointer z-2" width="51" height="32"

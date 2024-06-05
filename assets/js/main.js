@@ -120,3 +120,9 @@ document.addEventListener("DOMContentLoaded", function () {
     swiper.update();
   });
 });
+
+useEffect(() => {
+if (navigator.userAgent.match(/iP(hone|od|ad)/i)) {
+  document.getElementById("ios_setting").classList.add("height_iphone")
+}
+}, [third])
