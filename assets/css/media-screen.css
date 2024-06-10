@@ -300,10 +300,6 @@
     padding: 10px 24px;
   }
 
-  .get_btn_v2:hover {
-    padding: 10px 24px !important;
-  }
-
   .blur_card_1 {
     top: -12%;
     left: -7%;
@@ -351,6 +347,11 @@
 }
 
 @media (max-width: 575.98px) {
+  .apply_btn,
+  .get_btn {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
   .transform_y_heading {
     transform: translateY(14px);
   }
