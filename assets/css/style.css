@@ -4,7 +4,8 @@
 }
 
 .hero_video_parent {
-  height: 100vh !important;
+  min-height: 100vh !important;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -718,7 +719,9 @@ video::-webkit-media-controls {
 video::-moz-media-controls {
   display: none !important;
 }
-
+.transform_y_heading {
+  transform: translateY(14px);
+}
 video::media-controls {
   display: none !important;
 }

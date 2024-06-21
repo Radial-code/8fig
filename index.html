@@ -8,9 +8,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./assets/css/root.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="./assets/css/media-screen.css" />
+  <link rel="stylesheet" href="./assets/css/root.css?v=20220601" />
+  <link rel="stylesheet" href="./assets/css/style.css?v=20220601" />
+  <link rel="stylesheet" href="./assets/css/media-screen.css?v=20220601" />
   <!-- Primary Meta Tags -->
   <title>8Fig</title>
   <meta name="title" content="8fig" />
@@ -30,11 +30,27 @@ AI technology that predicts, plans, and protects your cash flow." />
   <meta property="twitter:description" content="Get AI funding for your store
 AI technology that predicts, plans, and protects your cash flow." />
   <meta property="twitter:image" content="https://fig-ce1e4.web.app/seo.png" />
+  <style>
+    @supports (-webkit-touch-callout: none) {
+      .min-vh-100 {
+        min-height: 100dvh !important;
+        transition: all 400ms linear;
+      }
+    }
+
+    @supports not (-webkit-touch-callout: none) {
+      .min-vh-100 {
+        min-height: 100dvh !important;
+        transition: all 400ms linear;
+
+      }
+    }
+  </style>
 </head>
 
 <body>
   <!-- Hero start  -->
-  <section class="bg-yellow overflow-hidden min-vh-100 my_n_18">
+  <section id="ios_setting" class="bg-yellow overflow-hidden min-vh-100 my_n_18 position-relative z-5">
     <!-- header start  -->
     <div class="d-flex content_container justify-content-between position-fixed px-4 py-3 z-3 transition_03s w-100">
       <a aria-label="link to landing page" href="/"><svg class="cursor-pointer z-2" width="51" height="32"
@@ -64,13 +80,14 @@ AI technology that predicts, plans, and protects your cash flow." />
 
     <div class="m-0 overflow-hidden h-100">
       <video id="myVideo" loop playsinline muted autoplay
-        class="w-100 hero_video_parent position-absolute pointer-event-none">
+        class="w-100 hero_video_parent position-absolute pointer-event-none  h-100">
         <source src="/assets/video/mp4.mp4" type="video/mp4" />
         <!-- https://firebasestorage.googleapis.com/v0/b/fig-ce1e4.appspot.com/o/Video.Guru_20240422_115442846.mp4?alt=media&token=f8f96e6d-7feb-49bf-82ad-3725acd5cb66 -->
       </video>
+      <div class=" position-absolute top-0 start-0 min-vh-100 h-100 w-100 bg-black z-1 opacity-25"></div>
       <div
-        class="container container_custom_hero px-0 px-md-3 d-flex justify-content-between align-items-center flex-column-reverse flex-md-row min-vh-100 pb-5 pb-md-0 position-relative">
-        <div class="pb-2 pb-md-0 hero_content_parent">
+        class="container container_custom_hero px-0 px-md-3 d-flex justify-content-between align-items-center flex-column-reverse flex-md-row min-vh-100 pb-3 pb-md-0 position-relative z-2">
+        <div class="pb-2 pb-md-0 hero_content_parent pb-5">
           <div class="d-flex flex-column">
             <h1 class="fw-bold font-5xl lh_106 text-white mt-3 w_hero_title mb-1">
               Get AI funding for your store
@@ -125,44 +142,44 @@ AI technology that predicts, plans, and protects your cash flow." />
         </div>
       </div>
     </div>
-  </section>
-  <div class="bg-light-black shopping_box position-relative">
-    <div class="d-flex flex-md-row flex-column gap_sm_52 align-items-center mx-3 justify-content-center">
-      <p class="fw-medium fw_normal_mobile font-sm text_xs_mobile text-white text-uppercase mb-0 tracking_1">
-        main supported platforms
-      </p>
-      <div
-        class="d-flex flex-sm-row flex-column justify-content-center align-items-center max_w_290 w_full_mobile mt_30_mobile gap_sm_52">
+    <div class="bg-light-black shopping_box position-relative z-1">
+      <div class="d-flex flex-md-row flex-column gap_sm_52 align-items-center mx-3 justify-content-center">
+        <p class="fw-medium fw_normal_mobile font-sm text_xs_mobile text-white text-uppercase mb-0 tracking_1">
+          main supported platforms
+        </p>
         <div
-          class="d-flex justify-content-sm-center justify-content-between align-items-sm-center w_full_mobile gap_sm_52">
-          <span class="d-sm-block d-none">
-            <img loading="lazy" src="./assets/images/svg/amazon.svg" alt="amazon" />
-          </span>
-          <span class="d-sm-none d-block scale_12">
-            <img loading="lazy" src="./assets/images/svg/amazon2.svg" alt="amazon" />
-          </span>
-          <span class="d-sm-block d-none">
-            <img loading="lazy" src="./assets/images/svg/shopify.svg" alt="shopify" />
-          </span>
-          <span class="d-sm-none d-block">
-            <img loading="lazy" src="./assets/images/svg/shopify2.svg" alt="shopify" />
-          </span>
-        </div>
-        <div
-          class="d-flex justify-content-sm-center justify-content-between align-items-center mt_44_mobile w_full_mobile gap_sm_52">
-          <span class="d-sm-block d-none">
-            <img loading="lazy" src="./assets/images/svg/ebay.svg" alt="ebay" />
-          </span>
-          <span class="d-sm-none d-block">
-            <img loading="lazy" src="./assets/images/svg/ebay2.svg" alt="ebay" />
-          </span>
-          <span>
-            <img loading="lazy" class="commerce_image" src="./assets/images/webp/big-commerce.webp"
-              alt="big-commerce" /></span>
+          class="d-flex flex-sm-row flex-column justify-content-center align-items-center max_w_290 w_full_mobile mt_30_mobile gap_sm_52">
+          <div
+            class="d-flex justify-content-sm-center justify-content-between align-items-sm-center w_full_mobile gap_sm_52">
+            <span class="d-sm-block d-none">
+              <img loading="lazy" src="./assets/images/svg/amazon.svg" alt="amazon" />
+            </span>
+            <span class="d-sm-none d-block scale_12">
+              <img loading="lazy" src="./assets/images/svg/amazon2.svg" alt="amazon" />
+            </span>
+            <span class="d-sm-block d-none">
+              <img loading="lazy" src="./assets/images/svg/shopify.svg" alt="shopify" />
+            </span>
+            <span class="d-sm-none d-block">
+              <img loading="lazy" src="./assets/images/svg/shopify2.svg" alt="shopify" />
+            </span>
+          </div>
+          <div
+            class="d-flex justify-content-sm-center justify-content-between align-items-center mt_44_mobile w_full_mobile gap_sm_52">
+            <span class="d-sm-block d-none">
+              <img loading="lazy" src="./assets/images/svg/ebay.svg" alt="ebay" />
+            </span>
+            <span class="d-sm-none d-block">
+              <img loading="lazy" src="./assets/images/svg/ebay2.svg" alt="ebay" />
+            </span>
+            <span>
+              <img loading="lazy" class="commerce_image" src="./assets/images/webp/big-commerce.webp"
+                alt="big-commerce" /></span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Three same cards sections start  -->
   <section class="bg-yellow">
@@ -188,13 +205,13 @@ AI technology that predicts, plans, and protects your cash flow." />
               <div class="d-flex flex-column">
                 <div class="mx-md-0 mx-auto">
                   <div class="black_circle d-flex justify-content-center align-items-center">
-                    <p class="fw-semibold font-2xl font-abril-semibold text-white mb-0 cards_number_top_mt">
+                    <p class=" font-2xl font-abril-semibold text-white mb-0 cards_number_top_mt">
                       1
                     </p>
                   </div>
                 </div>
                 <h2
-                  class="font-abril-semibold text-md-start text-center mx-md-0 mx-auto fw-semibold font-3xl text-light-black mt-3 card_one_para_width mb-0">
+                  class="font-abril-semibold text-md-start text-center mx-md-0 mx-auto  font-3xl text-light-black mt-3 card_one_para_width mb-0">
                   Get an AI evaluation of your supply
                   <span class="ms-md-1">chain needs</span>
                 </h2>
@@ -218,13 +235,13 @@ AI technology that predicts, plans, and protects your cash flow." />
               <div class="d-flex flex-column">
                 <div class="mx-md-0 mx-auto">
                   <div class="black_circle d-flex justify-content-center align-items-center">
-                    <p class="fw-semibold font-2xl font-abril-semibold text-white mb-0 cards_number_top_mt">
+                    <p class="font-2xl font-abril-semibold text-white mb-0 cards_number_top_mt">
                       2
                     </p>
                   </div>
                 </div>
                 <h2
-                  class="font-abril-semibold text-md-start text-center mx-md-0 mx-auto text-md-start text-center mx-md-0 mx-auto fw-semibold font-3xl text-light-black mt-3 max_w_revenue_content mb-0">
+                  class="font-abril-semibold text-md-start text-center mx-md-0 mx-auto text-md-start text-center mx-md-0 mx-auto font-3xl text-light-black mt-3 max_w_revenue_content mb-0">
                   Get funded
                 </h2>
                 <p
@@ -285,13 +302,13 @@ AI technology that predicts, plans, and protects your cash flow." />
                 <div class="mx-md-0 mx-auto">
                   <div class="black_circle d-flex justify-content-center align-items-center">
                     <p
-                      class="fw-semibold font-2xl text-md-start text-center mx-md-0 mx-auto font-abril-semibold text-white mb-0 cards_number_top_mt">
+                      class=" font-2xl text-md-start text-center mx-md-0 mx-auto font-abril-semibold text-white mb-0 cards_number_top_mt">
                       3
                     </p>
                   </div>
                 </div>
                 <h2
-                  class="font-abril-semibold text-md-start text-center mx-md-0 mx-auto fw-semibold font-3xl text-light-black mt-3 max_w_revenue_content mb-0">
+                  class="font-abril-semibold text-md-start text-center mx-md-0 mx-auto font-3xl text-light-black mt-3 max_w_revenue_content mb-0">
                   Experience cash flow freedom
                 </h2>
                 <p
@@ -319,12 +336,13 @@ AI technology that predicts, plans, and protects your cash flow." />
       <div class="section_custom_width w_3xl_vh_full">
         <div
           class=" works_top_padding works_top_space d-flex flex-column justify-content-between justify-content-xl-center pin_scroll">
-          <div class="flex min-vw-100 flex-column mx-auto">
-            <h6 class="text-dark-grey text-uppercase fw-medium fw_normal_mobile font-sm text-center mb-0 tracking_1">
+          <div class="flex min-vw-100 w-100 flex-column mx-auto">
+            <h6
+              class="text-dark-grey text-uppercase fw-medium fw_normal_mobile font-sm text-center mb-0 tracking_1 transform_y_heading">
               how it works
             </h6>
             <h2
-              class="font-abril-semibold text-center fw-semibold mx-auto font-3xl text-white mb-0 works_text_width cards_btn_top_space">
+              class="font-abril-semibold text-center mx-auto font-3xl text-white mb-0 works_text_width cards_btn_top_space transform_y_heading">
               AI technology that predicts, plans, and protects your cash flow
             </h2>
           </div>
@@ -345,7 +363,7 @@ AI technology that predicts, plans, and protects your cash flow." />
           join our community
         </p>
         <h4
-          class="font-3xl text-light-black fw-semibold font-abril-semibold mb-4 mb-md-0 pb-sm-1 text-center join_text_width px-4 px-md-0">
+          class="font-3xl text-light-black font-abril-semibold mb-4 mb-md-0 pb-sm-1 text-center join_text_width px-4 px-md-0">
           Learn from sellers who’ve already made it
         </h4>
       </div>
@@ -401,7 +419,7 @@ AI technology that predicts, plans, and protects your cash flow." />
                     <p
                       class="d-flex align-items-center justify-content-start w-100 line_height_mobile_1 text-black fw-bold font-abril-bold font-3xl mb-0">
                       450%
-                      <span class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg">Shopify store growth
+                      <span class=" font-abril-bold ms-2 ps-1 lh-sm font-lg">Shopify store growth
                       </span>
                     </p>
                   </div>
@@ -434,7 +452,7 @@ AI technology that predicts, plans, and protects your cash flow." />
                     <p
                       class="d-flex align-items-center justify-content-start w-100 line_height_mobile_1 text-black fw-bold font-abril-bold font-3xl mb-0">
                       370%
-                      <span class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg">Shopify store growth</span>
+                      <span class=" font-abril-bold ms-2 ps-1 lh-sm font-lg">Shopify store growth</span>
                     </p>
                   </div>
                 </div>
@@ -465,7 +483,7 @@ AI technology that predicts, plans, and protects your cash flow." />
                     <p
                       class="d-flex align-items-center justify-content-start w-100 line_height_mobile_1 text-black fw-bold font-abril-bold font-3xl mb-0">
                       $5M
-                      <span class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg">Net revenue</span>
+                      <span class=" font-abril-bold ms-2 ps-1 lh-sm font-lg">Net revenue</span>
                     </p>
                   </div>
                 </div>
@@ -496,7 +514,7 @@ AI technology that predicts, plans, and protects your cash flow." />
                     <p
                       class="d-flex align-items-center justify-content-start w-100 line_height_mobile_1 text-black fw-bold font-abril-bold font-3xl mb-0">
                       639%
-                      <span class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg">Amazon store growth in a year
+                      <span class=" font-abril-bold ms-2 ps-1 lh-sm font-lg">Amazon store growth in a year
                       </span>
                     </p>
                   </div>
@@ -529,7 +547,7 @@ AI technology that predicts, plans, and protects your cash flow." />
                     <p
                       class="d-flex align-items-center justify-content-start w-100 line_height_mobile_1 text-black fw-bold font-abril-bold font-3xl mb-0">
                       370%
-                      <span class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg">Shopify store growth</span>
+                      <span class=" font-abril-bold ms-2 ps-1 lh-sm font-lg">Shopify store growth</span>
                     </p>
                   </div>
                 </div>
@@ -561,7 +579,7 @@ AI technology that predicts, plans, and protects your cash flow." />
                     <p
                       class="d-flex align-items-center justify-content-start w-100 line_height_mobile_1 text-black fw-bold font-abril-bold font-3xl mb-0">
                       5 to 7 figures
-                      <span class="fw-semibold font-abril-bold ms-2 ps-1 lh-sm font-lg">in 2021</span>
+                      <span class=" font-abril-bold ms-2 ps-1 lh-sm font-lg">in 2021</span>
                     </p>
                   </div>
                 </div>
@@ -582,7 +600,7 @@ AI technology that predicts, plans, and protects your cash flow." />
           class="text-dark-grey text-uppercase pt-2 pt-md-4 mt-5 font-sm tracking_1 fw-medium fw_normal_mobile mb-3 pb-1">
           why choose 8Fig?
         </p>
-        <h4 class="font-3xl text-white fw-semibold text_custom_width mb-0 font-abril-semibold text-center px-4 px-md-0">
+        <h4 class="font-3xl text-white text_custom_width mb-0 font-abril-semibold text-center px-4 px-md-0">
           The benefits
         </h4>
       </div>
@@ -702,7 +720,7 @@ AI technology that predicts, plans, and protects your cash flow." />
               </p>
               <div class="d-flex justify-content-center align-items-center mt-2">
                 <img loading="lazy" src="/assets/images/svg/equility.svg" class="px-1 equlity_svg" alt="euility" />
-                <p class="fw-semibold font-abril-semibold font-2xl text-center mb-0 text-white">
+                <p class="font-abril-semibold font-2xl text-center mb-0 text-white">
                   0%
                 </p>
               </div>
@@ -720,8 +738,7 @@ AI technology that predicts, plans, and protects your cash flow." />
         class="text-uppercase eligible_heading_space font-sm tracking_1 fw-medium fw_normal_mobile mb-3 pb-1 text-dark-grey">
         make the cut
       </p>
-      <h4
-        class="font-3xl text-light-black fw-semibold text_custom_width mb-0 font-abril-semibold text-center px-4 px-md-0">
+      <h4 class="font-3xl text-light-black text_custom_width mb-0 font-abril-semibold text-center px-4 px-md-0">
         Who’s eligible for getting our AI funding?
       </h4>
       <div class="d-flex justify-content-center mt-3 pt-1 justify-content-lg-start">
@@ -792,7 +809,7 @@ AI technology that predicts, plans, and protects your cash flow." />
             <img loading="lazy" src="/assets/images/png/bbb-logo.png" width="83px" height="31px" class="rating_icon"
               alt="bbb-logo" />
             <h3
-              class="font-4xl text-light-black rating_text_top_space fw-semibold text-white font-abril-semibold mb-0 mb-sm-4 text-center text-lg-start px-sm-4 px-md-0">
+              class="font-4xl text-light-black rating_text_top_space text-white font-abril-semibold mb-0 mb-sm-4 text-center text-lg-start px-sm-4 px-md-0">
               ‘A’ Rating
             </h3>
           </div>
@@ -803,7 +820,7 @@ AI technology that predicts, plans, and protects your cash flow." />
               Average store growth
             </p>
             <h4
-              class="font-4xl text-white text-light-black rating_text_top_space fw-semibold font-abril-semibold mb-0 mb-sm-4 text-center text-lg-start px-sm-4 px-md-0">
+              class="font-4xl text-white text-light-black rating_text_top_space font-abril-semibold mb-0 mb-sm-4 text-center text-lg-start px-sm-4 px-md-0">
               400%
             </h4>
           </div>
@@ -813,7 +830,7 @@ AI technology that predicts, plans, and protects your cash flow." />
             <img loading="lazy" src="/assets/images/webp/trustpilot.webp" class="trustpilot_icon" width="140px"
               height="34px" alt="trustpilot" />
             <h4
-              class="font-4xl text-white text-light-black rating_text_top_space fw-semibold font-abril-semibold mb-0 mb-sm-4 text-center text-lg-start px-sm-4 px-md-0">
+              class="font-4xl text-white text-light-black rating_text_top_space font-abril-semibold mb-0 mb-sm-4 text-center text-lg-start px-sm-4 px-md-0">
               Excellent
             </h4>
           </div>
@@ -824,7 +841,7 @@ AI technology that predicts, plans, and protects your cash flow." />
               Funding given
             </p>
             <h4
-              class="font-4xl text-white text-light-black rating_text_top_space fw-semibold font-abril-semibold mb-0 mb-sm-4 text-center text-lg-start px-sm-4 px-md-0">
+              class="font-4xl text-white text-light-black rating_text_top_space font-abril-semibold mb-0 mb-sm-4 text-center text-lg-start px-sm-4 px-md-0">
               $450M+
             </h4>
           </div>
@@ -841,7 +858,7 @@ AI technology that predicts, plans, and protects your cash flow." />
           still have questions?
         </p>
         <h2
-          class="font-3xl text-light-black fw-semibold font-abril-semibold mb-0 mb-sm-4 text-center text-lg-start mb-4 mb-xl-5 pb-2 pb-sm-4">
+          class="font-3xl text-light-black font-abril-semibold mb-0 mb-sm-4 text-center text-lg-start mb-4 mb-xl-5 pb-2 pb-sm-4">
           Learn more with FAQ
         </h2>
       </div>
@@ -996,16 +1013,14 @@ AI technology that predicts, plans, and protects your cash flow." />
         </div>
         <div class="col-6 col-lg-4">
           <div class="d-flex align-items-center gap_36 mt-3 mt-lg-0 justify-content-end">
-            <a rel="noopener" target="_blank" href="https://www.facebook.com/"><img
+            <a rel="noopener" target="_blank" href="https://www.facebook.com/8fig.co"><img
                 src="./assets/images/svg/facebook.svg" class="facebook_icon fotter_icons" alt="facebook" /></a>
-            <a target="_blank" rel="noopener"
-              href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fstories%2Fhighlights%2F17859310559785705%2F&is_from_rle"><img
+            <a target="_blank" rel="noopener" href="https://www.instagram.com/8fig.co/"><img
                 src="./assets/images/svg/instagram.svg" class="instagram_icon fotter_icons" alt="instagram" /></a>
-            <a target="_blank" rel="noopener"
-              href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F"><img
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/8fig"><img
                 src="./assets/images/svg/linkdin.svg" class="linkdin_icon fotter_icons" alt="linkdin" /></a>
-            <a target="_blank" rel="noopener" href="https://twitter.com/account/access"><img
-                src="./assets/images/svg/twiter.svg" class="twiter_icon fotter_icons" alt="twiter" /></a>
+            <a target="_blank" rel="noopener" href="https://x.com/eightfig"><img src="./assets/images/svg/twiter.svg"
+                class="twiter_icon fotter_icons" alt="twiter" /></a>
           </div>
         </div>
       </div>
@@ -1020,23 +1035,6 @@ AI technology that predicts, plans, and protects your cash flow." />
     </div>
   </div>
 
-  <!-- Back to top
-  <button id="back-to-top" style="z-index: 99999999"
-    class="border border-1 border-white rounded-5 back_to_top_hover transition_03s hide_back_to_top transition_300"
-    data-toggle="tooltip" title="Back to Top">
-    <span class="d-flex justify-content-center align-items-center w-100 h-100">
-      <svg class="back_to_top_arrow_size" width="20" height="17" viewBox="0 0 22 19" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M20.154 11.4008C20.259 11.5014 20.3826 11.58 20.5175 11.6322C20.6525 11.6844 20.7963 11.7091 20.9407 11.705C21.0852 11.7008 21.2274 11.6679 21.3592 11.6081C21.4911 11.5482 21.61 11.4626 21.7092 11.3562C21.8085 11.2498 21.886 11.1246 21.9375 10.9878C21.989 10.851 22.0134 10.7052 22.0093 10.5589C22.0052 10.4125 21.9728 10.2684 21.9137 10.1347C21.8547 10.0011 21.7702 9.88055 21.6652 9.77998L11.7665 0.304706C11.5623 0.109028 11.292 0 11.0109 0C10.7299 0 10.4596 0.109028 10.2553 0.304706L0.355555 9.77998C0.248252 9.87989 0.161604 10.0004 0.100645 10.1345C0.0396856 10.2687 0.00563107 10.4137 0.000457544 10.5613C-0.00471599 10.7089 0.0190964 10.8561 0.0705096 10.9943C0.121923 11.1324 0.199912 11.2589 0.299949 11.3663C0.399986 11.4736 0.520075 11.5598 0.653242 11.6197C0.786409 11.6797 0.929999 11.7122 1.07567 11.7154C1.22134 11.7186 1.36619 11.6925 1.50181 11.6384C1.63742 11.5844 1.7611 11.5037 1.86565 11.4008L11.0109 2.64789L20.154 11.4008Z"
-          fill="black"></path>
-        <path
-          d="M20.154 18.1176C20.259 18.2182 20.3826 18.2968 20.5175 18.349C20.6525 18.4012 20.7963 18.4259 20.9407 18.4218C21.0852 18.4176 21.2274 18.3847 21.3592 18.3249C21.4911 18.265 21.61 18.1794 21.7092 18.073C21.8085 17.9666 21.886 17.8414 21.9375 17.7046C21.989 17.5678 22.0134 17.422 22.0093 17.2757C22.0052 17.1293 21.9728 16.9852 21.9137 16.8515C21.8547 16.7179 21.7702 16.5973 21.6652 16.4968L11.7665 7.0215C11.5623 6.82583 11.292 6.7168 11.0109 6.7168C10.7299 6.7168 10.4596 6.82583 10.2553 7.0215L0.355555 16.4968C0.248252 16.5967 0.161604 16.7172 0.100645 16.8513C0.0396856 16.9855 0.00563107 17.1305 0.000457544 17.2781C-0.00471599 17.4257 0.0190964 17.5729 0.0705096 17.7111C0.121923 17.8492 0.199912 17.9757 0.299949 18.0831C0.399986 18.1904 0.520075 18.2766 0.653242 18.3365C0.786409 18.3964 0.929999 18.429 1.07567 18.4322C1.22134 18.4354 1.36619 18.4092 1.50181 18.3552C1.63742 18.3012 1.7611 18.2205 1.86565 18.1176L11.0109 9.36468L20.154 18.1176Z"
-          fill="black"></path>
-      </svg>
-    </span>
-  </button> -->
-
 
   <!-- bootstrap link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -1046,17 +1044,21 @@ AI technology that predicts, plans, and protects your cash flow." />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- Your JavaScript -->
 
+  <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <!-- Include ScrollTrigger plugin -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <!-- slick.min.js link  -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> -->
   <!-- Include Lottie -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
   <!-- CUSTOM JS FILES -->
 
   <script>
     gsap.registerPlugin(ScrollTrigger);
+    setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 2000);
     gsap.set(".pinned_section", { minHeight: "100vh" });
 
     // Load the Lottie animations
@@ -1081,10 +1083,6 @@ AI technology that predicts, plans, and protects your cash flow." />
 
     function animateLottie(animation, progress) {
       const totalFrames = animation.totalFrames;
-      //  if (window.innerWidth < 768) {     const frame = Math.round(progress * (totalFrames - 17)) + 17;
-      //       animation.goToAndStop(frame, true);
-
-      //  }  
       const frame = Math.round(progress * (totalFrames - 17)) + 17;
       animation.goToAndStop(frame, true);
     }
@@ -1092,19 +1090,21 @@ AI technology that predicts, plans, and protects your cash flow." />
     gsap.to('.pinned_section', {
       scrollTrigger: {
         trigger: '.pinned_section',
-        start: window.innerWidth > 768 ? "-20px 0px" : "-0px 0px",
-        end: window.innerWidth > 768 ? '+=300%' : '+=200%',
-        scrub: window.innerWidth > 768 ? true : false,
+        // start: '-=10%',
+        start: 'top 40px', // Adjusted start value
+        end: '+=300%',
+        // scrub: window.innerWidth > 768 ? true : false,
+        scrub: true,
         pin: true,
         pinSpacing: true,
+        // markers: true,
         onUpdate: function (self) {
-
           if (window.innerWidth < 768) {
             const progress = self.progress;
             const totalFrames = lottieElement.totalFrames;
             const totalFramesMobile = lottieElementMobile.totalFrames;
-            const frame = Math.round(progress * (totalFrames - 16)) + 16; // Start from frame 16
-            const frameMobile = Math.round(progress * (totalFramesMobile - 16)) + 16; // Start from frame 16
+            const frame = Math.round(progress * (totalFrames - 17)) + 17; // Start from frame 17
+            const frameMobile = Math.round(progress * (totalFramesMobile - 17)) + 17; // Start from frame 17
             lottieElement.goToAndStop(frame, true);
             lottieElementMobile.goToAndStop(frameMobile, true);
           }
@@ -1124,5 +1124,3 @@ AI technology that predicts, plans, and protects your cash flow." />
   <script src="./assets/js/main.js"></script>
 
 </body>
-
-</html>

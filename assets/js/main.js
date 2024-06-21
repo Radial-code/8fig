@@ -35,35 +35,6 @@ window.addEventListener("resize", handleScroll);
 window.addEventListener("load", handleScroll); // Note: Use "load" event instead of "onload"
 window.addEventListener("scroll", handleScroll);
 
-// // BACk-TO-TOP
-// document.addEventListener("DOMContentLoaded", function () {
-//   var backToTopButton = document.getElementById("back-to-top");
-
-//   backToTopButton.addEventListener("click", function () {
-//     window.scrollTo({
-//       top: 0,
-//       left: 0,
-//       behavior: "smooth",
-//     });
-//   });
-// });
-
-document.addEventListener("DOMContentLoaded", function () {
-  var backToTop = document.getElementById("back-to-top");
-
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 100) {
-      backToTop.classList.remove("hide_back_to_top");
-    } else {
-      backToTop.classList.add("hide_back_to_top");
-    }
-  });
-
-  backToTop.addEventListener("click", function () {
-    scrollToTop(0); // Adjust the duration as needed
-  });
-});
-
 // YEAR CHANGER FUNCTION
 var currentYearElements = document.getElementsByClassName("currentYear");
 for (var i = 0; i < currentYearElements.length; i++) {
@@ -149,3 +120,9 @@ document.addEventListener("DOMContentLoaded", function () {
     swiper.update();
   });
 });
+
+useEffect(() => {
+if (navigator.userAgent.match(/iP(hone|od|ad)/i)) {
+  document.getElementById("ios_setting").classList.add("height_iphone")
+}
+}, [third])
